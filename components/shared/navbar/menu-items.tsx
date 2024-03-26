@@ -3,16 +3,48 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { useLocale } from "next-intl";
 
-export const MenuItems = () => {
+type MenuItemsProps = {
+  itemsNames: {
+    home: string;
+    services: string;
+    fleet: string;
+    about: string;
+    contacts: string;
+  };
+};
+
+export const MenuItems = ({ itemsNames }: MenuItemsProps) => {
   const pathname = usePathname();
+  const locale = useLocale();
 
   const items = [
-    { name: "Home", href: "/", isActive: pathname === "/" },
-    { name: "Services", href: "/services", isActive: pathname === "/services" },
-    { name: "Fleet", href: "/fleet", isActive: pathname === "/fleet" },
-    { name: "About", href: "/about", isActive: pathname === "/about" },
-    { name: "Contact", href: "/contact", isActive: pathname === "/contact" },
+    {
+      name: itemsNames.home,
+      href: `/${locale}`,
+      isActive: pathname === `/${locale}`,
+    },
+    {
+      name: itemsNames.services,
+      href: `/${locale}/services`,
+      isActive: pathname === `/${locale}/services`,
+    },
+    {
+      name: itemsNames.fleet,
+      href: `/${locale}/fleet`,
+      isActive: pathname === `/${locale}/fleet`,
+    },
+    {
+      name: itemsNames.about,
+      href: `/${locale}/about`,
+      isActive: pathname === `/${locale}/about`,
+    },
+    {
+      name: itemsNames.contacts,
+      href: `/${locale}/contacts`,
+      isActive: pathname === `/${locale}/contacts`,
+    },
   ];
 
   return (
@@ -21,6 +53,7 @@ export const MenuItems = () => {
         <Link
           key={index}
           href={item.href}
+          // TODO: STYLE THIS BETTER
           className={cn("", !item.isActive && "text-foreground/80")}
         >
           {item.name}

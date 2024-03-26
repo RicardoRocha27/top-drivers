@@ -1,0 +1,1 @@
+type LocaleProps = "en" | "pt";
