@@ -1,4 +1,8 @@
 {
+  "language": {
+    "en": "English",
+    "pt": "Portuguese"
+  },
   "navbar": {
     "home": "Home",
     "services": "Services",

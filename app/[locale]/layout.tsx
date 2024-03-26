@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
-import "./globals.css";
 import { Navbar } from "@/components/shared/navbar/navbar";
+
+import "/node_modules/flag-icons/css/flag-icons.min.css";
+import "./globals.css";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "700"] });
 
