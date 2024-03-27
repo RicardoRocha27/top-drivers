@@ -9,5 +9,18 @@
     "fleet": "Fleet",
     "about": "About",
     "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "Portugal Transfer Services",
+    "subtitle": "Experience excellence through our services, offering exquisite quality and comfort tailored to meet your unique needs",
+    "button": "Contact us"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
+    "executive": "Executive",
+    "weddings": "Weddings",
+    "tours": "Tours",
+    "nightLife": "Night Life"
   }
 }

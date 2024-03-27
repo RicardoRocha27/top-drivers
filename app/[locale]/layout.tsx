@@ -9,7 +9,6 @@ import "./globals.css";
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "700"] });
 
 export const metadata: Metadata = {
-  // TODO: Maybe change this to a more descriptive thing
   title: "Top Drivers",
   description:
     "Top Drivers offers exquisite quality and comfort tailored to meet your unique needs.",

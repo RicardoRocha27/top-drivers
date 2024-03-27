@@ -5,21 +5,20 @@ export const ServicesDesktop = () => {
   return (
     <div className="h-[450px] my-32 gap-8 hidden lg:grid grid-cols-3">
       <div className="h-full flex flex-col justify-between">
-        <Header
-          title="Our Services"
-          subtitle="lorem ipsum dolor sit amet, consectetur adipiscing elit"
-        />
+        <Header translationKeyword="services" />
         <div className="h-1/2 relative">
           <ServiceCard
-            buttonLabel="Executive"
+            buttonKeyword="executive"
             alt="executive service"
+            href="/"
             imageUrl="/home-executive.jpg"
           />
         </div>
       </div>
       <div className="h-full relative">
         <ServiceCard
-          buttonLabel="Weddings"
+          buttonKeyword="weddings"
+          href="/"
           alt="weddings service"
           imageUrl="/home-weddings.jpg"
         />
@@ -27,14 +26,16 @@ export const ServicesDesktop = () => {
       <div className="h-full flex flex-col gap-4">
         <div className="relative h-full">
           <ServiceCard
-            buttonLabel="Tours"
+            buttonKeyword="tours"
+            href="/"
             alt="tours service"
             imageUrl="/home-tours.jpg"
           />
         </div>
         <div className="relative h-full">
           <ServiceCard
-            buttonLabel="Night Life"
+            buttonKeyword="nightLife"
+            href="/"
             alt="night life service"
             imageUrl="/home-night-life.jpg"
           />

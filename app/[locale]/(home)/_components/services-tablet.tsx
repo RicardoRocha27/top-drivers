@@ -6,13 +6,11 @@ export const ServicesTablet = () => {
     <div className="h-[450px] my-32 gap-8 hidden md:grid lg:hidden grid-rows-3">
       <div className="flex gap-8 size-full row-span-2">
         <div className="size-full flex flex-col justify-between">
-          <Header
-            title="Our Services"
-            subtitle="lorem ipsum dolor sit amet, consectetur adipiscing elit"
-          />
+          <Header translationKeyword="services" />
           <div className="h-1/2 relative">
             <ServiceCard
-              buttonLabel="Executive"
+              buttonKeyword="executive"
+              href="/"
               alt="executive service"
               imageUrl="/home-executive.jpg"
             />
@@ -20,7 +18,8 @@ export const ServicesTablet = () => {
         </div>
         <div className="size-full relative">
           <ServiceCard
-            buttonLabel="Weddings"
+            buttonKeyword="weddings"
+            href="/"
             alt="weddings service"
             imageUrl="/home-weddings.jpg"
           />
@@ -29,14 +28,16 @@ export const ServicesTablet = () => {
       <div className="flex gap-8 size-full">
         <div className="size-full relative">
           <ServiceCard
-            buttonLabel="Tours"
+            buttonKeyword="tours"
+            href="/"
             alt="tours service"
             imageUrl="/home-tours.jpg"
           />
         </div>
         <div className="size-full relative">
           <ServiceCard
-            buttonLabel="Night Life"
+            buttonKeyword="nightLife"
+            href="/"
             alt="night life service"
             imageUrl="/home-night-life.jpg"
           />

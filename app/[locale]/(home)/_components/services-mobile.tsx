@@ -4,37 +4,38 @@ import { ServiceCard } from "./service-card";
 export const ServicesMobile = () => {
   return (
     <div className="h-[750px] my-32 flex flex-col md:hidden">
-      <Header
-        title="Our Services"
-        subtitle="lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      />
+      <Header translationKeyword="services" />
       <div className="flex flex-col h-full gap-4 mt-8">
         <div className="relative h-full">
           <ServiceCard
-            buttonLabel="Executive"
-            alt="executive service"
+            buttonKeyword="executive"
             imageUrl="/home-executive.jpg"
+            href="/"
+            alt="executive service"
           />
         </div>
         <div className="relative h-full">
           <ServiceCard
-            buttonLabel="Weddings"
-            alt="weddings service"
+            buttonKeyword="weddings"
             imageUrl="/home-weddings.jpg"
+            href="/"
+            alt="weddings service"
           />
         </div>
         <div className="relative h-full">
           <ServiceCard
-            buttonLabel="Tours"
-            alt="tours service"
+            buttonKeyword="tours"
             imageUrl="/home-tours.jpg"
+            href="/"
+            alt="tours service"
           />
         </div>
         <div className="relative h-full">
           <ServiceCard
-            buttonLabel="Night Life"
-            alt="night life service"
+            buttonKeyword="nightLife"
             imageUrl="/home-night-life.jpg"
+            href="/"
+            alt="night life service"
           />
         </div>
       </div>
