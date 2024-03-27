@@ -1,3 +1,4 @@
+import { Container } from "../container";
 import { Logo } from "../logo";
 import { LanguageSwitcher } from "./language-switcher";
 
@@ -22,10 +23,12 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="container py-2 w-full flex items-center justify-between">
-      <Logo size={70} />
-      <MenuItems itemsNames={itemsNames} />
-      <LanguageSwitcher languagesNames={languagesNames} />
-    </div>
+    <Container>
+      <div className="py-2 w-full flex items-center justify-between">
+        <Logo size={70} />
+        <MenuItems itemsNames={itemsNames} />
+        <LanguageSwitcher languagesNames={languagesNames} />
+      </div>
+    </Container>
   );
 };

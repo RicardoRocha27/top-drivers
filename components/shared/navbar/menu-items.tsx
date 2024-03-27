@@ -53,8 +53,10 @@ export const MenuItems = ({ itemsNames }: MenuItemsProps) => {
         <Link
           key={index}
           href={item.href}
-          // TODO: STYLE THIS BETTER
-          className={cn("", !item.isActive && "text-foreground/80")}
+          className={cn(
+            "text-foreground/80 hover:text-foreground transition-colors",
+            item.isActive && "text-accent hover:text-accent"
+          )}
         >
           {item.name}
         </Link>
