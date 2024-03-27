@@ -1,10 +1,11 @@
 import { Container } from "@/components/shared/container";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export const Hero = () => {
   const hero = useTranslations("hero");
+  const locale = useLocale() as LocaleProps;
 
   return (
     <Container>
@@ -21,8 +22,16 @@ export const Hero = () => {
             className="text-4xl sm:text-5xl md:text-6xl font-bold max-w-md"
             style={{ fontFamily: "Times New Roman" }}
           >
-            {hero("title")}
-            {/* <span className="text-accent">{hero("titleSpan")}</span> */}
+            {locale === "en" ? (
+              <>
+                Portugal <span className="text-accent">Transfer Services</span>
+              </>
+            ) : (
+              <>
+                <span className="text-accent">Serviços de Transferes</span> em
+                Portugal
+              </>
+            )}
           </h1>
           <p className="text-sm text-foreground/80 max-w-md">
             {hero("subtitle")}
