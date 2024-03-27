@@ -4,6 +4,7 @@ import { LanguageSwitcher } from "./language-switcher";
 
 import { MenuItems } from "./menu-items";
 import { useTranslations } from "next-intl";
+import { MobileMenu } from "./mobile-menu";
 
 export const Navbar = () => {
   const navbar = useTranslations("navbar");
@@ -28,6 +29,7 @@ export const Navbar = () => {
         <Logo size={70} />
         <MenuItems itemsNames={itemsNames} />
         <LanguageSwitcher languagesNames={languagesNames} />
+        <MobileMenu />
       </div>
     </Container>
   );

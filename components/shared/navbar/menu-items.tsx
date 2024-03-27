@@ -48,7 +48,7 @@ export const MenuItems = ({ itemsNames }: MenuItemsProps) => {
   ];
 
   return (
-    <div className="space-x-8">
+    <div className="space-x-8 hidden md:flex">
       {items.map((item, index) => (
         <Link
           key={index}
