@@ -55,7 +55,7 @@ export const MenuItems = ({ itemsNames }: MenuItemsProps) => {
           href={item.href}
           className={cn(
             "text-foreground/80 hover:text-foreground transition-colors",
-            item.isActive && "text-accent hover:text-accent"
+            item.isActive && "text-accent hover:text-[#ffc266]"
           )}
         >
           {item.name}
