@@ -9,23 +9,23 @@ export const Banner = () => {
         <div className="grid grid-cols-4 gap-20 max-w-6xl mx-auto">
           <BannerIcon
             icon={<ShieldCheck className="size-8" />}
-            title="Safety First"
-            description="Lorem ipsum dolor sit amet consectetur dui iaculis."
+            titleKeyword="banner1.title"
+            descriptionKeyword="banner1.description"
           />
           <BannerIcon
             icon={<Handshake className="size-8" />}
-            title="Comprehensive Services"
-            description="Lorem ipsum dolor sit amet consectetur dui iaculis."
+            titleKeyword="banner2.title"
+            descriptionKeyword="banner2.description"
           />
           <BannerIcon
             icon={<UserCheck className="size-8" />}
-            title="Reliable Chauffeurs"
-            description="Lorem ipsum dolor sit amet consectetur dui iaculis."
+            titleKeyword="banner3.title"
+            descriptionKeyword="banner3.description"
           />
           <BannerIcon
             icon={<CalendarCheck className="size-8" />}
-            title="24/7 Availability"
-            description="Lorem ipsum dolor sit amet consectetur dui iaculis."
+            titleKeyword="banner4.title"
+            descriptionKeyword="banner4.description"
           />
         </div>
       </div>

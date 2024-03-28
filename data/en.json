@@ -21,5 +21,23 @@
     "weddings": "Weddings",
     "tours": "Tours",
     "nightLife": "Night Life"
+  },
+  "banners": {
+    "banner1": {
+      "title": "Safety First",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "banner2": {
+      "title": "Comprehensive Services",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "banner3": {
+      "title": "Reliable Chauffeurs",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "banner4": {
+      "title": "24/7 Availability",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
   }
 }
