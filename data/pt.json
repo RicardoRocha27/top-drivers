@@ -39,5 +39,11 @@
       "title": "Disponibilidade 24/7",
       "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
+  },
+  "about": {
+    "title": "Sobre nós",
+    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic, minima officia in aliquam illo, eligendi dignissimos repudiandae ullam quibusdam ratione distinctio odio!",
+    "card1Text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
   }
 }
