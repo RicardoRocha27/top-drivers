@@ -1,10 +1,10 @@
-import { Container } from "@/components/shared/container";
-import { Header } from "@/components/shared/header";
-import { AboutGrid } from "./about-grid";
-import { useTranslations } from "next-intl";
+import { Container } from '@/components/shared/container';
+import { Header } from '@/components/shared/header';
+import { AboutGrid } from './about-grid';
+import { useTranslations } from 'next-intl';
 
 export const About = () => {
-  const t = useTranslations("about");
+  const t = useTranslations('about');
 
   return (
     <Container>
@@ -14,10 +14,10 @@ export const About = () => {
             <Header translationKeyword="about" />
           </div>
           <p className="text-sm md:text-base text-foreground/80 lg:max-w-md">
-            {t("description")}
+            {t('description')}
           </p>
         </div>
-        <AboutGrid card1Text={t("card1Text")} />
+        <AboutGrid card1Text={t('card1Text')} />
       </div>
     </Container>
   );
