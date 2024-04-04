@@ -1,9 +1,8 @@
-import React from 'react';
-import Image from 'next/image';
-import { Container } from '../container';
-import { Logo } from '../logo';
+import React from "react";
+import { Container } from "../container";
+import { Logo } from "../logo";
 
-const footer = () => {
+export const Footer = () => {
   return (
     <Container>
       <footer className="rounded-lg bg-foreground dark:bg-gray-900 text-background">
@@ -132,5 +131,3 @@ const footer = () => {
     </Container>
   );
 };
-
-export default footer;
