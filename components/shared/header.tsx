@@ -5,6 +5,7 @@ type HeaderProps = {
 };
 
 export const Header = ({ translationKeyword }: HeaderProps) => {
+  // @ts-ignore
   const t = useTranslations(translationKeyword);
   return (
     <div>
@@ -14,7 +15,7 @@ export const Header = ({ translationKeyword }: HeaderProps) => {
       >
         {t("title")}
       </h1>
-      <p className="text-sm md:text-base text-foreground/80">{t("subtitle")}</p>
+      <p className="text-sm text-foreground/80">{t("subtitle")}</p>
     </div>
   );
 };

@@ -14,6 +14,7 @@ export const AboutGrid = ({ card1Text }: AboutGridProps) => {
         </div>
       </div>
       <div className="col-span-1 relative">
+        <div className="absolute size-full z-10 bg-accent/15 rounded-lg top-0 left-0" />
         <Image
           fill
           alt="portugal image"
@@ -22,6 +23,7 @@ export const AboutGrid = ({ card1Text }: AboutGridProps) => {
         />
       </div>
       <div className="col-span-1 md:col-span-2 relative">
+        <div className="absolute size-full z-10 bg-accent/15 rounded-lg top-0 left-0" />
         <Image
           fill
           alt="car image"

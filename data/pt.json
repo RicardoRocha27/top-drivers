@@ -46,6 +46,10 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic, minima officia in aliquam illo, eligendi dignissimos repudiandae ullam quibusdam ratione distinctio odio!",
     "card1Text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
   },
+  "fleet": {
+    "title": "Frota",
+    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
+  },
   "footer": {
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae.",
     "socialMedia": {
