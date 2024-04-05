@@ -9,7 +9,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 type LanguagesSwitcherProps = {
   languagesNames: {
@@ -22,10 +22,11 @@ export const LanguageSwitcher = ({
   languagesNames,
 }: LanguagesSwitcherProps) => {
   const router = useRouter();
+  const pathname = usePathname();
   const locale = useLocale();
 
   const onLanguageChange = (localeProps: LocaleProps) => {
-    router.replace(`/${localeProps}`);
+    router.replace(`/${localeProps}/${pathname.slice(3)}`);
   };
 
   return (
