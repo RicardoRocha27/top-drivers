@@ -2,8 +2,16 @@ import { useTranslations } from "next-intl";
 
 type BannerIconProps = {
   icon: React.ReactNode;
-  titleKeyword: string;
-  descriptionKeyword: string;
+  titleKeyword:
+    | "banner1.title"
+    | "banner2.title"
+    | "banner3.title"
+    | "banner4.title";
+  descriptionKeyword:
+    | "banner1.description"
+    | "banner2.description"
+    | "banner3.description"
+    | "banner4.description";
 };
 
 export const BannerIcon = ({

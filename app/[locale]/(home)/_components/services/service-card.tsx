@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 type ServiceCardProps = {
-  buttonKeyword: string;
+  buttonKeyword: "executive" | "weddings" | "tours" | "nightLife";
   imageUrl: string;
   href: string;
   alt: string;

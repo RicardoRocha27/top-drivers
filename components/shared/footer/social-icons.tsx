@@ -1,9 +1,9 @@
-import React from 'react';
-import { FaFacebook } from 'react-icons/fa6';
-import { PiInstagramLogoFill } from 'react-icons/pi';
-import { RiWhatsappFill } from 'react-icons/ri';
+import React from "react";
+import { FaFacebook } from "react-icons/fa6";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { RiWhatsappFill } from "react-icons/ri";
 
-const SocialIcons = () => {
+export const SocialIcons = () => {
   return (
     <div className="flex space-x-4 mt-4 lg:mt-3">
       <a
@@ -30,5 +30,3 @@ const SocialIcons = () => {
     </div>
   );
 };
-
-export default SocialIcons;
