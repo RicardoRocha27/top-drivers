@@ -14,7 +14,9 @@ export const Footer = () => {
         <div className="max-w-6xl mx-auto">
           <div className="lg:flex">
             <div className="w-full lg:w-6/12">
-              <Logo size={50} />
+              <div className="flex">
+                <Logo size={50} />
+              </div>
               <p className="max-w-sm mt-2  ">{t("description")}</p>
               <SocialIcons />
             </div>

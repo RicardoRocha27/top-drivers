@@ -50,6 +50,10 @@
     "title": "Frota",
     "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
   },
+  "contacts": {
+    "title": "Contacte-nos",
+    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
+  },
   "footer": {
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae.",
     "socialMedia": {

@@ -1,5 +1,6 @@
 import { About } from "./_components/about/about";
 import { Banner } from "./_components/banner/banner";
+import { Contacts } from "./_components/contacts/contacts";
 import { Fleet } from "./_components/fleet/fleet";
 import { Hero } from "./_components/hero";
 import { Services } from "./_components/services/services";
@@ -12,7 +13,7 @@ export default function Home() {
       <Banner />
       <About />
       <Fleet />
-      <div>contacts</div>
+      <Contacts />
     </div>
   );
 }

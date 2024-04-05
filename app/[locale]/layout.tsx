@@ -5,6 +5,7 @@ import { Navbar } from "@/components/shared/navbar/navbar";
 import { Footer } from "@/components/shared/footer/footer";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import "./globals.css";
+import { GoUpButton } from "@/components/shared/go-up-button";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "700"] });
 
@@ -29,6 +30,7 @@ export default function RootLocaleLayout({
         <div className="pb-8">
           <Footer />
         </div>
+        <GoUpButton />
       </body>
     </html>
   );
