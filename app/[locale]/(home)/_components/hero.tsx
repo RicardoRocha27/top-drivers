@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 
 export const Hero = () => {
-  const hero = useTranslations("hero");
+  const hero = useTranslations("home.hero");
   const locale = useLocale() as LocaleProps;
 
   return (

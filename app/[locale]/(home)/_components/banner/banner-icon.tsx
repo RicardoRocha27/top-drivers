@@ -19,7 +19,7 @@ export const BannerIcon = ({
   titleKeyword,
   descriptionKeyword,
 }: BannerIconProps) => {
-  const t = useTranslations("banners");
+  const t = useTranslations("home.banners");
 
   return (
     <div className="flex flex-col justify-between gap-4">

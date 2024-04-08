@@ -34,6 +34,7 @@ export const ContactsForm = () => {
   const isLoading: boolean = form.formState.isSubmitting;
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
+    // TODO: add emailjs logic
     console.log(values);
   };
 

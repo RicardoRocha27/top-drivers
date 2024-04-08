@@ -10,49 +10,57 @@
     "about": "Sobre",
     "contacts": "Contactos"
   },
-  "hero": {
-    "subtitle": "Viva a excelência através dos nossos serviços de qualidade requintada e conforto adaptado para satisfazer as suas necessidades",
-    "button": "Contacte-nos"
-  },
-  "services": {
-    "title": "Serviços",
-    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
-    "executive": "Executivo",
-    "weddings": "Casamentos",
-    "tours": "Tours",
-    "nightLife": "Vida Noturna"
-  },
-  "banners": {
-    "banner1": {
-      "title": "Segurança em Primeiro Lugar",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  "home": {
+    "hero": {
+      "subtitle": "Viva a excelência através dos nossos serviços de qualidade requintada e conforto adaptado para satisfazer as suas necessidades",
+      "button": "Contacte-nos"
     },
-    "banner2": {
-      "title": "Serviços Abrangentes",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "services": {
+      "title": "Serviços",
+      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
+      "executive": "Executivo",
+      "weddings": "Casamentos",
+      "tours": "Tours",
+      "nightLife": "Vida Noturna"
     },
-    "banner3": {
-      "title": "Motoristas Confiáveis",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "banners": {
+      "banner1": {
+        "title": "Segurança em Primeiro Lugar",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      "banner2": {
+        "title": "Serviços Abrangentes",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      "banner3": {
+        "title": "Motoristas Confiáveis",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      "banner4": {
+        "title": "Disponibilidade 24/7",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
     },
-    "banner4": {
-      "title": "Disponibilidade 24/7",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "about": {
+      "title": "Sobre nós",
+      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic, minima officia in aliquam illo, eligendi dignissimos repudiandae ullam quibusdam ratione distinctio odio!",
+      "card1Text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+    },
+    "fleet": {
+      "title": "Frota",
+      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
+    },
+    "contacts": {
+      "title": "Contacte-nos",
+      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
     }
   },
   "about": {
-    "title": "Sobre nós",
-    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic, minima officia in aliquam illo, eligendi dignissimos repudiandae ullam quibusdam ratione distinctio odio!",
-    "card1Text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-  },
-  "fleet": {
-    "title": "Frota",
-    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
-  },
-  "contacts": {
-    "title": "Contacte-nos",
-    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
+    "hero": {
+      "subtitle": "Estamos a mudar a forma como as pessoas viajam.",
+      "button": "Contacte-nos"
+    }
   },
   "footer": {
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae.",

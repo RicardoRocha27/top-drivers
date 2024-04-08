@@ -7,7 +7,7 @@ export const Contacts = () => {
     <Container>
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8">
         <div className="w-full flex flex-col gap-4">
-          <Header translationKeyword="contacts" />
+          <Header translationKeyword="home.contacts" />
           <ContactsForm />
         </div>
         <div className="w-full">

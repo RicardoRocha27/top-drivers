@@ -6,7 +6,7 @@ export const ServicesTablet = () => {
     <div className="h-[450px] my-32 gap-8 hidden md:grid lg:hidden grid-rows-3">
       <div className="flex gap-8 size-full row-span-2">
         <div className="size-full flex flex-col justify-between">
-          <Header translationKeyword="services" />
+          <Header translationKeyword="home.services" />
           <div className="h-1/2 relative">
             <ServiceCard
               buttonKeyword="executive"

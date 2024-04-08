@@ -16,7 +16,7 @@ export const ServiceCard = ({
   href,
   alt,
 }: ServiceCardProps) => {
-  const services = useTranslations("services");
+  const services = useTranslations("home.services");
 
   return (
     <div>

@@ -5,7 +5,7 @@ export const ServicesDesktop = () => {
   return (
     <div className="h-[450px] max-w-6xl mx-auto my-32 gap-8 hidden lg:grid grid-cols-3">
       <div className="h-full flex flex-col justify-between">
-        <Header translationKeyword="services" />
+        <Header translationKeyword="home.services" />
         <div className="h-1/2 relative">
           <ServiceCard
             buttonKeyword="executive"

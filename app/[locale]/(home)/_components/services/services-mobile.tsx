@@ -4,7 +4,7 @@ import { ServiceCard } from "./service-card";
 export const ServicesMobile = () => {
   return (
     <div className="h-[750px] my-32 flex flex-col md:hidden">
-      <Header translationKeyword="services" />
+      <Header translationKeyword="home.services" />
       <div className="flex flex-col h-full gap-4 mt-8">
         <div className="relative h-full">
           <ServiceCard

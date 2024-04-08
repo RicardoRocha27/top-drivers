@@ -10,49 +10,57 @@
     "about": "About",
     "contacts": "Contacts"
   },
-  "hero": {
-    "subtitle": "Experience excellence through our services, offering exquisite quality and comfort tailored to meet your unique needs",
-    "button": "Contact us"
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
-    "executive": "Executive",
-    "weddings": "Weddings",
-    "tours": "Tours",
-    "nightLife": "Night Life"
-  },
-  "banners": {
-    "banner1": {
-      "title": "Safety First",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  "home": {
+    "hero": {
+      "subtitle": "Experience excellence through our services, offering exquisite quality and comfort tailored to meet your unique needs",
+      "button": "Contact us"
     },
-    "banner2": {
-      "title": "Comprehensive Services",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "services": {
+      "title": "Our Services",
+      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
+      "executive": "Executive",
+      "weddings": "Weddings",
+      "tours": "Tours",
+      "nightLife": "Night Life"
     },
-    "banner3": {
-      "title": "Reliable Chauffeurs",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "banners": {
+      "banner1": {
+        "title": "Safety First",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      "banner2": {
+        "title": "Comprehensive Services",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      "banner3": {
+        "title": "Reliable Chauffeurs",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      "banner4": {
+        "title": "24/7 Availability",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
     },
-    "banner4": {
-      "title": "24/7 Availability",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    "about": {
+      "title": "About Us",
+      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic, minima officia in aliquam illo, eligendi dignissimos repudiandae ullam quibusdam ratione distinctio odio!",
+      "card1Text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+    },
+    "fleet": {
+      "title": "Our Fleet",
+      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
+    },
+    "contacts": {
+      "title": "Contact Us",
+      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
     }
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic, minima officia in aliquam illo, eligendi dignissimos repudiandae ullam quibusdam ratione distinctio odio!",
-    "card1Text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
-  },
-  "fleet": {
-    "title": "Our Fleet",
-    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
-  },
-  "contacts": {
-    "title": "Contact Us",
-    "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
+    "hero": {
+      "subtitle": "We are changing the way people travel.",
+      "button": "Contact us"
+    }
   },
   "footer": {
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae.",

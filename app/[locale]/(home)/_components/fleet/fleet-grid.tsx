@@ -8,7 +8,7 @@ import { CarouselArrows } from "./carousel-arrows";
 
 export const FleetGrid = () => {
   // TODO: UPDATE FLEET INFORMATION
-  const carsInfo = [
+  const fleetList: Fleet[] = [
     {
       imageUrl: "/car1.jpg",
       carName: "Mercedes E-Class",
@@ -39,13 +39,13 @@ export const FleetGrid = () => {
     <Carousel>
       <CarouselArrows />
       <CarouselContent>
-        {carsInfo.map((carInfo, index) => (
+        {fleetList.map((fleet, index) => (
           <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3">
             <FleetCard
-              imageUrl={carInfo.imageUrl}
-              carName={carInfo.carName}
-              availablePlaces={carInfo.availablePlaces}
-              availableBags={carInfo.availableBags}
+              imageUrl={fleet.imageUrl}
+              carName={fleet.carName}
+              availablePlaces={fleet.availablePlaces}
+              availableBags={fleet.availableBags}
             />
           </CarouselItem>
         ))}
