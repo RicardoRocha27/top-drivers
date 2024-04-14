@@ -7,6 +7,7 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 import "./globals.css";
 import { GoUpButton } from "@/components/shared/go-up-button";
 import WhatsappButton from "@/components/shared/whatsapp-button";
+import { ActionButtonsContainer } from "@/components/shared/action-buttons-container";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "700"] });
 
@@ -31,8 +32,7 @@ export default function RootLocaleLayout({
         <div className="pb-8">
           <Footer />
         </div>
-        <GoUpButton />
-        <WhatsappButton />
+        <ActionButtonsContainer />
       </body>
     </html>
   );
