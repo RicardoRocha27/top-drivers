@@ -1,5 +1,6 @@
 import { Container } from "@/components/shared/container";
 import { ServiceItem } from "./service-item";
+import { Header } from "@/components/shared/header";
 
 export const ServicesGrid = () => {
   return (

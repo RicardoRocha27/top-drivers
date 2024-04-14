@@ -33,7 +33,7 @@ export const GoUpButton = () => {
 
   return (
     isVisible && (
-      <div className="fixed w-full bottom-4 z-10">
+      <div className="fixed w-full bottom-4 z-20">
         <Container>
           <div className="w-full flex justify-end">
             <Button

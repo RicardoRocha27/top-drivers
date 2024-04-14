@@ -20,6 +20,8 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         accent: "text-background bg-accent hover:bg-[#ffc266]",
         background: "text-background bg-foreground hover:bg-[#e5e5e5]",
+        whatsapp:
+          "bg-gradient-to-br from-[#A6ED6A] to-[#00C91A] hover:from-[#00C91A] hover:to-[#009B15]",
       },
       size: {
         default: "h-10 px-4 py-2",
