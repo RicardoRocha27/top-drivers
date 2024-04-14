@@ -1,3 +1,9 @@
+import { ServicesGrid } from "./_components/services-grid";
+
 export default function ServicesPage() {
-  return <div>Services page</div>;
+  return (
+    <div>
+      <ServicesGrid />
+    </div>
+  );
 }

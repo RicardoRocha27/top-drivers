@@ -60,6 +60,10 @@
     "hero": {
       "subtitle": "Estamos a mudar a forma como as pessoas viajam.",
       "button": "Contacte-nos"
+    },
+    "mission": {
+      "title": "A Missão",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic!"
     }
   },
   "footer": {
