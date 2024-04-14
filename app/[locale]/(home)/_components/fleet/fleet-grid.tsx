@@ -54,7 +54,11 @@ export const FleetGrid = () => {
   ];
 
   return (
-    <Carousel>
+    <Carousel
+      opts={{
+        align: "start",
+      }}
+    >
       <CarouselArrows />
       <CarouselContent>
         {fleetList.map((fleet, index) => (
