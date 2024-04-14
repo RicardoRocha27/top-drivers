@@ -10,26 +10,44 @@ export const FleetGrid = () => {
   // TODO: UPDATE FLEET INFORMATION
   const fleetList: Fleet[] = [
     {
-      imageUrl: "/car1.jpg",
+      imageUrl: "/car-e-class.jpeg",
       carName: "Mercedes E-Class",
       availablePlaces: 4,
       availableBags: 2,
     },
     {
-      imageUrl: "/car1.jpg",
-      carName: "Mercedes E-Class",
+      imageUrl: "/car-s-class.jpeg",
+      carName: "Mercedes S-Class",
       availablePlaces: 4,
       availableBags: 2,
     },
     {
-      imageUrl: "/car1.jpg",
-      carName: "Mercedes E-Class",
+      imageUrl: "/car-eqe.jpeg",
+      carName: "Mercedes EQE",
       availablePlaces: 4,
       availableBags: 2,
     },
     {
-      imageUrl: "/car1.jpg",
-      carName: "Mercedes E-Class",
+      imageUrl: "/car-eqs.jpeg",
+      carName: "Mercedes EQS",
+      availablePlaces: 4,
+      availableBags: 2,
+    },
+    {
+      imageUrl: "/car-eqs-suv.jpeg",
+      carName: "Mercedes EQS Suv",
+      availablePlaces: 4,
+      availableBags: 2,
+    },
+    {
+      imageUrl: "/car-v-class.jpeg",
+      carName: "Mercedes V-Class",
+      availablePlaces: 4,
+      availableBags: 2,
+    },
+    {
+      imageUrl: "/car-sprinter.jpeg",
+      carName: "Mercedes Sprinter",
       availablePlaces: 4,
       availableBags: 2,
     },
