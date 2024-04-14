@@ -1,3 +1,9 @@
+import { Hero } from "@/components/shared/hero";
+
 export default function ServicesPage() {
-  return <div>Fleet page</div>;
+  return (
+    <div>
+      <Hero keyword="fleet" imageUrl="/about-hero.png" />
+    </div>
+  );
 }

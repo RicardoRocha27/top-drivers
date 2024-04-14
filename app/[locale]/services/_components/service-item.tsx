@@ -5,6 +5,7 @@ type ServiceItemProps = {
   imageUrl: string;
   title: string;
   description: string;
+  urlKey: string;
   isImageFirst?: boolean;
 };
 
@@ -13,15 +14,17 @@ export const ServiceItem = ({
   title,
   description,
   isImageFirst,
+  urlKey,
 }: ServiceItemProps) => {
   return (
     <div
+      id={urlKey}
       className={cn(
         "flex flex-col gap-8 items-center w-full",
         isImageFirst ? "md:flex-row" : "md:flex-row-reverse"
       )}
     >
-      <div className="relative w-full h-[350px] md:w-[350px] md:aspect-square ">
+      <div className="relative w-full h-[250px] md:w-[350px] md:aspect-square ">
         <Image
           src={imageUrl}
           fill

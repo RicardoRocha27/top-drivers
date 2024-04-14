@@ -56,14 +56,36 @@
       "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
     }
   },
+  "services": {
+    "hero": {
+      "title": "We offer a wide range of services, tailored to meet your unique needs.",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
+      "button": "Contact us"
+    }
+  },
+  "fleet": {
+    "hero": {
+      "title": "Our fleet is composed of the most luxurious and comfortable vehicles.",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
+      "button": "Contact us"
+    }
+  },
   "about": {
     "hero": {
-      "subtitle": "We are changing the way people travel.",
+      "title": "We are changing the way people travel.",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
       "button": "Contact us"
     },
     "mission": {
       "title": "Our Mission",
       "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic!"
+    }
+  },
+  "contacts": {
+    "hero": {
+      "title": "Contact us and book your next trip with us.",
+      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
+      "button": "Contact us"
     }
   },
   "footer": {

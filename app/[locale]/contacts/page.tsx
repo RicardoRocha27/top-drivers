@@ -1,3 +1,9 @@
+import { Hero } from "@/components/shared/hero";
+
 export default function ServicesPage() {
-  return <div>Contacts page</div>;
+  return (
+    <div>
+      <Hero keyword="contacts" imageUrl="/about-hero.png" />
+    </div>
+  );
 }

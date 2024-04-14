@@ -1,7 +1,8 @@
 import { Header } from "@/components/shared/header";
 import { ServiceCard } from "./service-card";
+import { ServicesProps } from "./services";
 
-export const ServicesDesktop = () => {
+export const ServicesDesktop = ({ locale }: ServicesProps) => {
   return (
     <div className="h-[450px] max-w-6xl mx-auto my-32 gap-8 hidden lg:grid grid-cols-3">
       <div className="h-full flex flex-col justify-between">
@@ -10,7 +11,7 @@ export const ServicesDesktop = () => {
           <ServiceCard
             buttonKeyword="executive"
             alt="executive service"
-            href="/"
+            href={`/${locale}/services#executive`}
             imageUrl="/home-executive.jpg"
           />
         </div>
@@ -18,7 +19,7 @@ export const ServicesDesktop = () => {
       <div className="h-full relative">
         <ServiceCard
           buttonKeyword="weddings"
-          href="/"
+          href={`/${locale}/services#weddings`}
           alt="weddings service"
           imageUrl="/home-weddings.jpg"
         />
@@ -27,7 +28,7 @@ export const ServicesDesktop = () => {
         <div className="relative h-full">
           <ServiceCard
             buttonKeyword="tours"
-            href="/"
+            href={`/${locale}/services#tours`}
             alt="tours service"
             imageUrl="/home-tours.jpg"
           />
@@ -35,7 +36,7 @@ export const ServicesDesktop = () => {
         <div className="relative h-full">
           <ServiceCard
             buttonKeyword="nightLife"
-            href="/"
+            href={`/${locale}/services#night-life`}
             alt="night life service"
             imageUrl="/home-night-life.jpg"
           />

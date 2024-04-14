@@ -1,7 +1,8 @@
 import { Header } from "@/components/shared/header";
 import { ServiceCard } from "./service-card";
+import { ServicesProps } from "./services";
 
-export const ServicesTablet = () => {
+export const ServicesTablet = ({ locale }: ServicesProps) => {
   return (
     <div className="h-[450px] my-32 gap-8 hidden md:grid lg:hidden grid-rows-3">
       <div className="flex gap-8 size-full row-span-2">
@@ -10,7 +11,7 @@ export const ServicesTablet = () => {
           <div className="h-1/2 relative">
             <ServiceCard
               buttonKeyword="executive"
-              href="/"
+              href={`/${locale}/services#executive`}
               alt="executive service"
               imageUrl="/home-executive.jpg"
             />
@@ -19,7 +20,7 @@ export const ServicesTablet = () => {
         <div className="size-full relative">
           <ServiceCard
             buttonKeyword="weddings"
-            href="/"
+            href={`/${locale}/services#weddings`}
             alt="weddings service"
             imageUrl="/home-weddings.jpg"
           />
@@ -29,7 +30,7 @@ export const ServicesTablet = () => {
         <div className="size-full relative">
           <ServiceCard
             buttonKeyword="tours"
-            href="/"
+            href={`/${locale}/services#tours`}
             alt="tours service"
             imageUrl="/home-tours.jpg"
           />
@@ -37,7 +38,7 @@ export const ServicesTablet = () => {
         <div className="size-full relative">
           <ServiceCard
             buttonKeyword="nightLife"
-            href="/"
+            href={`/${locale}/services#night-life`}
             alt="night life service"
             imageUrl="/home-night-life.jpg"
           />
