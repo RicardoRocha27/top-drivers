@@ -10,7 +10,6 @@ import {
   Users,
 } from "lucide-react";
 
-// TODO: Improve this to be prettier
 export const Mission = () => {
   return (
     <Container>
