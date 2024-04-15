@@ -1,43 +1,52 @@
 import { Container } from "@/components/shared/container";
+import { Header } from "@/components/shared/header";
+import { MissionItem } from "./mission-item";
+import {
+  GraduationCap,
+  Hand,
+  Rocket,
+  Sparkles,
+  Sun,
+  Users,
+} from "lucide-react";
 
 // TODO: Improve this to be prettier
 export const Mission = () => {
   return (
     <Container>
-      <div className="my-32 max-w-6xl mx-auto flex flex-col md:flex-row gap-24">
-        <div className="w-full md:w-1/2">
-          <h2
-            className="text-4xl md:text-6xl mb-8"
-            style={{ fontFamily: "Times New Roman" }}
-          >
-            Our Mission
-          </h2>
-          <p className="text-sm text-foreground/80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque
-            tempore doloremque quasi maiores blanditiis aut, mollitia modi
-            aspernatur nobis minima laboriosam ut.
-          </p>
-          <br />
-          <p className="text-sm text-foreground/80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque
-            tempore doloremque quasi maiores blanditiis aut, molliti.
-          </p>
-        </div>
-        <div className="w-full md:w-1/2 flex flex-row md:flex-col justify-between gap-4 text-center md:text-start">
-          <div>
-            <h3 className="font-bold text-lg md:text-2xl">44 million</h3>
-            <p className="text-sm text-foreground/80">
-              Transactions every 24 hours
-            </p>
-          </div>
-          <div>
-            <h3 className="font-bold text-lg md:text-2xl">€119 trillion</h3>
-            <p className="text-sm text-foreground/80">Assets under holding</p>
-          </div>
-          <div>
-            <h3 className="font-bold text-lg md:text-2xl">46,000</h3>
-            <p className="text-sm text-foreground/80">New users annually</p>
-          </div>
+      <div className="my-32 mx-auto max-w-6xl space-y-12">
+        <Header translationKeyword="about.mission" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <MissionItem
+            title="Be world-class."
+            description="Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna."
+            icon={<Rocket size={19.5} />}
+          />
+          <MissionItem
+            title="Be supportive."
+            description="Laudantium tempora sint ut consectetur ratione. Ut illum ut rem numquam fuga delectus."
+            icon={<Users size={19.5} />}
+          />
+          <MissionItem
+            title="Take responsibility."
+            description="Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo."
+            icon={<Hand size={19.5} />}
+          />
+          <MissionItem
+            title="Always learning."
+            description="Iure sed ab. Aperiam optio placeat dolor facere. Officiis pariatur eveniet atque et dolor."
+            icon={<GraduationCap size={19.5} />}
+          />
+          <MissionItem
+            title="Enjoy downtime."
+            description="Culpa dolorem voluptatem velit autem rerum qui et corrupti. Quibusdam quo placeat."
+            icon={<Sun size={19.5} />}
+          />
+          <MissionItem
+            title="Share everything you know."
+            description="Laudantium tempora sint ut consectetur ratione. Ut illum ut rem numquam fuga delectus."
+            icon={<Sparkles size={19.5} />}
+          />
         </div>
       </div>
     </Container>
