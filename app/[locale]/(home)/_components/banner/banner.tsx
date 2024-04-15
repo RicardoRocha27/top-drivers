@@ -2,12 +2,11 @@ import { Container } from "@/components/shared/container";
 import { BannerIcon } from "./banner-icon";
 import { CalendarCheck, Handshake, ShieldCheck, UserCheck } from "lucide-react";
 
-// TODO: MAKE THIS LOOK BETTER ON MOBILE
 export const Banner = () => {
   return (
     <Container>
       <div className="bg-secondary rounded-lg w-full py-16 px-4 my-32">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 max-w-6xl mx-auto">
           <BannerIcon
             icon={<ShieldCheck className="size-8" />}
             titleKeyword="banner1.title"
