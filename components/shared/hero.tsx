@@ -5,37 +5,73 @@ import Image from "next/image";
 
 type HeroProps = {
   keyword: "services" | "fleet" | "about" | "contacts";
-  imageUrl: string;
+  imagesUrl: string[];
 };
 
-export const Hero = ({ keyword, imageUrl }: HeroProps) => {
+export const Hero = ({ keyword, imagesUrl }: HeroProps) => {
   const t = useTranslations(keyword);
 
   return (
     <Container>
-      <div className="max-w-6xl mx-auto my-16">
-        <div className="flex justify-between items-center flex-col md:flex-row gap-8">
-          <div className="flex items-center text-center md:text-start md:items-start flex-col w-full gap-8">
-            <h1
-              className="text-4xl sm:text-5xl md:text-6xl font-bold max-w-md"
-              style={{ fontFamily: "Times New Roman" }}
-            >
-              {t("hero.title")}
-            </h1>
-            <p className="text-sm text-foreground/80 max-w-md">
-              {t("hero.description")}
-            </p>
-            <Button className="w-fit" variant="accent">
-              {t("hero.button")}
-            </Button>
-          </div>
-          <div className="relative w-full h-[600px]">
+      <div className="flex flex-col md:flex-row justify-between mx-auto max-w-6xl py-12 items-center gap-8 overflow-hidden">
+        <div className="space-y-8 text-center md:text-start">
+          <h1
+            className="text-4xl sm:text-5xl md:text-6xl font-bold max-w-md"
+            style={{ fontFamily: "Times New Roman" }}
+          >
+            {t("hero.title")}
+          </h1>
+          <p className="text-sm text-foreground/80 max-w-md">
+            {t("hero.description")}
+          </p>
+          <Button className="w-fit" variant="accent">
+            {t("hero.button")}
+          </Button>
+        </div>
+        <div className="flex gap-4 mt-16">
+          <div className="relative w-[150px] h-[250px] my-auto">
             <Image
-              alt={t("hero.title")}
-              src={imageUrl}
+              src={imagesUrl[0]}
               fill
-              className="object-center object-contain"
+              alt={t("hero.title")}
+              className="object-cover object-center rounded-lg"
             />
+          </div>
+          <div className="relative w-[150px] h-[500px] space-y-4">
+            <div className="relative h-1/2 w-full">
+              <Image
+                src={imagesUrl[1]}
+                fill
+                alt={t("hero.title")}
+                className="object-cover object-center rounded-lg"
+              />
+            </div>
+            <div className="relative h-1/2 w-full">
+              <Image
+                src={imagesUrl[2]}
+                fill
+                alt={t("hero.title")}
+                className="object-cover object-center rounded-lg"
+              />
+            </div>
+          </div>
+          <div className="relative w-[150px] h-[500px] space-y-4 -mt-16">
+            <div className="relative h-1/2 w-full">
+              <Image
+                src={imagesUrl[3]}
+                fill
+                alt={t("hero.title")}
+                className="object-cover object-center rounded-lg"
+              />
+            </div>
+            <div className="relative h-1/2 w-full">
+              <Image
+                src={imagesUrl[4]}
+                fill
+                alt={t("hero.title")}
+                className="object-cover object-center rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </div>

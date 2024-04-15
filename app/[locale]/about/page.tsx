@@ -7,7 +7,16 @@ import { Timeline } from "./_components/timeline";
 export default function ServicesPage() {
   return (
     <div>
-      <Hero keyword="about" imageUrl="/about-hero.png" />
+      <Hero
+        keyword="about"
+        imagesUrl={[
+          "/home-hero.jpg",
+          "/home-hero.jpg",
+          "/home-hero.jpg",
+          "/home-hero.jpg",
+          "/home-hero.jpg",
+        ]}
+      />
       <Mission />
       <Banner />
       <Timeline />

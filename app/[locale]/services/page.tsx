@@ -4,7 +4,7 @@ import { ServicesGrid } from "./_components/services-grid";
 export default function ServicesPage() {
   return (
     <div>
-      <Hero keyword="services" imageUrl="/about-hero.png" />
+      <Hero keyword="services" imagesUrl={["/home-hero.jpg"]} />
       <ServicesGrid />
     </div>
   );
