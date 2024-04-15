@@ -1,24 +1,15 @@
-// pages/stats.tsx
-import StatisticCard from '@/app/[locale]/about/_components/statistic-card';
-import { Container } from '@/components/shared/container';
-export const Statistics: React.FC = () => {
+import { Header } from "@/components/shared/header";
+import { StatisticCard } from "../_components/statistic-card";
+import { Container } from "@/components/shared/container";
+
+export const Statistics = () => {
   return (
     <Container>
       <div className="mt-32">
-        <h2
-          className="text-4xl md:text-6xl mb-8"
-          style={{ fontFamily: 'Times New Roman' }}
-        >
-          Our approach
-        </h2>
-        <p className="mb-10 lg:w-1/2 text-sm text-foreground/80">
-          Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod
-          lacus. Est non placerat nam arcu. Cras purus nibh cursus sit eu in id.
-          Integer vel nibh.
-        </p>
+        <Header translationKeyword="about.statistics" />
         <div
           className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 align-bottom"
-          style={{ alignItems: 'end' }}
+          style={{ alignItems: "end" }}
         >
           <StatisticCard
             number="250k"
@@ -44,7 +35,6 @@ export const Statistics: React.FC = () => {
             textColor="text-background"
             height="250px"
           />
-          {/* You can add more StatisticCard components here */}
         </div>
       </div>
     </Container>

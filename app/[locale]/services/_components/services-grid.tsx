@@ -4,7 +4,7 @@ import { ServiceItem } from "./service-item";
 export const ServicesGrid = () => {
   return (
     <Container>
-      <div className="max-w-5xl mx-auto my-32 space-y-16">
+      <div className="max-w-6xl mx-auto my-32 space-y-16">
         <ServiceItem
           urlKey="executive"
           imageUrl="/home-executive.jpg"

@@ -1,23 +1,22 @@
-// components/TimelineEvent.tsx
-import React from 'react';
+import React from "react";
 
-interface TimelineEventProps {
+type TimelineEventProps = {
   date: string;
   title: string;
   description: string;
-}
+};
 
-const TimelineEvent: React.FC<TimelineEventProps> = ({
+export const TimelineEvent = ({
   date,
   title,
   description,
-}) => {
+}: TimelineEventProps) => {
   return (
     <div className="flex flex-col py-4 relative">
       <div className="flex space-x-2 items-center">
-        <div className="w-1 h-1 bg-accent rounded-full"></div>
+        <div className="w-1 h-1 bg-accent rounded-full" />
         <span className="text-sm text-accent whitespace-nowrap">{date}</span>
-        <div className="h-[1px] bg-accent flex-grow"></div>
+        <div className="h-[1px] bg-accent flex-grow" />
       </div>
       <div className="mt-1">
         <h3 className="font-bold text-lg">{title}</h3>
@@ -26,5 +25,3 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
     </div>
   );
 };
-
-export default TimelineEvent;

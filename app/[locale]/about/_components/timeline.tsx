@@ -1,12 +1,11 @@
-// components/Timeline.tsx
-import React from 'react';
-import TimelineEvent from '@/app/[locale]/about/_components/timeline-event';
-import { Container } from '@/components/shared/container';
+import React from "react";
+import { TimelineEvent } from "../_components/timeline-event";
+import { Container } from "@/components/shared/container";
 
 export const Timeline = () => {
   return (
     <Container>
-      <div className="mx-auto">
+      <div className="max-w-6xl mx-auto my-32">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <TimelineEvent
             date="Mar 2023"

@@ -13,7 +13,7 @@ export const Hero = ({ keyword, imageUrl }: HeroProps) => {
 
   return (
     <Container>
-      <div className="max-w-5xl mx-auto my-16">
+      <div className="max-w-6xl mx-auto my-16">
         <div className="flex justify-between items-center flex-col md:flex-row gap-8">
           <div className="flex items-center text-center md:text-start md:items-start flex-col w-full gap-8">
             <h1
