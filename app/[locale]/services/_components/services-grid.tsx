@@ -4,33 +4,65 @@ import { ServiceItem } from "./service-item";
 export const ServicesGrid = () => {
   return (
     <Container>
-      <div className="max-w-6xl mx-auto my-32 space-y-16">
-        <ServiceItem
-          urlKey="executive"
-          imageUrl="/home-executive.jpg"
-          title="Executive"
-          description="TopDrivers is constantly in pursuit for a delighted and confident Client! For this reason, we assist you with anything you may need, from ground transportation with reliable chauffeurs to arranging private jets, restaurant, theater or event bookings, private tours and much more...From everything to anything you may need, TopDrivers will be there for you, available 24/7 to take you anywhere, anytime!"
-          isImageFirst
-        />
-        <ServiceItem
-          urlKey="weddings"
-          imageUrl="/home-weddings.jpg"
-          title="Weedings"
-          description="TopDrivers is constantly in pursuit for a delighted and confident Client! For this reason, we assist you with anything you may need, from ground transportation with reliable chauffeurs to arranging private jets, restaurant, theater or event bookings, private tours and much more...From everything to anything you may need, TopDrivers will be there for you, available 24/7 to take you anywhere, anytime!"
-        />
-        <ServiceItem
-          urlKey="tours"
-          imageUrl="/home-tours.jpg"
-          title="Tours"
-          description="TopDrivers is constantly in pursuit for a delighted and confident Client! For this reason, we assist you with anything you may need, from ground transportation with reliable chauffeurs to arranging private jets, restaurant, theater or event bookings, private tours and much more...From everything to anything you may need, TopDrivers will be there for you, available 24/7 to take you anywhere, anytime!"
-          isImageFirst
-        />
-        <ServiceItem
-          urlKey="night-life"
-          imageUrl="/home-night-life.jpg"
-          title="Night Life"
-          description="TopDrivers is constantly in pursuit for a delighted and confident Client! For this reason, we assist you with anything you may need, from ground transportation with reliable chauffeurs to arranging private jets, restaurant, theater or event bookings, private tours and much more...From everything to anything you may need, TopDrivers will be there for you, available 24/7 to take you anywhere, anytime!"
-        />
+      <div className="my-32 space-y-32">
+        <div className="bg-secondary rounded-lg w-full pt-16 pb-32 px-4">
+          <div className="max-w-6xl mx-auto">
+            <ServiceItem
+              firstImageUrl="/home-hero.jpg"
+              secondImageUrl="/home-hero.jpg"
+              title="Executive"
+              subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              firstDescriptionTitle="Nesciunt pariatur"
+              firstDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+              secondDescriptionTitle="Nesciunt pariatur"
+              secondDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+              id="executive"
+            />
+          </div>
+        </div>
+        <div className="max-w-6xl mx-auto">
+          <ServiceItem
+            firstImageUrl="/home-hero.jpg"
+            secondImageUrl="/home-hero.jpg"
+            title="Weddings"
+            subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            firstDescriptionTitle="Nesciunt pariatur"
+            firstDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+            secondDescriptionTitle="Nesciunt pariatur"
+            secondDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+            id="weddings"
+            isReversed
+          />
+        </div>
+        <div className="bg-secondary rounded-lg w-full pt-16 pb-32 px-4">
+          <div className="max-w-6xl mx-auto">
+            <ServiceItem
+              firstImageUrl="/home-hero.jpg"
+              secondImageUrl="/home-hero.jpg"
+              title="Tours"
+              subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              firstDescriptionTitle="Nesciunt pariatur"
+              firstDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+              secondDescriptionTitle="Nesciunt pariatur"
+              secondDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+              id="tours"
+            />
+          </div>
+        </div>
+        <div className="max-w-6xl mx-auto">
+          <ServiceItem
+            firstImageUrl="/home-hero.jpg"
+            secondImageUrl="/home-hero.jpg"
+            title="Night Life"
+            subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            firstDescriptionTitle="Nesciunt pariatur"
+            firstDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+            secondDescriptionTitle="Nesciunt pariatur"
+            secondDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+            id="night-life"
+            isReversed
+          />
+        </div>
       </div>
     </Container>
   );
