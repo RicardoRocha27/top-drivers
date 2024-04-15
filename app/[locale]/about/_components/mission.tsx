@@ -1,4 +1,4 @@
-import { Container } from "@/components/shared/container";
+import { Container } from '@/components/shared/container';
 
 // TODO: Improve this to be prettier
 export const Mission = () => {
@@ -6,12 +6,12 @@ export const Mission = () => {
     <Container>
       <div className="my-32 max-w-5xl mx-auto flex flex-col md:flex-row gap-24">
         <div className="w-full md:w-1/2">
-          <h1
+          <h2
             className="text-4xl md:text-6xl mb-8"
-            style={{ fontFamily: "Times New Roman" }}
+            style={{ fontFamily: 'Times New Roman' }}
           >
             Our Mission
-          </h1>
+          </h2>
           <p className="text-sm text-foreground/80">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque
             tempore doloremque quasi maiores blanditiis aut, mollitia modi
