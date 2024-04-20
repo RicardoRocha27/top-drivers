@@ -17,7 +17,7 @@
     },
     "services": {
       "title": "Our Services",
-      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
+      "subtitle": "We offer a wide range of services, tailored to meet your unique needs.",
       "executive": "Executive",
       "weddings": "Weddings",
       "tours": "Tours",
@@ -26,34 +26,34 @@
     "banners": {
       "banner1": {
         "title": "Safety First",
-        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "A priority for us is to ensure the safety of our passengers."
       },
       "banner2": {
         "title": "Comprehensive Services",
-        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "Services tailored to meet your unique needs."
       },
       "banner3": {
         "title": "Reliable Chauffeurs",
-        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "Our chauffeurs are experienced and professional."
       },
       "banner4": {
         "title": "24/7 Availability",
-        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "We are available 24/7 to meet your needs."
       }
     },
     "about": {
       "title": "About Us",
-      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
+      "subtitle": "We are a luxury transportation company, dedicated to providing excellent and comfortable services to our clients.",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic, minima officia in aliquam illo, eligendi dignissimos repudiandae ullam quibusdam ratione distinctio odio!",
       "card1Text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
     },
     "fleet": {
       "title": "Our Fleet",
-      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
+      "subtitle": "We have a fleet composed of the most luxurious and comfortable vehicles, ensuring a pleasant and safe journey."
     },
     "contacts": {
       "title": "Contact Us",
-      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
+      "subtitle": "Book your next trip with us and experience excellence in travel."
     }
   },
   "services": {
