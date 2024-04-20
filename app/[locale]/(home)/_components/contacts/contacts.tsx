@@ -1,5 +1,5 @@
 import { Container } from "@/components/shared/container";
-import { ContactsForm } from "./contacts-form";
+import { ContactsForm } from "../../../../../components/shared/contacts-form";
 import { Header } from "@/components/shared/header";
 
 export const Contacts = () => {

@@ -17,7 +17,7 @@ export const Hero = () => {
           fill
           className="object-cover object-center rounded-xl"
         />
-        <div className="absolute z-20 space-y-8 p-6 sm:p-8 md:p-12 w-full">
+        <div className="absolute z-20 space-y-8 p-6 sm:p-8 md:p-16 lg:p-24 w-full">
           <h1
             className="text-4xl sm:text-5xl md:text-6xl font-bold max-w-md"
             style={{ fontFamily: "Times New Roman" }}

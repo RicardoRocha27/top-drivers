@@ -1,14 +1,15 @@
-import React from 'react';
+import { Header } from "@/components/shared/header";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
+} from "@/components/ui/accordion";
 
-export default function faq() {
+export const Faqs = () => {
   return (
-    <div>
+    <div className="my-32 max-w-6xl mx-auto space-y-8">
+      <Header translationKeyword="contacts.faqs" />
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
@@ -31,4 +32,4 @@ export default function faq() {
       </Accordion>
     </div>
   );
-}
+};

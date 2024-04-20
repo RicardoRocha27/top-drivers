@@ -86,6 +86,14 @@
       "title": "Contact us and book your next trip with us.",
       "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
       "button": "Contact us"
+    },
+    "contacts": {
+      "title": "Book your next trip",
+      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
+    },
+    "faqs": {
+      "title": "Faqs",
+      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
     }
   },
   "footer": {
