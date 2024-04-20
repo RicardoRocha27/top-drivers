@@ -99,16 +99,16 @@
   "footer": {
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae.",
     "socialMedia": {
-      "title": "Social Media",
+      "title": "Redes sociais",
       "links": ["Instagram", "Facebook", "Whatsapp"]
     },
     "contacts": {
-      "title": "Contacts",
+      "title": "Contactos",
       "links": ["999 999 999", "email@exemplo.com", "Rua da Fantasia"]
     },
     "links": {
       "title": "Links",
-      "links": ["Home", "Services", "Fleet", "About", "Contacts"]
+      "links": ["Início", "Serviços", "Frota", "Sobre", "Contactos"]
     }
   }
 }
