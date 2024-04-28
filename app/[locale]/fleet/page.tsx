@@ -1,7 +1,7 @@
 import { Container } from "@/components/shared/container";
 import { Hero } from "@/components/shared/hero";
 import { Banner } from "./_components/banner";
-import { CarGrid } from "./_components/car-grid";
+import { CarWrapper } from "./_components/car-wrapper";
 
 export default function ServicesPage() {
   return (
@@ -18,7 +18,7 @@ export default function ServicesPage() {
       />
       <Container>
         <Banner />
-        <CarGrid />
+        <CarWrapper />
       </Container>
     </div>
   );
