@@ -68,6 +68,12 @@
       "title": "Our fleet is composed of the most luxurious and comfortable vehicles.",
       "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
       "button": "Contact us"
+    },
+    "cars": {
+      "header": {
+        "title": "Know our fleet",
+        "subtitle": "We have a fleet composed of the most luxurious and comfortable vehicles, ensuring a pleasant and safe journey."
+      }
     }
   },
   "about": {
