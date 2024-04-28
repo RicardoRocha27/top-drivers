@@ -5,4 +5,5 @@ type Fleet = {
   carName: string;
   availablePlaces: number;
   availableBags: number;
+  images: string[];
 };
