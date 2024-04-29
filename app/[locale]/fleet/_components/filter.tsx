@@ -121,7 +121,7 @@ export const Filter = () => {
                     size={20}
                     className={cn(
                       "cursor-pointer",
-                      (availablePlaces as number) > 3 &&
+                      parseInt(availablePlaces as string) > 3 &&
                         "text-muted-foreground opacity-50 cursor-default"
                     )}
                     onClick={() => updateFilters(true, true)}
@@ -146,7 +146,7 @@ export const Filter = () => {
                     size={20}
                     className={cn(
                       "cursor-pointer",
-                      (availableBags as number) > 3 &&
+                      parseInt(availableBags as string) > 3 &&
                         "text-muted-foreground opacity-50 cursor-default"
                     )}
                     onClick={() => updateFilters(true, false)}
