@@ -13,7 +13,7 @@ export const Car = ({
   return (
     <Dialog>
       <DialogTrigger>
-        <div className="relative w-full rounded-lg cursor-pointer hover:opacity-80 transition-opacity duration-300 ease-in-out">
+        <div className="relative w-full  cursor-pointer hover:opacity-80 transition-opacity duration-300 ease-in-out">
           <Image
             width={500}
             height={500}
@@ -37,6 +37,12 @@ export const Car = ({
         </div>
       </DialogTrigger>
       <DialogContent>
+        <div>
+          <h1 className="font-semibold text-lg">{carName}</h1>
+          <p className="max-w-xl text-foreground/80 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
         <CarCarousel images={images} />
       </DialogContent>
     </Dialog>
