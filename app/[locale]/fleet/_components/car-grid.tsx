@@ -12,8 +12,8 @@ export const CarGrid = () => {
 
   const filteredFleet = fleetList.filter(
     (car) =>
-      car.availablePlaces > parseInt(availablePlaces as string) &&
-      car.availableBags > parseInt(availableBags as string)
+      car.availablePlaces >= parseInt(availablePlaces as string) &&
+      car.availableBags >= parseInt(availableBags as string)
   );
 
   return (

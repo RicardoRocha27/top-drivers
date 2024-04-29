@@ -1,24 +1,39 @@
 "use client";
 
-import { Input } from "@/components/ui/input";
-import { BriefcaseBusiness, Users } from "lucide-react";
+import { CircleMinus, CirclePlus, FilterIcon } from "lucide-react";
+import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
 import qs from "query-string";
+
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+} from "@/components/ui/popover";
+import {
+  Command,
+  CommandGroup,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command";
 
 export const Filter = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const current = qs.parse(searchParams.toString());
 
-  const [availablePlaces, setAvailablePlaces] = useState(
-    current["availablePlaces"] || "1"
+  const [open, setOpen] = useState(false);
+
+  const [availablePlaces, setAvailablePlaces] = useState<string | number>(
+    (current["availablePlaces"] as string) || 1
   );
-  const [availableBags, setAvailableBags] = useState(
-    current["availableBags"] || "1"
+  const [availableBags, setAvailableBags] = useState<string | number>(
+    (current["availableBags"] as string) || 1
   );
 
-  useEffect(() => {
+  const submitFilters = () => {
     let query = {
       ...current,
     };
@@ -33,7 +48,7 @@ export const Filter = () => {
     if (availablePlaces !== "0") {
       query = {
         ...query,
-        ["availablePlaces"]: availablePlaces,
+        ["availablePlaces"]: availablePlaces as string,
       };
     } else {
       delete query["availablePlaces"];
@@ -42,7 +57,7 @@ export const Filter = () => {
     if (availableBags !== "0") {
       query = {
         ...query,
-        ["availableBags"]: availableBags,
+        ["availableBags"]: availableBags as string,
       };
     } else {
       delete query["availableBags"];
@@ -57,33 +72,98 @@ export const Filter = () => {
     );
 
     router.push(url, { scroll: false });
-  }, [availableBags, availablePlaces, router, current]);
+    setOpen(false);
+  };
+
+  const updateFilters = (shouldIncrease: boolean, isPlaces: boolean) => {
+    if (isPlaces) {
+      if (shouldIncrease && parseInt(availablePlaces as string) < 4) {
+        setAvailablePlaces((curr) => parseInt(curr as string) + 1);
+      } else if (!shouldIncrease && parseInt(availablePlaces as string) > 1) {
+        setAvailablePlaces((curr) => parseInt(curr as string) - 1);
+      }
+    } else {
+      if (shouldIncrease && parseInt(availableBags as string) < 4) {
+        setAvailableBags((curr) => parseInt(curr as string) + 1);
+      } else if (!shouldIncrease && parseInt(availableBags as string) > 1) {
+        setAvailableBags((curr) => parseInt(curr as string) - 1);
+      }
+    }
+  };
 
   return (
-    <div className="space-x-2 flex items-center gap-2">
-      <div className="relative">
-        <Users className="absolute top-1/2 -translate-y-1/2 left-2" size={16} />
-        <Input
-          type="number"
-          className="pl-8 w-14"
-          min={1}
-          defaultValue={parseInt(availablePlaces as string)}
-          onChange={(e) => setAvailablePlaces(e.target.value)}
-        />
-      </div>
-      <div className="relative">
-        <BriefcaseBusiness
-          className="absolute top-1/2 -translate-y-1/2 left-2"
-          size={16}
-        />
-        <Input
-          type="number"
-          className="pl-8 w-14"
-          min={1}
-          defaultValue={parseInt(availableBags as string)}
-          onChange={(e) => setAvailableBags(e.target.value)}
-        />
-      </div>
-    </div>
+    <Popover open={open} onOpenChange={setOpen}>
+      <PopoverTrigger asChild>
+        <Button variant="background" className="flex items-center gap-2">
+          <FilterIcon />
+          Filter
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent className="max-w-[140px] p-0" align="end">
+        <Command>
+          <CommandList>
+            <CommandGroup heading="Filters">
+              <CommandItem className="flex flex-col justify-start gap-1">
+                <p className="text-xs w-full">Number of seats</p>
+                <div className="flex items-center gap-2 w-full">
+                  <CircleMinus
+                    size={20}
+                    className={cn(
+                      "cursor-pointer",
+                      availablePlaces === 1 &&
+                        "text-muted-foreground opacity-50 cursor-default"
+                    )}
+                    onClick={() => updateFilters(false, true)}
+                  />
+                  {availablePlaces}
+                  {/* TODO: change the compare value for the one of the max available places */}
+                  <CirclePlus
+                    size={20}
+                    className={cn(
+                      "cursor-pointer",
+                      (availablePlaces as number) > 3 &&
+                        "text-muted-foreground opacity-50 cursor-default"
+                    )}
+                    onClick={() => updateFilters(true, true)}
+                  />
+                </div>
+              </CommandItem>
+              <CommandItem className="flex flex-col justify-start gap-1">
+                <p className="text-xs w-full">Number of bags</p>
+                <div className="flex items-center gap-2 w-full">
+                  <CircleMinus
+                    size={20}
+                    className={cn(
+                      "cursor-pointer",
+                      availableBags === 1 &&
+                        "text-muted-foreground opacity-50 cursor-default"
+                    )}
+                    onClick={() => updateFilters(false, false)}
+                  />
+                  {availableBags}
+                  {/* TODO: change the compare value for the one of the max available bags */}
+                  <CirclePlus
+                    size={20}
+                    className={cn(
+                      "cursor-pointer",
+                      (availableBags as number) > 3 &&
+                        "text-muted-foreground opacity-50 cursor-default"
+                    )}
+                    onClick={() => updateFilters(true, false)}
+                  />
+                </div>
+              </CommandItem>
+            </CommandGroup>
+            <Button
+              className="w-full rounded-e-none rounded-t-none"
+              variant="accent"
+              onClick={submitFilters}
+            >
+              Filter
+            </Button>
+          </CommandList>
+        </Command>
+      </PopoverContent>
+    </Popover>
   );
 };
