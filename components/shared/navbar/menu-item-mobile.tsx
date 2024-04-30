@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import { cn } from '@/lib/utils';
-import { useLocale } from 'next-intl';
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { useLocale } from "next-intl";
 import {
   Sheet,
   SheetContent,
@@ -11,7 +11,7 @@ import {
   SheetHeader,
   SheetPrimitive,
   SheetTrigger,
-} from '@/components/ui/sheet';
+} from "@/components/ui/sheet";
 type MenuItemMobileProps = {
   itemsNames: {
     home: string;
@@ -57,18 +57,18 @@ export const MenuItemMobile = ({ itemsNames }: MenuItemMobileProps) => {
   return (
     <div className="mt-8 flex flex-col space-y-3 md:hidden">
       {items.map((item, index) => (
-        <SheetPrimitive.Close key={index} className="flex flex-col">
-          <Link
-            key={index}
-            href={item.href}
-            className={cn(
-              'text-foreground/80 hover:text-foreground transition-colors focus:outline-none text-sm',
-              item.isActive && 'text-accent hover:text-[#ffc266]'
-            )}
-          >
+        <Link
+          key={index}
+          href={item.href}
+          className={cn(
+            "text-foreground/80 hover:text-foreground transition-colors focus:outline-none text-sm",
+            item.isActive && "text-accent hover:text-[#ffc266]"
+          )}
+        >
+          <SheetPrimitive.Close key={index} className="flex flex-col">
             {item.name}
-          </Link>
-        </SheetPrimitive.Close>
+          </SheetPrimitive.Close>
+        </Link>
       ))}
     </div>
   );
