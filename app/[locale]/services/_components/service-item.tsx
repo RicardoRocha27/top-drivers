@@ -27,9 +27,15 @@ export const ServiceItem = ({
   isReversed,
 }: ServiceItemProps) => {
   return (
-    <div className={cn("flex gap-8", isReversed && "flex-row-reverse")} id={id}>
-      <div className="h-full flex">
-        <div className="relative w-[250px] h-[350px]">
+    <div
+      className={cn(
+        "flex flex-col lg:flex-row text-center lg:text-start items-center gap-32 lg:gap-8 overflow-hidden lg:overflow-visible",
+        isReversed && "lg:flex-row-reverse"
+      )}
+      id={id}
+    >
+      <div className="h-full flex justify-center items-center ml-16 lg:ml-0">
+        <div className="relative w-[150px] h-[250px] sm:w-[250px] sm:h-[350px]">
           <Image
             src={firstImageUrl}
             alt={firstDescriptionTitle}
@@ -37,7 +43,7 @@ export const ServiceItem = ({
             className="object-cover object-center rounded-lg"
           />
         </div>
-        <div className="relative w-[250px] h-[350px]">
+        <div className="relative w-[150px] h-[250px] sm:w-[250px] sm:h-[350px]">
           <Image
             src={secondImageUrl}
             alt={secondDescriptionTitle}

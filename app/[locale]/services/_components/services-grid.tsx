@@ -5,7 +5,7 @@ export const ServicesGrid = () => {
   return (
     <Container>
       <div className="my-32 space-y-32">
-        <div className="bg-secondary rounded-lg w-full pt-16 pb-32 px-4">
+        <div className="bg-secondary rounded-lg w-full pt-16 pb-16 lg:pb-32 px-4">
           <div className="max-w-6xl mx-auto">
             <ServiceItem
               firstImageUrl="/home-hero.jpg"
