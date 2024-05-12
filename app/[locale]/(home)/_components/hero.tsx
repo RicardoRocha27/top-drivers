@@ -2,6 +2,7 @@ import { Container } from "@/components/shared/container";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
 
 export const Hero = () => {
   const hero = useTranslations("home.hero");
@@ -36,7 +37,9 @@ export const Hero = () => {
           <p className="text-sm text-foreground/80 max-w-md">
             {hero("subtitle")}
           </p>
-          <Button variant="accent">{hero("button")}</Button>
+          <Button variant="accent" asChild>
+            <Link href={`/${locale}/contacts`}>{hero("button")}</Link>
+          </Button>
         </div>
       </div>
     </Container>

@@ -9,6 +9,7 @@ export const AboutGrid = ({ card1Text }: AboutGridProps) => {
     <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-8">
       <div className="col-span-1">
         <div className="text-center bg-secondary p-12 rounded-lg">
+          {/* TODO: Change number of trips */}
           <h1 className="font-bold text-2xl">+1k</h1>
           <p className="text-foreground/80 text-sm">{card1Text}</p>
         </div>

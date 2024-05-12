@@ -1,7 +1,8 @@
 import { Container } from "@/components/shared/container";
 import { Button } from "@/components/ui/button";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 
 type HeroProps = {
   keyword: "services" | "fleet" | "about" | "contacts";
@@ -10,6 +11,7 @@ type HeroProps = {
 
 export const Hero = ({ keyword, imagesUrl }: HeroProps) => {
   const t = useTranslations(keyword);
+  const locale = useLocale();
 
   return (
     <Container>
@@ -24,8 +26,8 @@ export const Hero = ({ keyword, imagesUrl }: HeroProps) => {
           <p className="text-sm text-foreground/80 max-w-md">
             {t("hero.description")}
           </p>
-          <Button className="w-fit" variant="accent">
-            {t("hero.button")}
+          <Button className="w-fit" variant="accent" asChild>
+            <Link href={`/${locale}/contacts`}>{t("hero.button")}</Link>
           </Button>
         </div>
         <div className="flex gap-4 mt-16">

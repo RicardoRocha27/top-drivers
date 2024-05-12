@@ -13,7 +13,7 @@ export const CarouselArrows = () => {
 
   return (
     <div className="absolute z-10 space-x-4 flex items-center -top-[92px] md:right-0">
-      <Button variant="accent">
+      <Button variant="accent" asChild>
         <Link href={`${params.locale}/fleet`}>All Vehicles</Link>
       </Button>
       <Button
