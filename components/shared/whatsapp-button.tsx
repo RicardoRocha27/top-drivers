@@ -9,8 +9,7 @@ const WhatsappButton = () => {
       variant="whatsapp"
       size="icon"
       className="shadow-md"
-      // TODO: CHANGE MOBILE NUMBER
-      onClick={() => window.open(`https://wa.me/999999999`)}
+      onClick={() => window.open(`https://wa.me/966513221`)}
     >
       <AiOutlineWhatsApp size={20} className="text-foreground" />
     </Button>

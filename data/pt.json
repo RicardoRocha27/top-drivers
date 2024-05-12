@@ -44,73 +44,163 @@
     "about": {
       "title": "Sobre nós",
       "subtitle": "Somos uma empresa de transporte de luxo, dedicada a fornecer serviços de excelência e conforto aos nossos clientes.",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic, minima officia in aliquam illo, eligendi dignissimos repudiandae ullam quibusdam ratione distinctio odio!",
-      "card1Text": "Viagens completas"
+      "description": "Somos uma referência em Portugal para serviços de motoristas e chauffeurs de excelência. O nosso compromisso é superar as expectativas de cada cliente, o que nos destaca como a escolha distintiva para todas as necessidades de transporte.",
+      "card1Text": "Viagens completas com motoristas profissionais"
     },
     "fleet": {
       "title": "Frota",
-      "subtitle": "Temos uma frota composta pelos veículos mais luxuosos e confortáveis, adaptados para satisfazer as suas necessidades."
+      "subtitle": "Temos uma frota composta pelos veículos mais luxuosos e confortáveis, adaptados para satisfazer as suas necessidades.",
+      "button": "Todos os veículos"
     },
     "contacts": {
       "title": "Contacte-nos",
-      "subtitle": "Marque a sua próxima viagem connosco e experiencie viagens de excelência."
+      "subtitle": "Marque a sua próxima viagem connosco e experiencie viagens de excelência.",
+      "form": {
+        "name": "Nome",
+        "email": "Email",
+        "body": "Escreva a sua mensagem aqui...",
+        "button": "Enviar"
+      }
     }
   },
   "services": {
     "hero": {
-      "title": "We offer a wide range of services, tailored to meet your unique needs.",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
-      "button": "Contact us"
+      "title": "Serviços para atender às suas necessidades",
+      "description": "Tempo, conforto e privacidade são alguns dos maiores luxos da vida, e quando combinados com um Serviço Privado de Motorista notável e digno de confiança, a perfeição é alcançada",
+      "button": "Contacte-nos"
+    },
+    "items": {
+      "executive": {
+        "title": "Executivo",
+        "subtitle": "",
+        "firstDescriptionTitle": "",
+        "firstDescription": "",
+        "secondDescriptionTitle": "",
+        "secondDescription": ""
+      },
+      "weddings": {
+        "title": "Casamentos",
+        "subtitle": "Independentemente da questão, a resposta será sempre sim.",
+        "firstDescriptionTitle": "",
+        "firstDescription": "",
+        "secondDescriptionTitle": "",
+        "secondDescription": ""
+      },
+      "tours": {
+        "title": "Tours",
+        "subtitle": "",
+        "firstDescriptionTitle": "",
+        "firstDescription": "",
+        "secondDescriptionTitle": "",
+        "secondDescription": ""
+      },
+      "nightLife": {
+        "title": "Vida noturna",
+        "subtitle": "Serviço discreto, de confiança e atencioso para necessidades incomparáveis",
+        "firstDescriptionTitle": "Condução Confiável, Noites Inesquecíveis",
+        "firstDescription": "Cuidamos da condução, estacionamento e outros detalhes, para que possa desfrutar plenamente do momento e dar atenção aos que mais ama, sem preocupações.",
+        "secondDescriptionTitle": "Experiência e Dedicação ao Seu Serviço",
+        "secondDescription": "Com anos de experiência e um compromisso inabalável com o serviço de excelência, garantimos que cada detalhe da sua noite é cuidadosamente planeado e executado."
+      }
     }
   },
   "fleet": {
     "hero": {
-      "title": "Our fleet is composed of the most luxurious and comfortable vehicles.",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
-      "button": "Contact us"
+      "title": "Conheça a nossa frota de veículos de luxo",
+      "description": "Garantimos viagens memoráveis com conforto e segurança, com a nossa frota de luxo composta por modelos Mercedes equipados com tudo o que precisa para uma viagem agradável e segura.",
+      "button": "Contacte-nos"
+    },
+    "banner": {
+      "title": "Porque também nós dependemos deles, só confiamos nos melhores dos melhores"
     },
     "cars": {
       "header": {
-        "title": "Know our fleet",
-        "subtitle": "We have a fleet composed of the most luxurious and comfortable vehicles, ensuring a pleasant and safe journey."
+        "title": "Conheça a nossa frota",
+        "subtitle": "Temos uma frota composta pelos veículos mais luxuosos e confortáveis, garantindo uma viagem agradável e segura."
+      },
+      "filter": {
+        "label": "Filtrar",
+        "heading": "Filtros",
+        "availablePlacesLabel": "Lugares",
+        "availableBagsLabel": "Malas"
       }
     }
   },
   "about": {
     "hero": {
-      "title": "We are changing the way people travel.",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
-      "button": "Contact us"
+      "title": "Mudamos a forma como as pessoas viajam",
+      "description": "O nosso compromisso é superar as expectativas de cada cliente, o que nos destaca como a escolha distintiva para todas as necessidades de transporte.",
+      "button": "Contacte-nos"
     },
     "mission": {
-      "title": "Our Mission",
-      "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic!"
+      "title": "A nossa missão",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae, nostrum assumenda temporibus est hic!",
+      "standards": {
+        "trust": {
+          "title": "Confiança",
+          "description": "Pode confiar em nós para fornecer um serviço excepcional e priorizar a sua segurança e satisfação a cada passo do caminho."
+        },
+        "privacy": {
+          "title": "Privacidade",
+          "description": "Desfrute da sua viagem sabendo que o seu espaço pessoal e informações são respeitados e protegidos a todo o momento."
+        },
+        "comfort": {
+          "title": "Conforto",
+          "description": "Os nossos veículos de luxo e serviço atencioso garantem uma viagem suave e agradável do início ao fim."
+        },
+        "quality": {
+          "title": "Qualidade",
+          "description": "Desde a nossa frota meticulosamente mantida até aos nossos motoristas profissionais, a excelência é o nosso padrão."
+        },
+        "convenience": {
+          "title": "Conveniência",
+          "description": "Sente-se, relaxe e deixe-nos tratar de todos os detalhes, para que possa focar-se no que é mais importante para si."
+        },
+        "safety": {
+          "title": "Segurança",
+          "description": "Cumprimos os mais altos padrões de segurança, proporcionando transporte seguro e fiável."
+        }
+      }
     }
   },
   "contacts": {
     "hero": {
-      "title": "Contact us and book your next trip with us.",
-      "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc.",
-      "button": "Contact us"
+      "title": "Contacte-nos e reserve a sua próxima viagem connosco",
+      "description": "Estamos disponíveis 24/7 para satisfazer as suas necessidades de transporte, garantindo viagens seguras e confortáveis.",
+      "button": ""
     },
     "contacts": {
-      "title": "Book your next trip",
-      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
+      "title": "Reserve a sua próxima viagem",
+      "subtitle": "Entre em contacto connosco para reservar a sua próxima viagem e experienciar viagens de excelência."
     },
     "faqs": {
       "title": "Faqs",
-      "subtitle": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies, nunc nunc."
+      "subtitle": "Procura mais informações? Consulte as nossas perguntas frequentes.",
+      "items": {
+        "question1": {
+          "question": "Como posso reservar um serviço?",
+          "answer": "Pode reservar um serviço através do nosso website, preenchendo o formulário de contacto ou através do nosso número de telefone."
+        },
+        "question2": {
+          "question": "Quais são os métodos de pagamento disponíveis?",
+          "answer": "Aceitamos pagamentos em numerário, cartão de crédito e transferência bancária."
+        },
+        "question3": {
+          "question": "Os vossos motoristas falam outras línguas?",
+          "answer": "Sim, os nossos motoristas são fluentes em várias línguas, incluindo inglês, francês e espanhol."
+        }
+      }
     }
   },
   "footer": {
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga nesciunt vitae.",
+    "description": "Serviços de excelência com qualidade e conforto inigualáveis para satisfazer necessidades únicas.",
     "socialMedia": {
       "title": "Redes sociais",
-      "links": ["Instagram", "Facebook", "Whatsapp"]
+      "links": ["Instagram", "Facebook"]
     },
     "contacts": {
       "title": "Contactos",
-      "links": ["999 999 999", "email@exemplo.com", "Rua da Fantasia"]
+      "links": ["966513221", "info@topdrivers.pt", "Rua da Fantasia"]
     },
     "links": {
       "title": "Links",

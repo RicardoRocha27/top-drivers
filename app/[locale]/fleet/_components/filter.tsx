@@ -22,7 +22,19 @@ import {
 const MAX_NUMBER_OF_SEATS = 15;
 const MAX_NUMBER_OF_BAGS = 31;
 
-export const Filter = () => {
+type FitlerProps = {
+  filterLabel: string;
+  heading: string;
+  availablePlacesLabel: string;
+  availableBagsLabel: string;
+};
+
+export const Filter = ({
+  filterLabel,
+  heading,
+  availablePlacesLabel,
+  availableBagsLabel,
+}: FitlerProps) => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const current = qs.parse(searchParams.toString());
@@ -105,15 +117,15 @@ export const Filter = () => {
       <PopoverTrigger asChild>
         <Button variant="background" className="flex items-center gap-2">
           <FilterIcon />
-          Filter
+          {filterLabel}
         </Button>
       </PopoverTrigger>
       <PopoverContent className="max-w-[140px] p-0" align="end">
         <Command>
           <CommandList>
-            <CommandGroup heading="Filters">
+            <CommandGroup heading={heading}>
               <CommandItem className="flex flex-col justify-start gap-1">
-                <p className="text-xs w-full">Number of seats</p>
+                <p className="text-xs w-full">{availablePlacesLabel}</p>
                 <div className="flex items-center gap-2 w-full">
                   <CircleMinus
                     size={20}
@@ -138,7 +150,7 @@ export const Filter = () => {
                 </div>
               </CommandItem>
               <CommandItem className="flex flex-col justify-start gap-1">
-                <p className="text-xs w-full">Number of bags</p>
+                <p className="text-xs w-full">{availableBagsLabel}</p>
                 <div className="flex items-center gap-2 w-full">
                   <CircleMinus
                     size={20}
@@ -167,7 +179,7 @@ export const Filter = () => {
               variant="accent"
               onClick={submitFilters}
             >
-              Filter
+              {filterLabel}
             </Button>
           </CommandList>
         </Command>

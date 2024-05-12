@@ -6,7 +6,11 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
-export const CarouselArrows = () => {
+type CarouselArrowsProps = {
+  buttonLabel: string;
+};
+
+export const CarouselArrows = ({ buttonLabel }: CarouselArrowsProps) => {
   const params = useParams();
   const { scrollNext, scrollPrev, canScrollNext, canScrollPrev } =
     useCarousel();
@@ -14,7 +18,7 @@ export const CarouselArrows = () => {
   return (
     <div className="absolute z-10 space-x-4 flex items-center -top-[92px] md:right-0">
       <Button variant="accent" asChild>
-        <Link href={`${params.locale}/fleet`}>All Vehicles</Link>
+        <Link href={`${params.locale}/fleet`}>{buttonLabel}</Link>
       </Button>
       <Button
         variant="accent"

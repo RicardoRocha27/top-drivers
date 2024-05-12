@@ -1,19 +1,18 @@
-'use client';
+"use client";
 
-import * as z from 'zod';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
+import * as z from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { Textarea } from '@/components/ui/textarea';
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
   name: z.string().min(1),
@@ -21,13 +20,25 @@ const formSchema = z.object({
   message: z.string().min(1).max(255),
 });
 
-export const ContactsForm = () => {
+type ContactsFormProps = {
+  nameLabel: string;
+  emailLabel: string;
+  bodyLabel: string;
+  buttonLabel: string;
+};
+
+export const ContactsForm = ({
+  nameLabel,
+  emailLabel,
+  bodyLabel,
+  buttonLabel,
+}: ContactsFormProps) => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     },
   });
 
@@ -54,7 +65,7 @@ export const ContactsForm = () => {
                   <Input
                     {...field}
                     disabled={isLoading}
-                    placeholder="Name"
+                    placeholder={nameLabel}
                     className="placeholder:text-foreground/80"
                   />
                 </FormControl>
@@ -71,7 +82,7 @@ export const ContactsForm = () => {
                   <Input
                     {...field}
                     disabled={isLoading}
-                    placeholder="Email"
+                    placeholder={emailLabel}
                     className=" placeholder:text-foreground/80"
                   />
                 </FormControl>
@@ -88,7 +99,7 @@ export const ContactsForm = () => {
                   <Textarea
                     {...field}
                     disabled={isLoading}
-                    placeholder="Write your message here..."
+                    placeholder={bodyLabel}
                     className="resize-none h-32 placeholder:text-foreground/80"
                   />
                 </FormControl>
@@ -104,7 +115,7 @@ export const ContactsForm = () => {
             variant="accent"
             className="w-full"
           >
-            Send
+            {buttonLabel}
           </Button>
         </div>
       </form>

@@ -1,7 +1,10 @@
 import { Container } from "@/components/shared/container";
 import { ServiceItem } from "./service-item";
+import { useTranslations } from "next-intl";
 
 export const ServicesGrid = () => {
+  const t = useTranslations("services.items");
+
   return (
     <Container>
       <div className="my-32 space-y-32">
@@ -10,12 +13,12 @@ export const ServicesGrid = () => {
             <ServiceItem
               firstImageUrl="/home-hero.jpg"
               secondImageUrl="/home-hero.jpg"
-              title="Executive"
-              subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              firstDescriptionTitle="Nesciunt pariatur"
-              firstDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
-              secondDescriptionTitle="Nesciunt pariatur"
-              secondDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+              title={t("executive.title")}
+              subtitle={t("executive.subtitle")}
+              firstDescriptionTitle={t("executive.firstDescriptionTitle")}
+              firstDescription={t("executive.firstDescription")}
+              secondDescriptionTitle={t("executive.secondDescriptionTitle")}
+              secondDescription={t("executive.secondDescription")}
               id="executive"
             />
           </div>
@@ -24,12 +27,12 @@ export const ServicesGrid = () => {
           <ServiceItem
             firstImageUrl="/home-hero.jpg"
             secondImageUrl="/home-hero.jpg"
-            title="Weddings"
-            subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            firstDescriptionTitle="Nesciunt pariatur"
-            firstDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
-            secondDescriptionTitle="Nesciunt pariatur"
-            secondDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+            title={t("weddings.title")}
+            subtitle={t("weddings.subtitle")}
+            firstDescriptionTitle={t("weddings.firstDescriptionTitle")}
+            firstDescription={t("weddings.firstDescription")}
+            secondDescriptionTitle={t("weddings.secondDescriptionTitle")}
+            secondDescription={t("weddings.secondDescription")}
             id="weddings"
             isReversed
           />
@@ -39,12 +42,12 @@ export const ServicesGrid = () => {
             <ServiceItem
               firstImageUrl="/home-hero.jpg"
               secondImageUrl="/home-hero.jpg"
-              title="Tours"
-              subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              firstDescriptionTitle="Nesciunt pariatur"
-              firstDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
-              secondDescriptionTitle="Nesciunt pariatur"
-              secondDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+              title={t("tours.title")}
+              subtitle={t("tours.subtitle")}
+              firstDescriptionTitle={t("tours.firstDescriptionTitle")}
+              firstDescription={t("tours.firstDescription")}
+              secondDescriptionTitle={t("tours.secondDescriptionTitle")}
+              secondDescription={t("tours.secondDescription")}
               id="tours"
             />
           </div>
@@ -53,12 +56,12 @@ export const ServicesGrid = () => {
           <ServiceItem
             firstImageUrl="/home-hero.jpg"
             secondImageUrl="/home-hero.jpg"
-            title="Night Life"
-            subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            firstDescriptionTitle="Nesciunt pariatur"
-            firstDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
-            secondDescriptionTitle="Nesciunt pariatur"
-            secondDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum, quae corporis tenetur delectus in exercitationem fugit accusamus quisquam dolores, pariatur vitae magnam ratione itaque! Enim asperiores modi praesentium in."
+            title={t("nightLife.title")}
+            subtitle={t("nightLife.subtitle")}
+            firstDescriptionTitle={t("nightLife.firstDescriptionTitle")}
+            firstDescription={t("nightLife.firstDescription")}
+            secondDescriptionTitle={t("nightLife.secondDescriptionTitle")}
+            secondDescription={t("nightLife.secondDescription")}
             id="night-life"
             isReversed
           />

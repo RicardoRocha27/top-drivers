@@ -5,6 +5,7 @@ import {
 } from "@/components/ui/carousel";
 import { FleetCard } from "./fleet-card";
 import { CarouselArrows } from "./carousel-arrows";
+import { useTranslations } from "next-intl";
 
 export const fleetList: Fleet[] = [
   {
@@ -114,13 +115,15 @@ export const fleetList: Fleet[] = [
 ];
 
 export const FleetGrid = () => {
+  const t = useTranslations("home.fleet");
+
   return (
     <Carousel
       opts={{
         align: "start",
       }}
     >
-      <CarouselArrows />
+      <CarouselArrows buttonLabel={t("button")} />
       <CarouselContent>
         {fleetList.map((fleet, index) => (
           <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3">

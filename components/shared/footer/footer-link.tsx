@@ -1,4 +1,5 @@
 import { useLocale } from "next-intl";
+import Link from "next/link";
 
 type FooterLinkProps = {
   title: string;
@@ -19,21 +20,29 @@ export const FooterLink = ({ title, links }: FooterLinkProps) => {
     Sobre: `/${locale}/about`,
     Contacts: `/${locale}/contacts`,
     Contactos: `/${locale}/contacts`,
+    Instagram: "https://www.instagram.com",
+    Facebook: "https://www.facebook.com",
+    966513221: "tel:+966513221",
+    "info@topdrivers.pt": "mailto:info@topdrivers.pt",
+    // TODO: ADD STREET HERE
   };
 
   return (
     <div>
       <h3 className="mb-2 font-semibold">{title}</h3>
       <div className="flex flex-col space-y-1">
-        {links.map((link: string, index: number) => (
-          <a
-            key={index}
-            href={MAP_NAMES_TO_LINKS[link]}
-            className="text-sm hover:underline w-fit"
-          >
-            {link}
-          </a>
-        ))}
+        {links.map(
+          (link: string, index: number) =>
+            MAP_NAMES_TO_LINKS[link] && (
+              <Link
+                key={index}
+                href={MAP_NAMES_TO_LINKS[link]}
+                className="text-sm hover:underline w-fit"
+              >
+                {link}
+              </Link>
+            )
+        )}
       </div>
     </div>
   );

@@ -26,9 +26,11 @@ export const Hero = ({ keyword, imagesUrl }: HeroProps) => {
           <p className="text-sm text-foreground/80 max-w-md">
             {t("hero.description")}
           </p>
-          <Button className="w-fit" variant="accent" asChild>
-            <Link href={`/${locale}/contacts`}>{t("hero.button")}</Link>
-          </Button>
+          {t("hero.button") !== "" && (
+            <Button className="w-fit" variant="accent" asChild>
+              <Link href={`/${locale}/contacts`}>{t("hero.button")}</Link>
+            </Button>
+          )}
         </div>
         <div className="flex gap-4 mt-16">
           <div className="relative w-[150px] h-[250px] my-auto">
