@@ -19,6 +19,9 @@ import {
   CommandList,
 } from "@/components/ui/command";
 
+const MAX_NUMBER_OF_SEATS = 15;
+const MAX_NUMBER_OF_BAGS = 31;
+
 export const Filter = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -77,13 +80,19 @@ export const Filter = () => {
 
   const updateFilters = (shouldIncrease: boolean, isPlaces: boolean) => {
     if (isPlaces) {
-      if (shouldIncrease && parseInt(availablePlaces as string) < 4) {
+      if (
+        shouldIncrease &&
+        parseInt(availablePlaces as string) < MAX_NUMBER_OF_SEATS
+      ) {
         setAvailablePlaces((curr) => parseInt(curr as string) + 1);
       } else if (!shouldIncrease && parseInt(availablePlaces as string) > 1) {
         setAvailablePlaces((curr) => parseInt(curr as string) - 1);
       }
     } else {
-      if (shouldIncrease && parseInt(availableBags as string) < 4) {
+      if (
+        shouldIncrease &&
+        parseInt(availableBags as string) < MAX_NUMBER_OF_BAGS
+      ) {
         setAvailableBags((curr) => parseInt(curr as string) + 1);
       } else if (!shouldIncrease && parseInt(availableBags as string) > 1) {
         setAvailableBags((curr) => parseInt(curr as string) - 1);
@@ -116,12 +125,12 @@ export const Filter = () => {
                     onClick={() => updateFilters(false, true)}
                   />
                   {availablePlaces}
-                  {/* TODO: change the compare value for the one of the max available places */}
                   <CirclePlus
                     size={20}
                     className={cn(
                       "cursor-pointer",
-                      parseInt(availablePlaces as string) > 3 &&
+                      parseInt(availablePlaces as string) >
+                        MAX_NUMBER_OF_SEATS &&
                         "text-muted-foreground opacity-50 cursor-default"
                     )}
                     onClick={() => updateFilters(true, true)}
@@ -141,12 +150,11 @@ export const Filter = () => {
                     onClick={() => updateFilters(false, false)}
                   />
                   {availableBags}
-                  {/* TODO: change the compare value for the one of the max available bags */}
                   <CirclePlus
                     size={20}
                     className={cn(
                       "cursor-pointer",
-                      parseInt(availableBags as string) > 3 &&
+                      parseInt(availableBags as string) > MAX_NUMBER_OF_BAGS &&
                         "text-muted-foreground opacity-50 cursor-default"
                     )}
                     onClick={() => updateFilters(true, false)}

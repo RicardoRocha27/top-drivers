@@ -10,8 +10,8 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-e-class.jpeg",
     carName: "Mercedes E-Class",
-    availablePlaces: 4,
-    availableBags: 2,
+    availablePlaces: 3,
+    availableBags: 4,
     images: [
       "/car-e-class.jpeg",
       "/car-e-class.jpeg",
@@ -23,8 +23,8 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-s-class.jpeg",
     carName: "Mercedes S-Class",
-    availablePlaces: 4,
-    availableBags: 2,
+    availablePlaces: 3,
+    availableBags: 4,
     images: [
       "/car-s-class.jpeg",
       "/car-s-class.jpeg",
@@ -36,8 +36,8 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-eqe.jpeg",
     carName: "Mercedes EQE",
-    availablePlaces: 4,
-    availableBags: 2,
+    availablePlaces: 3,
+    availableBags: 4,
     images: [
       "/car-eqe.jpeg",
       "/car-eqe.jpeg",
@@ -49,8 +49,8 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-eqs.jpeg",
     carName: "Mercedes EQS",
-    availablePlaces: 4,
-    availableBags: 2,
+    availablePlaces: 3,
+    availableBags: 5,
     images: [
       "/car-eqs.jpeg",
       "/car-eqs.jpeg",
@@ -63,7 +63,7 @@ export const fleetList: Fleet[] = [
     imageUrl: "/car-eqs-suv.jpeg",
     carName: "Mercedes EQS Suv",
     availablePlaces: 4,
-    availableBags: 2,
+    availableBags: 6,
     images: [
       "/car-eqs-suv.jpeg",
       "/car-eqs-suv.jpeg",
@@ -75,8 +75,8 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-v-class.jpeg",
     carName: "Mercedes V-Class",
-    availablePlaces: 4,
-    availableBags: 2,
+    availablePlaces: 7,
+    availableBags: 16,
     images: [
       "/car-v-class.jpeg",
       "/car-v-class.jpeg",
@@ -87,9 +87,22 @@ export const fleetList: Fleet[] = [
   },
   {
     imageUrl: "/car-sprinter.jpeg",
-    carName: "Mercedes Sprinter",
-    availablePlaces: 4,
-    availableBags: 2,
+    carName: "Mercedes Sprinter 8Pax",
+    availablePlaces: 8,
+    availableBags: 18,
+    images: [
+      "/car-sprinter.jpeg",
+      "/car-sprinter.jpeg",
+      "/car-sprinter.jpeg",
+      "/car-sprinter.jpeg",
+      "/car-sprinter.jpeg",
+    ],
+  },
+  {
+    imageUrl: "/car-sprinter.jpeg",
+    carName: "Mercedes Sprinter 16Pax",
+    availablePlaces: 16,
+    availableBags: 32,
     images: [
       "/car-sprinter.jpeg",
       "/car-sprinter.jpeg",
