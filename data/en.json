@@ -160,6 +160,28 @@
           "title": "Safety",
           "description": "We adhere to the highest safety standards, providing secure and reliable transportation."
         }
+      },
+      "timeline": {
+        "foundation": {
+          "title": "Foundation",
+          "date": "2020",
+          "description": "Our foundation took place in 2020, with the aim of providing luxury transportation services to clients in Portugal."
+        },
+        "growth": {
+          "title": "Expansion",
+          "date": "2014",
+          "description": "Since our inception, we have expanded our fleet and services, becoming a reference in the luxury transportation industry."
+        },
+        "green": {
+          "title": "Green Strategy",
+          "date": "2023",
+          "description": "We are committed to reducing our carbon footprint, implementing ecologic practices and vehicles in our fleet."
+        },
+        "present": {
+          "title": "TODO",
+          "date": "now",
+          "description": "TODO"
+        }
       }
     }
   },
@@ -196,7 +218,7 @@
     "description": "Services of excellence with quality and unparalleled comfort to meet unique needs.",
     "socialMedia": {
       "title": "Social Media",
-      "links": ["Instagram", "Facebook"]
+      "links": ["Instagram", "Facebook", "Twitter"]
     },
     "contacts": {
       "title": "Contacts",

@@ -160,6 +160,28 @@
           "title": "Segurança",
           "description": "Cumprimos os mais altos padrões de segurança, proporcionando transporte seguro e fiável."
         }
+      },
+      "timeline": {
+        "foundation": {
+          "title": "Fundação",
+          "date": "2020",
+          "description": "A nossa fundação aconteceu em 2020, com o objetivo de fornecer serviços de transporte de luxo a clientes em Portugal."
+        },
+        "growth": {
+          "title": "Expansão",
+          "date": "2014",
+          "description": "Desde a nossa criação, temos aumentado a nossa frota e os nossos serviços, tornando-nos uma referência na indústria de transporte de luxo."
+        },
+        "green": {
+          "title": "Estratégia Verde",
+          "date": "2023",
+          "description": "Estamos comprometidos em reduzir a nossa pegada de carbono, implementando práticas e veículos ecológicos na nossa frota."
+        },
+        "present": {
+          "title": "TODO",
+          "date": "agora",
+          "description": "TODO"
+        }
       }
     }
   },
@@ -196,7 +218,7 @@
     "description": "Serviços de excelência com qualidade e conforto inigualáveis para satisfazer necessidades únicas.",
     "socialMedia": {
       "title": "Redes sociais",
-      "links": ["Instagram", "Facebook"]
+      "links": ["Instagram", "Facebook", "Twitter"]
     },
     "contacts": {
       "title": "Contactos",

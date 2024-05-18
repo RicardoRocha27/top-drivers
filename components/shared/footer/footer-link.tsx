@@ -20,8 +20,10 @@ export const FooterLink = ({ title, links }: FooterLinkProps) => {
     Sobre: `/${locale}/about`,
     Contacts: `/${locale}/contacts`,
     Contactos: `/${locale}/contacts`,
-    Instagram: "https://www.instagram.com",
-    Facebook: "https://www.facebook.com",
+    Instagram:
+      "https://www.instagram.com/topdrivers_portugal?igsh=MWlhaHVibHM1MXpmdw==",
+    Facebook: "https://www.facebook.com/topdrivers.portugal/",
+    Twitter: "https://x.com/TopDrivers_Pt",
     966513221: "tel:+966513221",
     "info@topdrivers.pt": "mailto:info@topdrivers.pt",
     // TODO: ADD STREET HERE
@@ -38,6 +40,9 @@ export const FooterLink = ({ title, links }: FooterLinkProps) => {
                 key={index}
                 href={MAP_NAMES_TO_LINKS[link]}
                 className="text-sm hover:underline w-fit"
+                target={
+                  MAP_NAMES_TO_LINKS[link].includes("http") ? "_blank" : "_self"
+                }
               >
                 {link}
               </Link>
