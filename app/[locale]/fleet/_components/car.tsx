@@ -2,14 +2,18 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { BriefcaseBusiness, Users } from "lucide-react";
 import Image from "next/image";
 import { CarCarousel } from "./car-carousel";
+import { useTranslations } from "next-intl";
 
 export const Car = ({
   imageUrl,
   carName,
+  carDescriptionLabel,
   availablePlaces,
   availableBags,
   images,
 }: Fleet) => {
+  const t = useTranslations("fleet.cars.modalText");
+
   return (
     <Dialog>
       <DialogTrigger>
@@ -39,8 +43,9 @@ export const Car = ({
       <DialogContent>
         <div>
           <h1 className="font-semibold text-lg">{carName}</h1>
-          <p className="max-w-xl text-foreground/80 text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p className="max-w-2xl text-foreground/80 text-sm">
+            {/* @ts-ignore */}
+            {t(carDescriptionLabel)}
           </p>
         </div>
         <CarCarousel images={images} />

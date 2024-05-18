@@ -123,6 +123,32 @@
         "heading": "Filters",
         "availablePlacesLabel": "Seats",
         "availableBagsLabel": "Bags"
+      },
+      "modalText": {
+        "eClass": {
+          "description": "The Mercedes-Benz E-Class is a luxury vehicle that combines elegance, comfort, and cutting-edge technology."
+        },
+        "sClass": {
+          "description": "The Mercedes-Benz S-Class epitomizes luxury and comfort, offering an unmatched trip experience."
+        },
+        "eqe": {
+          "description": "The Mercedes-Benz EQE is a luxury electric vehicle that delivers efficient performance and advanced technology."
+        },
+        "eqs": {
+          "description": "The Mercedes-Benz EQS redefines electric mobility with luxury and innovation."
+        },
+        "eqsSuv": {
+          "description": "The Mercedes-Benz EQS SUV combines luxury, efficiency, and an elegant design in an electric vehicle."
+        },
+        "vClass": {
+          "description": "The Mercedes-Benz V-Class offers luxurious space and comfort, perfect for group travel."
+        },
+        "sprinter8": {
+          "description": "The Mercedes-Benz Sprinter 8Pax is a versatile and spacious vehicle, ideal for group trips."
+        },
+        "sprinter16": {
+          "description": "The Mercedes-Benz Sprinter 16Pax is perfect for larger groups, combining space, comfort, and versatility."
+        }
       }
     }
   },
@@ -178,9 +204,9 @@
           "description": "We are committed to reducing our carbon footprint, implementing ecologic practices and vehicles in our fleet."
         },
         "present": {
-          "title": "TODO",
-          "date": "now",
-          "description": "TODO"
+          "title": "Continued Excellence",
+          "date": "Now",
+          "description": "We continue to provide excellent services to our clients, ensuring safe and comfortable trips."
         }
       }
     }

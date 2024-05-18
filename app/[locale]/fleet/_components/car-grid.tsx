@@ -24,6 +24,7 @@ export const CarGrid = () => {
             key={car.carName}
             imageUrl={car.imageUrl}
             carName={car.carName}
+            carDescriptionLabel={car.carDescriptionLabel}
             availablePlaces={car.availablePlaces}
             availableBags={car.availableBags}
             images={car.images}

@@ -11,6 +11,7 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-e-class.jpeg",
     carName: "Mercedes E-Class",
+    carDescriptionLabel: "eClass.description",
     availablePlaces: 3,
     availableBags: 4,
     images: [
@@ -24,6 +25,7 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-s-class.jpeg",
     carName: "Mercedes S-Class",
+    carDescriptionLabel: "sClass.description",
     availablePlaces: 3,
     availableBags: 4,
     images: [
@@ -37,6 +39,7 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-eqe.jpeg",
     carName: "Mercedes EQE",
+    carDescriptionLabel: "eqe.description",
     availablePlaces: 3,
     availableBags: 4,
     images: [
@@ -50,6 +53,7 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-eqs.jpeg",
     carName: "Mercedes EQS",
+    carDescriptionLabel: "eqs.description",
     availablePlaces: 3,
     availableBags: 5,
     images: [
@@ -63,6 +67,7 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-eqs-suv.jpeg",
     carName: "Mercedes EQS Suv",
+    carDescriptionLabel: "eqsSuv.description",
     availablePlaces: 4,
     availableBags: 6,
     images: [
@@ -76,6 +81,7 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-v-class.jpeg",
     carName: "Mercedes V-Class",
+    carDescriptionLabel: "vClass.description",
     availablePlaces: 7,
     availableBags: 16,
     images: [
@@ -89,6 +95,7 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-sprinter.jpeg",
     carName: "Mercedes Sprinter 8Pax",
+    carDescriptionLabel: "sprinter8.description",
     availablePlaces: 8,
     availableBags: 18,
     images: [
@@ -102,6 +109,7 @@ export const fleetList: Fleet[] = [
   {
     imageUrl: "/car-sprinter.jpeg",
     carName: "Mercedes Sprinter 16Pax",
+    carDescriptionLabel: "sprinter16.description",
     availablePlaces: 16,
     availableBags: 32,
     images: [

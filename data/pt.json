@@ -123,6 +123,32 @@
         "heading": "Filtros",
         "availablePlacesLabel": "Lugares",
         "availableBagsLabel": "Malas"
+      },
+      "modalText": {
+        "eClass": {
+          "description": "O Mercedes-Benz Classe E é um veículo de luxo que combina elegância, conforto e tecnologia de ponta."
+        },
+        "sClass": {
+          "description": "O Mercedes-Benz Classe S é o epítome do luxo e conforto, que proporciona uma experiência de viagem inigualável."
+        },
+        "eqe": {
+          "description": "O Mercedes-Benz EQE é um veículo elétrico de luxo que oferece desempenho eficiente e tecnologia avançada."
+        },
+        "eqs": {
+          "description": "O Mercedes-Benz EQS redefine a mobilidade elétrica com luxo e inovação."
+        },
+        "eqsSuv": {
+          "description": "O Mercedes-Benz EQS SUV combina luxo, eficiência e um design elegante em um veículo elétrico."
+        },
+        "vClass": {
+          "description": "O Mercedes-Benz Classe V oferece espaço e conforto de luxo ideal para viagens em grupo."
+        },
+        "sprinter8": {
+          "description": "O Mercedes-Benz Sprinter 8Pax é um veículo versátil e espaçoso, perfeito para viagens de grupo."
+        },
+        "sprinter16": {
+          "description": "O Mercedes-Benz Sprinter 16Pax é ideal para grupos maiores, combinando espaço e conforto com versatilidade."
+        }
       }
     }
   },
@@ -178,9 +204,9 @@
           "description": "Estamos comprometidos em reduzir a nossa pegada de carbono, implementando práticas e veículos ecológicos na nossa frota."
         },
         "present": {
-          "title": "TODO",
-          "date": "agora",
-          "description": "TODO"
+          "title": "Excelência Contínua",
+          "date": "Agora",
+          "description": "Continuamos a fornecer serviços excelentes aos nossos clientes, garantindo viagens seguras e confortáveis."
         }
       }
     }
