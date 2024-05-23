@@ -1,5 +1,7 @@
-import { cn } from "@/lib/utils";
-import Image from "next/image";
+'use client';
+import { cn } from '@/lib/utils';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 type ServiceItemProps = {
   firstImageUrl: string;
@@ -10,8 +12,11 @@ type ServiceItemProps = {
   firstDescription: string;
   secondDescriptionTitle: string;
   secondDescription: string;
+  thirdDescriptionTitle?: string;
+  thirdDescription?: string;
   id: string;
   isReversed?: boolean;
+  hasExtra?: boolean;
 };
 
 export const ServiceItem = ({
@@ -23,14 +28,42 @@ export const ServiceItem = ({
   firstDescription,
   secondDescriptionTitle,
   secondDescription,
+  thirdDescriptionTitle,
+  thirdDescription,
   id,
   isReversed,
+  hasExtra,
 }: ServiceItemProps) => {
+  const texts = [
+    'Airport - Hotel - Airport',
+    'Hotel - Meeting / Dinner - Hotel',
+    'Lisbon - Cascais / Sintra - Lisbon',
+    'Lisbon - Oporto - Lisbon',
+    'Lisbon - Algarve - Lisbon',
+    'Lisbon - Madrid - Lisbon',
+    'Lisbon - Sevilla - Lisbon',
+    'Lisbon - Barcelona - Lisbon',
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        setFade(true);
+      }, 500); // duration of fade-out effect
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [texts.length]);
   return (
     <div
       className={cn(
-        "flex flex-col lg:flex-row text-center lg:text-start items-center gap-32 lg:gap-8 overflow-hidden lg:overflow-visible",
-        isReversed && "lg:flex-row-reverse"
+        'flex flex-col lg:flex-row text-center lg:text-start items-center gap-32 lg:gap-8 overflow-hidden lg:overflow-visible',
+        isReversed && 'lg:flex-row-reverse'
       )}
       id={id}
     >
@@ -66,6 +99,19 @@ export const ServiceItem = ({
           <h5 className="font-semibold mb-2">{secondDescriptionTitle}</h5>
           <p className="text-foreground/80 text-sm">{secondDescription}</p>
         </div>
+        <br />
+        {hasExtra && (
+          <div>
+            <h5 className="font-semibold mb-2">{thirdDescriptionTitle}</h5>
+            <p
+              className={`text-foreground/80 text-sm transition-opacity duration-500 ${
+                fade ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              {texts[currentIndex]}
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

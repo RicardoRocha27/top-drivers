@@ -72,27 +72,31 @@
     "items": {
       "executive": {
         "title": "Executivo",
-        "subtitle": "",
-        "firstDescriptionTitle": "",
-        "firstDescription": "",
-        "secondDescriptionTitle": "",
-        "secondDescription": ""
+        "subtitle": "Profissional, fiável e eficiente para as suas necessidades empresariais",
+        "firstDescriptionTitle": "Pontualidade e Profissionalismo",
+        "firstDescription": "Garantimos serviços de transporte pontuais e profissionais, permitindo-lhe focar-se nas suas questões empresariais sem distrações ou atrasos.",
+        "secondDescriptionTitle": "Adaptado ao Seu Negócio",
+        "secondDescription": "Com vasta experiência e um compromisso com a excelência, adaptamo-nos aos seus requisitos específicos de negócio, assegurando que cada viagem é tranquila e produtiva.",
+        "thirdDescriptionTitle": "Tailored to Your Business",
+        "thirdDescription": "With extensive experience and a commitment to excellence."
       },
       "weddings": {
-        "title": "Casamentos",
+        "title": "Casamentos e Eventos",
         "subtitle": "Independentemente da questão, a resposta será sempre sim.",
-        "firstDescriptionTitle": "",
-        "firstDescription": "",
-        "secondDescriptionTitle": "",
-        "secondDescription": ""
+        "firstDescriptionTitle": "Viagens Memoráveis para o Seu Grande Dia",
+        "firstDescription": "Tratamos de toda a logística, para que possa aproveitar cada momento do seu dia especial sem qualquer stress ou preocupação.",
+        "secondDescriptionTitle": "Atenção a Cada Detalhe",
+        "secondDescription": "A nossa equipa dedicada, com anos de experiência, assegura que todos os aspetos do transporte do seu evento são perfeitamente planeados e executados sem falhas."
       },
       "tours": {
         "title": "Tours",
-        "subtitle": "",
-        "firstDescriptionTitle": "",
-        "firstDescription": "",
-        "secondDescriptionTitle": "",
-        "secondDescription": ""
+        "subtitle": "Confortável, conhecedor e personalizado para as suas aventuras",
+        "firstDescriptionTitle": "Descubra com Facilidade",
+        "firstDescription": "Proporcionamos serviços de tour confortáveis e convenientes, permitindo-lhe explorar e desfrutar sem se preocupar com os detalhes.",
+        "secondDescriptionTitle": "Orientação e Cuidado Especializado",
+        "secondDescription": "Com um profundo conhecimento da área local e uma paixão por um serviço excelente, asseguramos que o seu tour seja informativo, agradável e memorável.",
+        "thirdDescriptionTitle": "Tailored to Your Business",
+        "thirdDescription": "With extensive experience and a commitment to excellence."
       },
       "nightLife": {
         "title": "Vida noturna",
