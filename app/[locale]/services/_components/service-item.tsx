@@ -85,7 +85,7 @@ export const ServiceItem = ({
           />
         </div>
       </div>
-      <div>
+      <div className="-mb-16">
         <h3 className="text-accent font-semibold uppercase tracking-wide mb-2">
           {title}
         </h3>
