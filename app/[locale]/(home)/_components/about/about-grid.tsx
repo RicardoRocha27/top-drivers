@@ -18,7 +18,7 @@ export const AboutGrid = ({ card1Text }: AboutGridProps) => {
         <Image
           fill
           alt="portugal image"
-          src="/about-portugal.jpg"
+          src="/about-lisbon.jpg"
           className="object-center object-cover rounded-lg"
         />
       </div>
@@ -27,8 +27,8 @@ export const AboutGrid = ({ card1Text }: AboutGridProps) => {
         <Image
           fill
           alt="car image"
-          src="/about-car.jpg"
-          className="object-center object-cover rounded-lg"
+          src="/about-porto.jpg"
+          className="object-bottom object-cover rounded-lg"
         />
       </div>
     </div>
