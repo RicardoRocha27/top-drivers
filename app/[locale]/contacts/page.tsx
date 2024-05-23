@@ -18,7 +18,7 @@ export default function ServicesPage() {
         ]}
       />
       <Container>
-        <div className="my-32">
+        <div className="my-32 max-w-6xl mx-auto">
           <Map />
         </div>
         <Contacts />
