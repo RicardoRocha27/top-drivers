@@ -1,5 +1,6 @@
 import { useLocale } from "next-intl";
 import Link from "next/link";
+import { FACEBOOK_LINK, INSTAGRAM_LINK, TWITTER_LINK } from "./social-icons";
 
 type FooterLinkProps = {
   title: string;
@@ -20,13 +21,11 @@ export const FooterLink = ({ title, links }: FooterLinkProps) => {
     Sobre: `/${locale}/about`,
     Contacts: `/${locale}/contacts`,
     Contactos: `/${locale}/contacts`,
-    Instagram:
-      "https://www.instagram.com/topdrivers_portugal?igsh=MWlhaHVibHM1MXpmdw==",
-    Facebook: "https://www.facebook.com/topdrivers.portugal/",
-    Twitter: "https://x.com/TopDrivers_Pt",
+    Instagram: INSTAGRAM_LINK,
+    Facebook: FACEBOOK_LINK,
+    Twitter: TWITTER_LINK,
     966513221: "tel:+966513221",
     "info@topdrivers.pt": "mailto:info@topdrivers.pt",
-    // TODO: ADD STREET HERE
   };
 
   return (

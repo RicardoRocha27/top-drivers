@@ -18,7 +18,9 @@ export default function ServicesPage() {
         ]}
       />
       <Container>
-        <Map />
+        <div className="my-32">
+          <Map />
+        </div>
         <Contacts />
         <Faqs />
       </Container>

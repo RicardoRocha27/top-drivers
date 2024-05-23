@@ -21,11 +21,9 @@ body,
     --background: 0 0% 0%;
     --foreground: 0 0% 96.1%;
 
-    /* TODO: CHANGE LATER IF WE NEED */
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
 
-    /* TODO: CHANGE LATER IF WE NEED */
     --popover: 0 0% 96.1%;
     --popover-foreground: 0 0% 0%;
 
@@ -35,18 +33,15 @@ body,
     --secondary: 13.8 9.1% 20.2%;
     --secondary-foreground: 0 0% 0%;
 
-    /* TODO: CHANGE LATER IF WE NEED */
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
     --accent: 35.8 100% 72.9%;
     --accent-foreground: 0 0% 0%;
 
-    /* TODO: CHANGE LATER IF WE NEED */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    /* TODO: CHANGE LATER IF WE NEED */
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
