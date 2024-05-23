@@ -9,11 +9,11 @@ export default function ServicesPage() {
       <Hero
         keyword="fleet"
         imagesUrl={[
-          "/home-hero.jpg",
-          "/home-hero.jpg",
-          "/home-hero.jpg",
-          "/home-hero.jpg",
-          "/home-hero.jpg",
+          "/home-hero.png",
+          "/home-hero.png",
+          "/home-hero.png",
+          "/home-hero.png",
+          "/home-hero.png",
         ]}
       />
       <Container>

@@ -14,7 +14,7 @@ export const Hero = () => {
         <div className="absolute size-full z-10 bg-gradient-to-br from-background/80 md:from-background/70 to-background/0" />
         <Image
           alt="mercedes benz car"
-          src="/home-hero.jpg"
+          src="/home-hero.png"
           fill
           className="object-cover object-center rounded-xl"
         />
