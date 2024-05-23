@@ -238,6 +238,24 @@
           "answer": "Yes, our drivers are fluent in several languages, including English, French and Spanish."
         }
       }
+    },
+    "features": {
+      "mobile": {
+        "title": "Phone",
+        "description": "+351 966513221"
+      },
+      "email": {
+        "title": "Email",
+        "description": "info@topdrivers.pt"
+      },
+      "social": {
+        "title": "Social Media",
+        "description": ""
+      },
+      "24/7": {
+        "title": "24/7 Customer Support",
+        "description": "We are available 24/7 to meet your needs."
+      }
     }
   },
   "footer": {
@@ -248,7 +266,7 @@
     },
     "contacts": {
       "title": "Contacts",
-      "links": ["966513221", "info@topdrivers.pt", "Rua da Fantasia"]
+      "links": ["966513221", "info@topdrivers.pt"]
     },
     "links": {
       "title": "Links",

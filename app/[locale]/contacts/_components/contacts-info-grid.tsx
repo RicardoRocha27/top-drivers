@@ -1,34 +1,32 @@
 import React from "react";
-import {
-  AiOutlineSetting,
-  AiOutlineHome,
-  AiOutlineMessage,
-  AiOutlineSearch,
-} from "react-icons/ai";
 import { ContactsInfo } from "./contacts-info";
+import { CalendarCheck, Globe, Mail, Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export const ContactInfoGrid = () => {
+  const t = useTranslations("contacts.features");
+
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 grid-rows-2 gap-4">
       <ContactsInfo
-        icon={<AiOutlineHome />}
-        subtitle="Feature One"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        icon={<Phone />}
+        subtitle={t("mobile.title")}
+        text={t("mobile.description")}
       />
       <ContactsInfo
-        icon={<AiOutlineSetting />}
-        subtitle="Feature Two"
-        text="Sed do eiusmod tempor incididunt ut labore et dolore."
+        icon={<Mail />}
+        subtitle={t("email.title")}
+        text={t("email.description")}
       />
       <ContactsInfo
-        icon={<AiOutlineMessage />}
-        subtitle="Feature Three"
-        text="Magna aliqua. Ut enim ad minim veniam."
+        icon={<Globe />}
+        subtitle={t("social.title")}
+        text={t("social.description")}
       />
       <ContactsInfo
-        icon={<AiOutlineSearch />}
-        subtitle="Feature Four"
-        text="Quis nostrud exercitation ullamco laboris nisi ut aliquip."
+        icon={<CalendarCheck />}
+        subtitle={t("24/7.title")}
+        text={t("24/7.description")}
       />
     </div>
   );
