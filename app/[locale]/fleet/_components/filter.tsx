@@ -142,7 +142,7 @@ export const Filter = ({
                     className={cn(
                       "cursor-pointer",
                       parseInt(availablePlaces as string) >
-                        MAX_NUMBER_OF_SEATS &&
+                        MAX_NUMBER_OF_SEATS - 1 &&
                         "text-muted-foreground opacity-50 cursor-default"
                     )}
                     onClick={() => updateFilters(true, true)}
@@ -166,7 +166,8 @@ export const Filter = ({
                     size={20}
                     className={cn(
                       "cursor-pointer",
-                      parseInt(availableBags as string) > MAX_NUMBER_OF_BAGS &&
+                      parseInt(availableBags as string) >
+                        MAX_NUMBER_OF_BAGS - 1 &&
                         "text-muted-foreground opacity-50 cursor-default"
                     )}
                     onClick={() => updateFilters(true, false)}
