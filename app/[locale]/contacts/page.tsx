@@ -1,8 +1,8 @@
-import { Hero } from "@/components/shared/hero";
-import { Map } from "./_components/map";
-import { Contacts } from "./_components/contacts";
-import { Faqs } from "./_components/faqs";
-import { Container } from "@/components/shared/container";
+import { Hero } from '@/components/shared/hero';
+import { Map } from './_components/map';
+import { Contacts } from './_components/contacts';
+import { Faqs } from './_components/faqs';
+import { Container } from '@/components/shared/container';
 
 export default function ServicesPage() {
   return (
@@ -10,11 +10,11 @@ export default function ServicesPage() {
       <Hero
         keyword="contacts"
         imagesUrl={[
-          "/home-hero.png",
-          "/home-hero.png",
-          "/home-hero.png",
-          "/home-hero.png",
-          "/home-hero.png",
+          '/contacts-hero-1.jpg',
+          '/contacts-hero-2.jpg',
+          '/contacts-hero-3.jpg',
+          '/contacts-hero-4.jpg',
+          '/contacts-hero-5.jpg',
         ]}
       />
       <Container>

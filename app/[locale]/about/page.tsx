@@ -1,7 +1,7 @@
-import { Hero } from "../../../components/shared/hero";
-import { Banner } from "./_components/banner";
-import { Mission } from "./_components/mission";
-import { Timeline } from "./_components/timeline";
+import { Hero } from '../../../components/shared/hero';
+import { Banner } from './_components/banner';
+import { Mission } from './_components/mission';
+import { Timeline } from './_components/timeline';
 // import { Statistics } from './_components/statistics';
 
 export default function ServicesPage() {
@@ -10,11 +10,11 @@ export default function ServicesPage() {
       <Hero
         keyword="about"
         imagesUrl={[
-          "/home-hero.png",
-          "/home-hero.png",
-          "/home-hero.png",
-          "/home-hero.png",
-          "/home-hero.png",
+          '/about-hero-1.jpg',
+          '/about-hero-2.jpg',
+          '/about-hero-3.jpg',
+          '/about-hero-4.jpg',
+          '/about-hero-5.jpg',
         ]}
       />
       <Mission />
