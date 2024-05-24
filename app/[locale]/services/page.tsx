@@ -7,11 +7,11 @@ export default function ServicesPage() {
       <Hero
         keyword="services"
         imagesUrl={[
-          "/home-hero.png",
-          "/home-hero.png",
-          "/home-hero.png",
-          "/home-hero.png",
-          "/home-hero.png",
+          "/services-hero-1.jpg",
+          "/services-hero-2.jpg",
+          "/services-hero-3.jpg",
+          "/services-hero-4.jpg",
+          "/services-hero-5.jpg",
         ]}
       />
       <ServicesGrid />
