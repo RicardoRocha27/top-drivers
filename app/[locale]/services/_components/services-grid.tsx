@@ -11,8 +11,8 @@ export const ServicesGrid = () => {
         <div className="bg-secondary rounded-lg w-full pt-16 pb-16 lg:pb-32 px-4">
           <div className="max-w-6xl mx-auto">
             <ServiceItem
-              firstImageUrl="/home-hero.png"
-              secondImageUrl="/home-hero.png"
+              firstImageUrl="/executive-1.jpg"
+              secondImageUrl="/executive-2.jpg"
               title={t('executive.title')}
               subtitle={t('executive.subtitle')}
               firstDescriptionTitle={t('executive.firstDescriptionTitle')}
@@ -28,8 +28,8 @@ export const ServicesGrid = () => {
         </div>
         <div className="max-w-6xl mx-auto">
           <ServiceItem
-            firstImageUrl="/home-hero.png"
-            secondImageUrl="/home-hero.png"
+            firstImageUrl="/events-1.jpg"
+            secondImageUrl="/events-2.jpg"
             title={t('weddings.title')}
             subtitle={t('weddings.subtitle')}
             firstDescriptionTitle={t('weddings.firstDescriptionTitle')}
@@ -43,8 +43,8 @@ export const ServicesGrid = () => {
         <div className="bg-secondary rounded-lg w-full pt-16 pb-32 px-4">
           <div className="max-w-6xl mx-auto">
             <ServiceItem
-              firstImageUrl="/home-hero.png"
-              secondImageUrl="/home-hero.png"
+              firstImageUrl="/tours-1.jpg"
+              secondImageUrl="/tours-2.jpg"
               title={t('tours.title')}
               subtitle={t('tours.subtitle')}
               firstDescriptionTitle={t('tours.firstDescriptionTitle')}
@@ -60,8 +60,8 @@ export const ServicesGrid = () => {
         </div>
         <div className="max-w-6xl mx-auto">
           <ServiceItem
-            firstImageUrl="/home-hero.png"
-            secondImageUrl="/home-hero.png"
+            firstImageUrl="/nightlife-1.jpg"
+            secondImageUrl="/nightlife-2.jpg"
             title={t('nightLife.title')}
             subtitle={t('nightLife.subtitle')}
             firstDescriptionTitle={t('nightLife.firstDescriptionTitle')}
