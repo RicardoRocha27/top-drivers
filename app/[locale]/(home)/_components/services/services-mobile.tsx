@@ -1,6 +1,6 @@
-import { Header } from "@/components/shared/header";
-import { ServiceCard } from "./service-card";
-import { ServicesProps } from "./services";
+import { Header } from '@/components/shared/header';
+import { ServiceCard } from './service-card';
+import { ServicesProps } from './services';
 
 export const ServicesMobile = ({ locale }: ServicesProps) => {
   return (
@@ -17,14 +17,6 @@ export const ServicesMobile = ({ locale }: ServicesProps) => {
         </div>
         <div className="relative h-full">
           <ServiceCard
-            buttonKeyword="weddings"
-            imageUrl="/home-weddings.jpg"
-            href={`/${locale}/services#weddings`}
-            alt="weddings service"
-          />
-        </div>
-        <div className="relative h-full">
-          <ServiceCard
             buttonKeyword="tours"
             imageUrl="/home-tours.jpg"
             href={`/${locale}/services#tours`}
@@ -37,6 +29,14 @@ export const ServicesMobile = ({ locale }: ServicesProps) => {
             imageUrl="/home-night-life.jpg"
             href={`/${locale}/services#night-life`}
             alt="night life service"
+          />
+        </div>
+        <div className="relative h-full">
+          <ServiceCard
+            buttonKeyword="weddings"
+            imageUrl="/home-weddings.jpg"
+            href={`/${locale}/services#weddings`}
+            alt="weddings service"
           />
         </div>
       </div>

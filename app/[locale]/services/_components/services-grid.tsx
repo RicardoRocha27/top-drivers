@@ -28,6 +28,39 @@ export const ServicesGrid = () => {
         </div>
         <div className="max-w-6xl mx-auto">
           <ServiceItem
+            firstImageUrl="/tours-1.jpg"
+            secondImageUrl="/tours-2.jpg"
+            title={t('tours.title')}
+            subtitle={t('tours.subtitle')}
+            firstDescriptionTitle={t('tours.firstDescriptionTitle')}
+            firstDescription={t('tours.firstDescription')}
+            secondDescriptionTitle={t('tours.secondDescriptionTitle')}
+            secondDescription={t('tours.secondDescription')}
+            thirdDescriptionTitle={t('tours.thirdDescriptionTitle')}
+            thirdDescription={t('tours.thirdDescription')}
+            id="tours"
+            isReversed
+            hasExtra
+          />
+        </div>
+        <div className="bg-secondary rounded-lg w-full pt-16 pb-32 px-4">
+          <div className="max-w-6xl mx-auto">
+            <ServiceItem
+              firstImageUrl="/nightlife-1.jpg"
+              secondImageUrl="/nightlife-2.jpg"
+              title={t('nightLife.title')}
+              subtitle={t('nightLife.subtitle')}
+              firstDescriptionTitle={t('nightLife.firstDescriptionTitle')}
+              firstDescription={t('nightLife.firstDescription')}
+              secondDescriptionTitle={t('nightLife.secondDescriptionTitle')}
+              secondDescription={t('nightLife.secondDescription')}
+              id="night-life"
+              isReversed
+            />
+          </div>
+        </div>
+        <div className="max-w-6xl mx-auto">
+          <ServiceItem
             firstImageUrl="/events-1.jpg"
             secondImageUrl="/events-2.jpg"
             title={t('weddings.title')}
@@ -37,39 +70,6 @@ export const ServicesGrid = () => {
             secondDescriptionTitle={t('weddings.secondDescriptionTitle')}
             secondDescription={t('weddings.secondDescription')}
             id="weddings"
-            isReversed
-          />
-        </div>
-        <div className="bg-secondary rounded-lg w-full pt-16 pb-32 px-4">
-          <div className="max-w-6xl mx-auto">
-            <ServiceItem
-              firstImageUrl="/tours-1.jpg"
-              secondImageUrl="/tours-2.jpg"
-              title={t('tours.title')}
-              subtitle={t('tours.subtitle')}
-              firstDescriptionTitle={t('tours.firstDescriptionTitle')}
-              firstDescription={t('tours.firstDescription')}
-              secondDescriptionTitle={t('tours.secondDescriptionTitle')}
-              secondDescription={t('tours.secondDescription')}
-              thirdDescriptionTitle={t('tours.thirdDescriptionTitle')}
-              thirdDescription={t('tours.thirdDescription')}
-              id="tours"
-              hasExtra
-            />
-          </div>
-        </div>
-        <div className="max-w-6xl mx-auto">
-          <ServiceItem
-            firstImageUrl="/nightlife-1.jpg"
-            secondImageUrl="/nightlife-2.jpg"
-            title={t('nightLife.title')}
-            subtitle={t('nightLife.subtitle')}
-            firstDescriptionTitle={t('nightLife.firstDescriptionTitle')}
-            firstDescription={t('nightLife.firstDescription')}
-            secondDescriptionTitle={t('nightLife.secondDescriptionTitle')}
-            secondDescription={t('nightLife.secondDescription')}
-            id="night-life"
-            isReversed
           />
         </div>
       </div>
