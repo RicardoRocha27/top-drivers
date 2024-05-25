@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { fleetList } from "../../(home)/_components/fleet/fleet-grid";
-import { Car } from "./car";
-import { useSearchParams } from "next/navigation";
+import { fleetList } from '../../(home)/_components/fleet/fleet-grid';
+import { Car } from './car';
+import { useSearchParams } from 'next/navigation';
 
 export const CarGrid = () => {
   const searchParams = useSearchParams();
 
-  const availablePlaces = searchParams.get("availablePlaces") || "1";
-  const availableBags = searchParams.get("availableBags") || "1";
+  const availablePlaces = searchParams.get('availablePlaces') || '1';
+  const availableBags = searchParams.get('availableBags') || '1';
 
   const filteredFleet = fleetList.filter(
     (car) =>

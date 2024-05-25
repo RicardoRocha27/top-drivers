@@ -1,6 +1,6 @@
-import { Container } from "@/components/shared/container";
-import { BannerIcon } from "./banner-icon";
-import { CalendarCheck, Handshake, ShieldCheck, UserCheck } from "lucide-react";
+import { Container } from '@/components/shared/container';
+import { BannerIcon } from './banner-icon';
+import { CalendarCheck, Handshake, ShieldCheck, UserCheck } from 'lucide-react';
 
 export const Banner = () => {
   return (
@@ -11,21 +11,25 @@ export const Banner = () => {
             icon={<ShieldCheck className="size-8" />}
             titleKeyword="banner1.title"
             descriptionKeyword="banner1.description"
+            delayTime={1}
           />
           <BannerIcon
             icon={<Handshake className="size-8" />}
             titleKeyword="banner2.title"
             descriptionKeyword="banner2.description"
+            delayTime={3}
           />
           <BannerIcon
             icon={<UserCheck className="size-8" />}
             titleKeyword="banner3.title"
             descriptionKeyword="banner3.description"
+            delayTime={5}
           />
           <BannerIcon
             icon={<CalendarCheck className="size-8" />}
             titleKeyword="banner4.title"
             descriptionKeyword="banner4.description"
+            delayTime={7}
           />
         </div>
       </div>
