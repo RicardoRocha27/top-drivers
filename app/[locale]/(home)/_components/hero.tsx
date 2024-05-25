@@ -1,11 +1,13 @@
-import { Container } from "@/components/shared/container";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
-import Link from "next/link";
+import { Container } from '@/components/shared/container';
+import { Button } from '@/components/ui/button';
+import Image from 'next/image';
+import { useLocale, useTranslations } from 'next-intl';
+import Link from 'next/link';
+import HeroImage from '@/public/home-hero.png';
+import { LocaleProps } from '@/types';
 
 export const Hero = () => {
-  const hero = useTranslations("home.hero");
+  const hero = useTranslations('home.hero');
   const locale = useLocale() as LocaleProps;
 
   return (
@@ -14,16 +16,17 @@ export const Hero = () => {
         <div className="absolute size-full z-10 bg-gradient-to-br from-background/80 md:from-background/70 to-background/0" />
         <Image
           alt="mercedes benz car"
-          src="/home-hero.png"
+          src={HeroImage}
+          placeholder="blur"
           fill
           className="object-cover object-center rounded-xl"
         />
         <div className="absolute z-20 space-y-8 p-6 sm:p-8 md:p-16 lg:p-24 w-full">
           <h1
             className="text-4xl sm:text-5xl md:text-6xl font-bold max-w-md"
-            style={{ fontFamily: "Times New Roman" }}
+            style={{ fontFamily: 'Times New Roman' }}
           >
-            {locale === "en" ? (
+            {locale === 'en' ? (
               <>
                 Portugal <span className="text-accent">Transfer Services</span>
               </>
@@ -35,10 +38,10 @@ export const Hero = () => {
             )}
           </h1>
           <p className="text-sm text-foreground/80 max-w-md">
-            {hero("subtitle")}
+            {hero('subtitle')}
           </p>
           <Button variant="accent" asChild>
-            <Link href={`/${locale}/contacts`}>{hero("button")}</Link>
+            <Link href={`/${locale}/contacts`}>{hero('button')}</Link>
           </Button>
         </div>
       </div>

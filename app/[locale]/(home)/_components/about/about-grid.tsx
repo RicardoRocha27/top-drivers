@@ -1,4 +1,7 @@
-import Image from "next/image";
+import Image from 'next/image';
+
+import AboutLisbonImage from '@/public/about-lisbon.jpg';
+import AboutPortoImage from '@/public/about-porto.jpg';
 
 type AboutGridProps = {
   card1Text: string;
@@ -18,7 +21,8 @@ export const AboutGrid = ({ card1Text }: AboutGridProps) => {
         <Image
           fill
           alt="portugal image"
-          src="/about-lisbon.jpg"
+          placeholder="blur"
+          src={AboutLisbonImage}
           className="object-center object-cover rounded-lg"
         />
       </div>
@@ -27,7 +31,8 @@ export const AboutGrid = ({ card1Text }: AboutGridProps) => {
         <Image
           fill
           alt="car image"
-          src="/about-porto.jpg"
+          placeholder="blur"
+          src={AboutPortoImage}
           className="object-bottom object-cover rounded-lg"
         />
       </div>

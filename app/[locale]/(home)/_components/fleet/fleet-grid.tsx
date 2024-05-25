@@ -2,136 +2,146 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import { FleetCard } from "./fleet-card";
-import { CarouselArrows } from "./carousel-arrows";
-import { useTranslations } from "next-intl";
+} from '@/components/ui/carousel';
+import { FleetCard } from './fleet-card';
+import { CarouselArrows } from './carousel-arrows';
+import { useTranslations } from 'next-intl';
+
+import Eclass0Image from '@/public/car-e-class.jpeg';
+// TODO: Import the rest of the images
+
+import Sclass0Image from '@/public/car-s-class.jpeg';
+// TODO: Import the rest of the images
+
+import Eqs0Image from '@/public/car-eqs.jpeg';
+// TODO: Import the rest of the images
+
+import Vclass0Image from '@/public/car-v-class.jpeg';
+// TODO: Import the rest of the images
+
+import Sprinter0Image from '@/public/car-sprinter.jpeg';
+// TODO: Import the rest of the images
+
+import EqsSuv0Image from '@/public/car-eqs-suv.jpeg';
+// TODO: Import the rest of the images
+
+import Eqe0Image from '@/public/car-eqe.jpeg';
+import { Fleet } from '@/types';
+// TODO: Import the rest of the images
 
 export const fleetList: Fleet[] = [
   {
-    imageUrl: "/car-e-class.jpeg",
-    carName: "Mercedes E-Class",
-    carDescriptionLabel: "eClass.description",
+    imageUrl: Eclass0Image,
+    carName: 'Mercedes E-Class',
+    carDescriptionLabel: 'eClass.description',
     availablePlaces: 3,
     availableBags: 4,
     images: [
-      "/car-e-class.jpeg",
-      "/car-e-class.jpeg",
-      "/car-e-class.jpeg",
-      "/car-e-class.jpeg",
-      "/car-e-class.jpeg",
+      Eclass0Image,
+      Eclass0Image,
+      Eclass0Image,
+      Eclass0Image,
+      Eclass0Image,
     ],
   },
   {
-    imageUrl: "/car-s-class.jpeg",
-    carName: "Mercedes S-Class",
-    carDescriptionLabel: "sClass.description",
+    imageUrl: Sclass0Image,
+    carName: 'Mercedes S-Class',
+    carDescriptionLabel: 'sClass.description',
     availablePlaces: 3,
     availableBags: 4,
     images: [
-      "/car-s-class.jpeg",
-      "/car-s-class.jpeg",
-      "/car-s-class.jpeg",
-      "/car-s-class.jpeg",
-      "/car-s-class.jpeg",
+      Sclass0Image,
+      Sclass0Image,
+      Sclass0Image,
+      Sclass0Image,
+      Sclass0Image,
     ],
   },
   {
-    imageUrl: "/car-eqe.jpeg",
-    carName: "Mercedes EQE",
-    carDescriptionLabel: "eqe.description",
+    imageUrl: Eqe0Image,
+    carName: 'Mercedes EQE',
+    carDescriptionLabel: 'eqe.description',
     availablePlaces: 3,
     availableBags: 4,
-    images: [
-      "/car-eqe.jpeg",
-      "/car-eqe.jpeg",
-      "/car-eqe.jpeg",
-      "/car-eqe.jpeg",
-      "/car-eqe.jpeg",
-    ],
+    images: [Eqe0Image, Eqe0Image, Eqe0Image, Eqe0Image, Eqe0Image],
   },
   {
-    imageUrl: "/car-eqs.jpeg",
-    carName: "Mercedes EQS",
-    carDescriptionLabel: "eqs.description",
+    imageUrl: Eqs0Image,
+    carName: 'Mercedes EQS',
+    carDescriptionLabel: 'eqs.description',
     availablePlaces: 3,
     availableBags: 5,
-    images: [
-      "/car-eqs.jpeg",
-      "/car-eqs.jpeg",
-      "/car-eqs.jpeg",
-      "/car-eqs.jpeg",
-      "/car-eqs.jpeg",
-    ],
+    images: [Eqs0Image, Eqs0Image, Eqs0Image, Eqs0Image, Eqs0Image],
   },
   {
-    imageUrl: "/car-eqs-suv.jpeg",
-    carName: "Mercedes EQS Suv",
-    carDescriptionLabel: "eqsSuv.description",
+    imageUrl: EqsSuv0Image,
+    carName: 'Mercedes EQS Suv',
+    carDescriptionLabel: 'eqsSuv.description',
     availablePlaces: 4,
     availableBags: 6,
     images: [
-      "/car-eqs-suv.jpeg",
-      "/car-eqs-suv.jpeg",
-      "/car-eqs-suv.jpeg",
-      "/car-eqs-suv.jpeg",
-      "/car-eqs-suv.jpeg",
+      EqsSuv0Image,
+      EqsSuv0Image,
+      EqsSuv0Image,
+      EqsSuv0Image,
+      EqsSuv0Image,
     ],
   },
   {
-    imageUrl: "/car-v-class.jpeg",
-    carName: "Mercedes V-Class",
-    carDescriptionLabel: "vClass.description",
+    imageUrl: Vclass0Image,
+    carName: 'Mercedes V-Class',
+    carDescriptionLabel: 'vClass.description',
     availablePlaces: 7,
     availableBags: 16,
     images: [
-      "/car-v-class.jpeg",
-      "/car-v-class.jpeg",
-      "/car-v-class.jpeg",
-      "/car-v-class.jpeg",
-      "/car-v-class.jpeg",
+      Vclass0Image,
+      Vclass0Image,
+      Vclass0Image,
+      Vclass0Image,
+      Vclass0Image,
     ],
   },
   {
-    imageUrl: "/car-sprinter.jpeg",
-    carName: "Mercedes Sprinter 8Pax",
-    carDescriptionLabel: "sprinter8.description",
+    imageUrl: Sprinter0Image,
+    carName: 'Mercedes Sprinter 8Pax',
+    carDescriptionLabel: 'sprinter8.description',
     availablePlaces: 8,
     availableBags: 18,
     images: [
-      "/car-sprinter.jpeg",
-      "/car-sprinter.jpeg",
-      "/car-sprinter.jpeg",
-      "/car-sprinter.jpeg",
-      "/car-sprinter.jpeg",
+      Sprinter0Image,
+      Sprinter0Image,
+      Sprinter0Image,
+      Sprinter0Image,
+      Sprinter0Image,
     ],
   },
   {
-    imageUrl: "/car-sprinter.jpeg",
-    carName: "Mercedes Sprinter 16Pax",
-    carDescriptionLabel: "sprinter16.description",
+    imageUrl: Sprinter0Image,
+    carName: 'Mercedes Sprinter 16Pax',
+    carDescriptionLabel: 'sprinter16.description',
     availablePlaces: 16,
     availableBags: 32,
     images: [
-      "/car-sprinter.jpeg",
-      "/car-sprinter.jpeg",
-      "/car-sprinter.jpeg",
-      "/car-sprinter.jpeg",
-      "/car-sprinter.jpeg",
+      Sprinter0Image,
+      Sprinter0Image,
+      Sprinter0Image,
+      Sprinter0Image,
+      Sprinter0Image,
     ],
   },
 ];
 
 export const FleetGrid = () => {
-  const t = useTranslations("home.fleet");
+  const t = useTranslations('home.fleet');
 
   return (
     <Carousel
       opts={{
-        align: "start",
+        align: 'start',
       }}
     >
-      <CarouselArrows buttonLabel={t("button")} />
+      <CarouselArrows buttonLabel={t('button')} />
       <CarouselContent>
         {fleetList.map((fleet, index) => (
           <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3">

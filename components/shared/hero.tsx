@@ -1,12 +1,13 @@
-import { Container } from "@/components/shared/container";
-import { Button } from "@/components/ui/button";
-import { useLocale, useTranslations } from "next-intl";
-import Image from "next/image";
-import Link from "next/link";
+import { Container } from '@/components/shared/container';
+import { Button } from '@/components/ui/button';
+import { useLocale, useTranslations } from 'next-intl';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import Image from 'next/image';
+import Link from 'next/link';
 
 type HeroProps = {
-  keyword: "services" | "fleet" | "about" | "contacts";
-  imagesUrl: string[];
+  keyword: 'services' | 'fleet' | 'about' | 'contacts';
+  imagesUrl: StaticImport[];
 };
 
 export const Hero = ({ keyword, imagesUrl }: HeroProps) => {
@@ -19,16 +20,16 @@ export const Hero = ({ keyword, imagesUrl }: HeroProps) => {
         <div className="space-y-8 text-center md:text-start">
           <h1
             className="text-4xl sm:text-5xl md:text-6xl font-bold max-w-md"
-            style={{ fontFamily: "Times New Roman" }}
+            style={{ fontFamily: 'Times New Roman' }}
           >
-            {t("hero.title")}
+            {t('hero.title')}
           </h1>
           <p className="text-sm text-foreground/80 max-w-md">
-            {t("hero.description")}
+            {t('hero.description')}
           </p>
-          {t("hero.button") !== "" && (
+          {t('hero.button') !== '' && (
             <Button className="w-fit" variant="accent" asChild>
-              <Link href={`/${locale}/contacts`}>{t("hero.button")}</Link>
+              <Link href={`/${locale}/contacts`}>{t('hero.button')}</Link>
             </Button>
           )}
         </div>
@@ -36,8 +37,9 @@ export const Hero = ({ keyword, imagesUrl }: HeroProps) => {
           <div className="relative w-[150px] h-[250px] my-auto">
             <Image
               src={imagesUrl[0]}
+              placeholder="blur"
               fill
-              alt={t("hero.title")}
+              alt={t('hero.title')}
               className="object-cover object-center rounded-lg"
             />
           </div>
@@ -45,16 +47,18 @@ export const Hero = ({ keyword, imagesUrl }: HeroProps) => {
             <div className="relative h-1/2 w-full">
               <Image
                 src={imagesUrl[1]}
+                placeholder="blur"
                 fill
-                alt={t("hero.title")}
+                alt={t('hero.title')}
                 className="object-cover object-center rounded-lg"
               />
             </div>
             <div className="relative h-1/2 w-full">
               <Image
                 src={imagesUrl[2]}
+                placeholder="blur"
                 fill
-                alt={t("hero.title")}
+                alt={t('hero.title')}
                 className="object-cover object-center rounded-lg"
               />
             </div>
@@ -63,16 +67,18 @@ export const Hero = ({ keyword, imagesUrl }: HeroProps) => {
             <div className="relative h-1/2 w-full">
               <Image
                 src={imagesUrl[3]}
+                placeholder="blur"
                 fill
-                alt={t("hero.title")}
+                alt={t('hero.title')}
                 className="object-cover object-center rounded-lg"
               />
             </div>
             <div className="relative h-1/2 w-full">
               <Image
                 src={imagesUrl[4]}
+                placeholder="blur"
                 fill
-                alt={t("hero.title")}
+                alt={t('hero.title')}
                 className="object-cover object-center rounded-lg"
               />
             </div>

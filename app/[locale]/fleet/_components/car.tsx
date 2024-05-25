@@ -1,8 +1,9 @@
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { BriefcaseBusiness, Users } from "lucide-react";
-import Image from "next/image";
-import { CarCarousel } from "./car-carousel";
-import { useTranslations } from "next-intl";
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { BriefcaseBusiness, Users } from 'lucide-react';
+import Image from 'next/image';
+import { CarCarousel } from './car-carousel';
+import { useTranslations } from 'next-intl';
+import { Fleet } from '@/types';
 
 export const Car = ({
   imageUrl,
@@ -12,7 +13,7 @@ export const Car = ({
   availableBags,
   images,
 }: Fleet) => {
-  const t = useTranslations("fleet.cars.modalText");
+  const t = useTranslations('fleet.cars.modalText');
 
   return (
     <Dialog>
@@ -22,6 +23,7 @@ export const Car = ({
             width={500}
             height={500}
             src={imageUrl}
+            placeholder="blur"
             alt="car"
             className="object-center object-cover w-full rounded-lg"
           />

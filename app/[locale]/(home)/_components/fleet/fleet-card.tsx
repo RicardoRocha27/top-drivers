@@ -1,8 +1,9 @@
-import { BriefcaseBusiness, Users } from "lucide-react";
-import Image from "next/image";
+import { BriefcaseBusiness, Users } from 'lucide-react';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import Image from 'next/image';
 
 type FleetCardProps = {
-  imageUrl: string;
+  imageUrl: StaticImport;
   carName: string;
   availablePlaces: number;
   availableBags: number;
@@ -21,6 +22,7 @@ export const FleetCard = ({
         <Image
           alt={carName}
           src={imageUrl}
+          placeholder="blur"
           height={400}
           width={400}
           className="object-center w-full object-cover rounded-lg"

@@ -1,11 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
-import Link from "next/link";
+import { Button } from '@/components/ui/button';
+import { useTranslations } from 'next-intl';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import Image from 'next/image';
+import Link from 'next/link';
 
 type ServiceCardProps = {
-  buttonKeyword: "executive" | "weddings" | "tours" | "nightLife";
-  imageUrl: string;
+  buttonKeyword: 'executive' | 'weddings' | 'tours' | 'nightLife';
+  imageUrl: StaticImport;
   href: string;
   alt: string;
 };
@@ -16,7 +17,7 @@ export const ServiceCard = ({
   href,
   alt,
 }: ServiceCardProps) => {
-  const services = useTranslations("home.services");
+  const services = useTranslations('home.services');
 
   return (
     <div>
@@ -32,6 +33,7 @@ export const ServiceCard = ({
         alt={alt}
         src={imageUrl}
         fill
+        placeholder="blur"
         className="object-cover object-center rounded-lg"
       />
     </div>

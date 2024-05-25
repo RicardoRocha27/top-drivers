@@ -2,6 +2,15 @@ import { Container } from '@/components/shared/container';
 import { ServiceItem } from './service-item';
 import { useTranslations } from 'next-intl';
 
+import Executive1Image from '@/public/executive-1.jpg';
+import Executive2Image from '@/public/executive-2.jpg';
+import Tours1Image from '@/public/tours-1.jpg';
+import Tours2Image from '@/public/tours-2.jpg';
+import NightLife1Image from '@/public/nightlife-1.jpg';
+import NightLife2Image from '@/public/nightlife-2.jpg';
+import Events1Image from '@/public/events-1.jpg';
+import Events2Image from '@/public/events-2.jpg';
+
 export const ServicesGrid = () => {
   const t = useTranslations('services.items');
 
@@ -11,8 +20,8 @@ export const ServicesGrid = () => {
         <div className="bg-secondary rounded-lg w-full pt-16 pb-16 lg:pb-32 px-4">
           <div className="max-w-6xl mx-auto">
             <ServiceItem
-              firstImageUrl="/executive-1.jpg"
-              secondImageUrl="/executive-2.jpg"
+              firstImageUrl={Executive1Image}
+              secondImageUrl={Executive2Image}
               title={t('executive.title')}
               subtitle={t('executive.subtitle')}
               firstDescriptionTitle={t('executive.firstDescriptionTitle')}
@@ -28,8 +37,8 @@ export const ServicesGrid = () => {
         </div>
         <div className="max-w-6xl mx-auto">
           <ServiceItem
-            firstImageUrl="/tours-1.jpg"
-            secondImageUrl="/tours-2.jpg"
+            firstImageUrl={Tours1Image}
+            secondImageUrl={Tours2Image}
             title={t('tours.title')}
             subtitle={t('tours.subtitle')}
             firstDescriptionTitle={t('tours.firstDescriptionTitle')}
@@ -46,8 +55,8 @@ export const ServicesGrid = () => {
         <div className="bg-secondary rounded-lg w-full pt-16 pb-32 px-4">
           <div className="max-w-6xl mx-auto">
             <ServiceItem
-              firstImageUrl="/nightlife-1.jpg"
-              secondImageUrl="/nightlife-2.jpg"
+              firstImageUrl={NightLife1Image}
+              secondImageUrl={NightLife2Image}
               title={t('nightLife.title')}
               subtitle={t('nightLife.subtitle')}
               firstDescriptionTitle={t('nightLife.firstDescriptionTitle')}
@@ -60,8 +69,8 @@ export const ServicesGrid = () => {
         </div>
         <div className="max-w-6xl mx-auto">
           <ServiceItem
-            firstImageUrl="/events-1.jpg"
-            secondImageUrl="/events-2.jpg"
+            firstImageUrl={Events1Image}
+            secondImageUrl={Events2Image}
             title={t('weddings.title')}
             subtitle={t('weddings.subtitle')}
             firstDescriptionTitle={t('weddings.firstDescriptionTitle')}

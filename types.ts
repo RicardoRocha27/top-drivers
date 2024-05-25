@@ -1,10 +1,12 @@
-type LocaleProps = "en" | "pt";
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
-type Fleet = {
-  imageUrl: string;
+export type LocaleProps = 'en' | 'pt';
+
+export type Fleet = {
+  imageUrl: StaticImport;
   carName: string;
   carDescriptionLabel: string;
   availablePlaces: number;
   availableBags: number;
-  images: string[];
+  images: StaticImport[];
 };

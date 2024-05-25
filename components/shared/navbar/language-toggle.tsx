@@ -7,6 +7,7 @@ import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { cn } from '@/lib/utils';
 import { useLocale } from 'next-intl';
+import { LocaleProps } from '@/types';
 
 type LanguagesTogglerProps = {
   languagesNames: {

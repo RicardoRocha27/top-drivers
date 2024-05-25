@@ -1,11 +1,12 @@
 'use client';
 import { cn } from '@/lib/utils';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 type ServiceItemProps = {
-  firstImageUrl: string;
-  secondImageUrl: string;
+  firstImageUrl: StaticImport;
+  secondImageUrl: StaticImport;
   title: string;
   subtitle: string;
   firstDescriptionTitle: string;
@@ -74,6 +75,7 @@ export const ServiceItem = ({
           <Image
             src={firstImageUrl}
             alt={firstDescriptionTitle}
+            placeholder="blur"
             fill
             className="object-cover object-center rounded-lg"
           />
@@ -82,6 +84,7 @@ export const ServiceItem = ({
           <Image
             src={secondImageUrl}
             alt={secondDescriptionTitle}
+            placeholder="blur"
             fill
             className="object-cover object-center rounded-lg mt-16 -ml-16 shadow-md"
           />

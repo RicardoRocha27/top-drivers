@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Select,
@@ -7,9 +7,10 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+} from '@/components/ui/select';
+import { LocaleProps } from '@/types';
+import { useLocale } from 'next-intl';
+import { usePathname, useRouter } from 'next/navigation';
 
 type LanguagesSwitcherProps = {
   languagesNames: {

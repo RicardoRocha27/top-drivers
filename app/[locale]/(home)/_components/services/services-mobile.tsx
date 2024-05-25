@@ -2,6 +2,11 @@ import { Header } from '@/components/shared/header';
 import { ServiceCard } from './service-card';
 import { ServicesProps } from './services';
 
+import ExecutiveImage from '@/public/home-executive.jpg';
+import ToursImage from '@/public/home-tours.jpg';
+import NightLifeImage from '@/public/home-night-life.jpg';
+import WeddingsImage from '@/public/home-weddings.jpg';
+
 export const ServicesMobile = ({ locale }: ServicesProps) => {
   return (
     <div className="h-[750px] my-32 flex flex-col md:hidden">
@@ -10,7 +15,7 @@ export const ServicesMobile = ({ locale }: ServicesProps) => {
         <div className="relative h-full">
           <ServiceCard
             buttonKeyword="executive"
-            imageUrl="/home-executive.jpg"
+            imageUrl={ExecutiveImage}
             href={`/${locale}/services#executive`}
             alt="executive service"
           />
@@ -18,7 +23,7 @@ export const ServicesMobile = ({ locale }: ServicesProps) => {
         <div className="relative h-full">
           <ServiceCard
             buttonKeyword="tours"
-            imageUrl="/home-tours.jpg"
+            imageUrl={ToursImage}
             href={`/${locale}/services#tours`}
             alt="tours service"
           />
@@ -26,7 +31,7 @@ export const ServicesMobile = ({ locale }: ServicesProps) => {
         <div className="relative h-full">
           <ServiceCard
             buttonKeyword="nightLife"
-            imageUrl="/home-night-life.jpg"
+            imageUrl={NightLifeImage}
             href={`/${locale}/services#night-life`}
             alt="night life service"
           />
@@ -34,7 +39,7 @@ export const ServicesMobile = ({ locale }: ServicesProps) => {
         <div className="relative h-full">
           <ServiceCard
             buttonKeyword="weddings"
-            imageUrl="/home-weddings.jpg"
+            imageUrl={WeddingsImage}
             href={`/${locale}/services#weddings`}
             alt="weddings service"
           />
