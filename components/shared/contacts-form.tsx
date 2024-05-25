@@ -1,18 +1,20 @@
-"use client";
+'use client';
 
-import * as z from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import * as z from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Textarea } from '@/components/ui/textarea';
+import emailjs from '@emailjs/browser';
+import { toast } from 'sonner';
 
 const formSchema = z.object({
   name: z.string().min(1),
@@ -36,17 +38,36 @@ export const ContactsForm = ({
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: "",
-      email: "",
-      message: "",
+      name: '',
+      email: '',
+      message: '',
     },
   });
 
   const isLoading: boolean = form.formState.isSubmitting;
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    // TODO: add emailjs logic
-    console.log(values);
+    const formTemplate = {
+      name: values.name,
+      email: values.email,
+      message: values.message,
+    };
+
+    try {
+      emailjs
+        .send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+          formTemplate,
+          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        )
+        .then(() => {
+          toast.success('Email enviado com sucesso');
+          form.reset();
+        });
+    } catch {
+      toast.error('Ocorreu um erro.');
+    }
   };
 
   return (
