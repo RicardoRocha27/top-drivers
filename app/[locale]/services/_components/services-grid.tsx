@@ -55,7 +55,6 @@ export const ServicesGrid = () => {
               secondDescriptionTitle={t('nightLife.secondDescriptionTitle')}
               secondDescription={t('nightLife.secondDescription')}
               id="night-life"
-              isReversed
             />
           </div>
         </div>
@@ -70,6 +69,7 @@ export const ServicesGrid = () => {
             secondDescriptionTitle={t('weddings.secondDescriptionTitle')}
             secondDescription={t('weddings.secondDescription')}
             id="weddings"
+            isReversed
           />
         </div>
       </div>
