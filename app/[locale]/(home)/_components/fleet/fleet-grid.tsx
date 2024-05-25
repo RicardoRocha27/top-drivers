@@ -6,6 +6,7 @@ import {
 import { FleetCard } from './fleet-card';
 import { CarouselArrows } from './carousel-arrows';
 import { useTranslations } from 'next-intl';
+import { Fleet } from '@/types';
 
 import Eclass0Image from '@/public/car-e-class.jpeg';
 // TODO: Import the rest of the images
@@ -29,7 +30,6 @@ import EqsSuv0Image from '@/public/car-eqs-suv.jpeg';
 // TODO: Import the rest of the images
 
 import Eqe0Image from '@/public/car-eqe.jpeg';
-import { Fleet } from '@/types';
 // TODO: Import the rest of the images
 
 export const fleetList: Fleet[] = [
