@@ -1,4 +1,5 @@
 'use client';
+
 import { cn } from '@/lib/utils';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
@@ -35,20 +36,10 @@ export const ServiceItem = ({
   isReversed,
   hasExtra,
 }: ServiceItemProps) => {
-  const texts = [
-    'Airport - Hotel - Airport',
-    'Hotel - Meeting / Dinner - Hotel',
-    'Lisbon - Cascais / Sintra - Lisbon',
-    'Lisbon - Oporto - Lisbon',
-    'Lisbon - Algarve - Lisbon',
-    'Lisbon - Madrid - Lisbon',
-    'Lisbon - Sevilla - Lisbon',
-    'Lisbon - Barcelona - Lisbon',
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
   const effectiveDescription = thirdDescription || [];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setFade(false);
@@ -90,7 +81,7 @@ export const ServiceItem = ({
           />
         </div>
       </div>
-      <div className="-mb-16">
+      <div className="lg:-mb-16">
         <h3 className="text-accent font-semibold uppercase tracking-wide mb-2">
           {title}
         </h3>
@@ -104,18 +95,20 @@ export const ServiceItem = ({
           <h5 className="font-semibold mb-2">{secondDescriptionTitle}</h5>
           <p className="text-foreground/80 text-sm">{secondDescription}</p>
         </div>
-        <br />
         {hasExtra && (
-          <div>
-            <h5 className="font-semibold mb-2">{thirdDescriptionTitle}</h5>
-            <p
-              className={`text-foreground/80 text-sm transition-opacity duration-500 ${
-                fade ? 'opacity-100' : 'opacity-0'
-              }`}
-            >
-              {effectiveDescription[currentIndex]}
-            </p>
-          </div>
+          <>
+            <br />
+            <div>
+              <h5 className="font-semibold mb-2">{thirdDescriptionTitle}</h5>
+              <p
+                className={`text-foreground/80 text-sm transition-opacity duration-500 ${
+                  fade ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
+                {effectiveDescription[currentIndex]}
+              </p>
+            </div>
+          </>
         )}
       </div>
     </div>
