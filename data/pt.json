@@ -294,5 +294,18 @@
       "title": "Links",
       "links": ["Início", "Serviços", "Frota", "Sobre", "Contactos"]
     }
+  },
+  "emailjs": {
+    "name": {
+      "error": "Por favor insira um nome válido"
+    },
+    "email": {
+      "error": "Por favor insira um email válido"
+    },
+    "body": {
+      "error": "Por favor insira uma mensagem"
+    },
+    "success": "Mensagem enviada com sucesso",
+    "error": "Ocorreu um erro ao enviar a mensagem"
   }
 }

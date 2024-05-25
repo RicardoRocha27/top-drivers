@@ -15,12 +15,9 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import emailjs from '@emailjs/browser';
 import { toast } from 'sonner';
-
-const formSchema = z.object({
-  name: z.string().min(1),
-  email: z.string().email().min(1),
-  message: z.string().min(1).max(255),
-});
+import { useTranslations } from 'next-intl';
+import { useState } from 'react';
+import { Loader } from 'lucide-react';
 
 type ContactsFormProps = {
   nameLabel: string;
@@ -35,6 +32,21 @@ export const ContactsForm = ({
   bodyLabel,
   buttonLabel,
 }: ContactsFormProps) => {
+  const t = useTranslations('emailjs');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const formSchema = z.object({
+    name: z.string().min(1, { message: t('name.error') }),
+    email: z
+      .string()
+      .email({ message: t('email.error') })
+      .min(1, { message: t('email.error') }),
+    message: z
+      .string()
+      .min(1, { message: t('body.error') })
+      .max(255, { message: t('body.error') }),
+  });
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -44,9 +56,9 @@ export const ContactsForm = ({
     },
   });
 
-  const isLoading: boolean = form.formState.isSubmitting;
-
   const onSubmit = (values: z.infer<typeof formSchema>) => {
+    setIsLoading(true);
+
     const formTemplate = {
       name: values.name,
       email: values.email,
@@ -62,11 +74,12 @@ export const ContactsForm = ({
           process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
         )
         .then(() => {
-          toast.success('Email enviado com sucesso');
+          toast.success(t('success'));
           form.reset();
-        });
+        })
+        .finally(() => setIsLoading(false));
     } catch {
-      toast.error('Ocorreu um erro.');
+      toast.error(t('error'));
     }
   };
 
@@ -121,6 +134,7 @@ export const ContactsForm = ({
                     {...field}
                     disabled={isLoading}
                     placeholder={bodyLabel}
+                    maxLength={255}
                     className="resize-none h-32 placeholder:text-foreground/80"
                   />
                 </FormControl>
@@ -136,7 +150,13 @@ export const ContactsForm = ({
             variant="accent"
             className="w-full"
           >
-            {buttonLabel}
+            {isLoading ? (
+              <div className="animate-spin">
+                <Loader />
+              </div>
+            ) : (
+              buttonLabel
+            )}
           </Button>
         </div>
       </form>
