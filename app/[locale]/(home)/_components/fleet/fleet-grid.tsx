@@ -19,7 +19,10 @@ import Eqs0Image from '@/public/car-eqs.jpeg';
 import Vclass0Image from '@/public/car-v-class.jpeg';
 // TODO: Import the rest of the images
 
-import Sprinter0Image from '@/public/car-sprinter.jpeg';
+import Sprinter80Image from '@/public/car-sprinter-8.jpeg';
+// TODO: Import the rest of the images
+
+import Sprinter160Image from '@/public/car-sprinter-16.jpg';
 // TODO: Import the rest of the images
 
 import EqsSuv0Image from '@/public/car-eqs-suv.jpeg';
@@ -103,31 +106,31 @@ export const fleetList: Fleet[] = [
     ],
   },
   {
-    imageUrl: Sprinter0Image,
+    imageUrl: Sprinter80Image,
     carName: 'Mercedes Sprinter 8Pax',
     carDescriptionLabel: 'sprinter8.description',
     availablePlaces: 8,
     availableBags: 18,
     images: [
-      Sprinter0Image,
-      Sprinter0Image,
-      Sprinter0Image,
-      Sprinter0Image,
-      Sprinter0Image,
+      Sprinter80Image,
+      Sprinter80Image,
+      Sprinter80Image,
+      Sprinter80Image,
+      Sprinter80Image,
     ],
   },
   {
-    imageUrl: Sprinter0Image,
+    imageUrl: Sprinter160Image,
     carName: 'Mercedes Sprinter 16Pax',
     carDescriptionLabel: 'sprinter16.description',
     availablePlaces: 16,
     availableBags: 32,
     images: [
-      Sprinter0Image,
-      Sprinter0Image,
-      Sprinter0Image,
-      Sprinter0Image,
-      Sprinter0Image,
+      Sprinter160Image,
+      Sprinter160Image,
+      Sprinter160Image,
+      Sprinter160Image,
+      Sprinter160Image,
     ],
   },
 ];
