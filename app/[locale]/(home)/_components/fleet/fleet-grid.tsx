@@ -9,28 +9,68 @@ import { useTranslations } from 'next-intl';
 import { Fleet } from '@/types';
 
 import Eclass0Image from '@/public/car-e-class.jpeg';
-// TODO: Import the rest of the images
+// TODO: Uncomment and change the images paths
+// import Eclass1Image from '@/public/...';
+// import Eclass2Image from '@/public/...';
+// import Eclass3Image from '@/public/...';
+// import Eclass4Image from '@/public/...';
+// import Eclass5Image from '@/public/...';
 
 import Sclass0Image from '@/public/car-s-class.jpeg';
-// TODO: Import the rest of the images
+// TODO: Uncomment and change the images paths
+// import Sclass1Image from '@/public/...';
+// import Sclass2Image from '@/public/...';
+// import Sclass3Image from '@/public/...';
+// import Sclass4Image from '@/public/...';
+// import Sclass5Image from '@/public/...';
 
 import Eqs0Image from '@/public/car-eqs.jpeg';
-// TODO: Import the rest of the images
+// TODO: Uncomment and change the images paths
+// import Eqs1Image from '@/public/...';
+// import Eqs2Image from '@/public/...';
+// import Eqs3Image from '@/public/...';
+// import Eqs4Image from '@/public/...';
+// import Eqs5Image from '@/public/...';
 
 import Vclass0Image from '@/public/car-v-class.jpeg';
-// TODO: Import the rest of the images
+// TODO: Uncomment and change the images paths
+// import Vclass1Image from '@/public/...';
+// import Vclass2Image from '@/public/...';
+// import Vclass3Image from '@/public/...';
+// import Vclass4Image from '@/public/...';
+// import Vclass5Image from '@/public/...';
 
 import Sprinter80Image from '@/public/car-sprinter-8.jpeg';
-// TODO: Import the rest of the images
+// TODO: Uncomment and change the images paths
+// import Sprinter81Image from '@/public/...';
+// import Sprinter82Image from '@/public/...';
+// import Sprinter83Image from '@/public/...';
+// import Sprinter84Image from '@/public/...';
+// import Sprinter85Image from '@/public/...';
 
 import Sprinter160Image from '@/public/car-sprinter-16.jpg';
-// TODO: Import the rest of the images
+// TODO: Uncomment and change the images paths
+// import Sprinter161Image from '@/public/...';
+// import Sprinter162Image from '@/public/...';
+// import Sprinter163Image from '@/public/...';
+// import Sprinter164Image from '@/public/...';
+// import Sprinter165Image from '@/public/...';
 
 import EqsSuv0Image from '@/public/car-eqs-suv.jpeg';
-// TODO: Import the rest of the images
+// TODO: Uncomment and change the images paths
+// import EqsSuv1Image from '@/public/...';
+// import EqsSuv2Image from '@/public/...';
+// import EqsSuv3Image from '@/public/...';
+// import EqsSuv4Image from '@/public/...';
+// import EqsSuv5Image from '@/public/...';
 
 import Eqe0Image from '@/public/car-eqe.jpeg';
-// TODO: Import the rest of the images
+// TODO: Uncomment and change the images paths
+// import Eqe1Image from '@/public/...';
+// import Eqe2Image from '@/public/...';
+// import Eqe3Image from '@/public/...';
+// import Eqe4Image from '@/public/...';
+// import Eqe5Image from '@/public/...';
 
 export const fleetList: Fleet[] = [
   {
@@ -40,11 +80,11 @@ export const fleetList: Fleet[] = [
     availablePlaces: 3,
     availableBags: 4,
     images: [
-      Eclass0Image,
-      Eclass0Image,
-      Eclass0Image,
-      Eclass0Image,
-      Eclass0Image,
+      // Eclass1Image,
+      // Eclass2Image,
+      // Eclass3Image,
+      // Eclass4Image,
+      // Eclass5Image,
     ],
   },
   {
@@ -54,11 +94,11 @@ export const fleetList: Fleet[] = [
     availablePlaces: 3,
     availableBags: 4,
     images: [
-      Sclass0Image,
-      Sclass0Image,
-      Sclass0Image,
-      Sclass0Image,
-      Sclass0Image,
+      // Sclass1Image,
+      // Sclass2Image,
+      // Sclass3Image,
+      // Sclass4Image,
+      // Sclass5Image,
     ],
   },
   {
@@ -67,7 +107,13 @@ export const fleetList: Fleet[] = [
     carDescriptionLabel: 'eqe.description',
     availablePlaces: 3,
     availableBags: 4,
-    images: [Eqe0Image, Eqe0Image, Eqe0Image, Eqe0Image, Eqe0Image],
+    images: [
+      // Eqe1Image,
+      // Eqe2Image,
+      // Eqe2Image,
+      // Eqe3Image,
+      // Eqe5Image
+    ],
   },
   {
     imageUrl: Eqs0Image,
@@ -75,7 +121,13 @@ export const fleetList: Fleet[] = [
     carDescriptionLabel: 'eqs.description',
     availablePlaces: 3,
     availableBags: 5,
-    images: [Eqs0Image, Eqs0Image, Eqs0Image, Eqs0Image, Eqs0Image],
+    images: [
+      // Eqs1Image,
+      // Eqs2Image,
+      // Eqs3Image,
+      // Eqs4Image,
+      // Eqs5Image
+    ],
   },
   {
     imageUrl: EqsSuv0Image,
@@ -84,11 +136,11 @@ export const fleetList: Fleet[] = [
     availablePlaces: 4,
     availableBags: 6,
     images: [
-      EqsSuv0Image,
-      EqsSuv0Image,
-      EqsSuv0Image,
-      EqsSuv0Image,
-      EqsSuv0Image,
+      // EqsSuv1Image,
+      // EqsSuv2Image,
+      // EqsSuv3Image,
+      // EqsSuv4Image,
+      // EqsSuv5Image,
     ],
   },
   {
@@ -98,11 +150,11 @@ export const fleetList: Fleet[] = [
     availablePlaces: 7,
     availableBags: 16,
     images: [
-      Vclass0Image,
-      Vclass0Image,
-      Vclass0Image,
-      Vclass0Image,
-      Vclass0Image,
+      // Vclass1Image,
+      // Vclass2Image,
+      // Vclass3Image,
+      // Vclass4Image,
+      // Vclass5Image,
     ],
   },
   {
@@ -112,11 +164,11 @@ export const fleetList: Fleet[] = [
     availablePlaces: 8,
     availableBags: 18,
     images: [
-      Sprinter80Image,
-      Sprinter80Image,
-      Sprinter80Image,
-      Sprinter80Image,
-      Sprinter80Image,
+      // Sprinter81Image,
+      // Sprinter82Image,
+      // Sprinter83Image,
+      // Sprinter84Image,
+      // Sprinter85Image,
     ],
   },
   {
@@ -126,11 +178,11 @@ export const fleetList: Fleet[] = [
     availablePlaces: 16,
     availableBags: 32,
     images: [
-      Sprinter160Image,
-      Sprinter160Image,
-      Sprinter160Image,
-      Sprinter160Image,
-      Sprinter160Image,
+      // Sprinter161Image,
+      // Sprinter162Image,
+      // Sprinter163Image,
+      // Sprinter164Image,
+      // Sprinter165Image,
     ],
   },
 ];
