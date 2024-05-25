@@ -20,7 +20,7 @@ export const ServicesGrid = () => {
               secondDescriptionTitle={t('executive.secondDescriptionTitle')}
               secondDescription={t('executive.secondDescription')}
               thirdDescriptionTitle={t('executive.thirdDescriptionTitle')}
-              thirdDescription={t('executive.thirdDescription')}
+              thirdDescription={t.raw('executive.thirdDescription')}
               id="executive"
               hasExtra
             />
@@ -37,7 +37,7 @@ export const ServicesGrid = () => {
             secondDescriptionTitle={t('tours.secondDescriptionTitle')}
             secondDescription={t('tours.secondDescription')}
             thirdDescriptionTitle={t('tours.thirdDescriptionTitle')}
-            thirdDescription={t('tours.thirdDescription')}
+            thirdDescription={t.raw('tours.thirdDescription')}
             id="tours"
             isReversed
             hasExtra

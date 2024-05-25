@@ -77,8 +77,17 @@
         "firstDescription": "Garantimos serviços de transporte pontuais e profissionais, permitindo-lhe focar-se nas suas questões empresariais sem distrações ou atrasos.",
         "secondDescriptionTitle": "Adaptado ao Seu Negócio",
         "secondDescription": "Com vasta experiência e um compromisso com a excelência, adaptamo-nos aos seus requisitos específicos de negócio, assegurando que cada viagem é tranquila e produtiva.",
-        "thirdDescriptionTitle": "Tailored to Your Business",
-        "thirdDescription": "With extensive experience and a commitment to excellence."
+        "thirdDescriptionTitle": "Viagens Frequentes",
+        "thirdDescription": [
+          "Aeroporto - Hotel - Aeroporto",
+          "Hotel - Reunião / Jantar - Hotel",
+          "Lisboa - Cascais / Sintra - Lisboa",
+          "Lisboa - Porto - Lisboa",
+          "Lisboa - Algarve - Lisboa",
+          "Lisboa - Madrid - Lisboa",
+          "Lisboa - Sevilha - Lisboa",
+          "Lisboa - Barcelona - Lisboa"
+        ]
       },
       "weddings": {
         "title": "Casamentos e Eventos",
@@ -95,8 +104,17 @@
         "firstDescription": "Proporcionamos serviços de tour confortáveis e convenientes, permitindo-lhe explorar e desfrutar sem se preocupar com os detalhes.",
         "secondDescriptionTitle": "Orientação e Cuidado Especializado",
         "secondDescription": "Com um profundo conhecimento da área local e uma paixão por um serviço excelente, asseguramos que o seu tour seja informativo, agradável e memorável.",
-        "thirdDescriptionTitle": "Tailored to Your Business",
-        "thirdDescription": "With extensive experience and a commitment to excellence."
+        "thirdDescriptionTitle": "Tours Famosos",
+        "thirdDescription": [
+          "Tour do Porto - A CIDADE DO ROMANCE E, INCONFUNDIVELMENTE, VINHO",
+          "Tour de Coimbra - A CIDADE DO CONHECIMENTO E SABEDORIA",
+          "Tour de Évora - O PATRIMÓNIO ROMANO",
+          "Tour de Óbidos, Batalha, Alcobaça e Nazaré - O PATRIMÓNIO MEDIEVAL",
+          "Tour de Tomar - O PATRIMÓNIO DOS TEMPLÁRIOS",
+          "Tour de Fátima - O BERÇO DA FÉ DE PORTUGAL",
+          "Tour de Sintra / Cascais - O ÉDEN ROMÂNTICO",
+          "Tour da Cidade de Lisboa - A CIDADE PORTUGUESA DAS SETE COLINAS"
+        ]
       },
       "nightLife": {
         "title": "Vida noturna",

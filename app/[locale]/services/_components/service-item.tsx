@@ -13,7 +13,7 @@ type ServiceItemProps = {
   secondDescriptionTitle: string;
   secondDescription: string;
   thirdDescriptionTitle?: string;
-  thirdDescription?: string;
+  thirdDescription?: string[];
   id: string;
   isReversed?: boolean;
   hasExtra?: boolean;
@@ -47,18 +47,20 @@ export const ServiceItem = ({
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
-
+  const effectiveDescription = thirdDescription || [];
   useEffect(() => {
     const interval = setInterval(() => {
       setFade(false);
       setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        setCurrentIndex(
+          (prevIndex) => (prevIndex + 1) % effectiveDescription.length
+        );
         setFade(true);
       }, 500); // duration of fade-out effect
     }, 2000);
 
     return () => clearInterval(interval);
-  }, [texts.length]);
+  }, [effectiveDescription.length]);
   return (
     <div
       className={cn(
@@ -108,7 +110,7 @@ export const ServiceItem = ({
                 fade ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              {texts[currentIndex]}
+              {effectiveDescription[currentIndex]}
             </p>
           </div>
         )}

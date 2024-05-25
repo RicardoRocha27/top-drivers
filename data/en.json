@@ -77,8 +77,17 @@
         "firstDescription": "We ensure timely and professional transport services, allowing you to focus on your business matters without any distractions or delays.",
         "secondDescriptionTitle": "Tailored to Your Business",
         "secondDescription": "With extensive experience and a commitment to excellence, we cater to your specific business requirements, ensuring every trip is smooth and productive.",
-        "thirdDescriptionTitle": "Tailored to Your Business",
-        "thirdDescription": "With extensive experience and a commitment to excellence."
+        "thirdDescriptionTitle": "Some Frequent Business Transfers",
+        "thirdDescription": [
+          "Airport - Hotel - Airport",
+          "Hotel - Meeting / Dinner - Hotel",
+          "Lisbon - Cascais / Sintra - Lisbon",
+          "Lisbon - Oporto - Lisbon",
+          "Lisbon - Algarve - Lisbon",
+          "Lisbon - Madrid - Lisbon",
+          "Lisbon - Sevilla - Lisbon",
+          "Lisbon - Barcelona - Lisbon"
+        ]
       },
       "weddings": {
         "title": "Weddings and Events",
@@ -95,8 +104,17 @@
         "firstDescription": "We provide comfortable and convenient tour services, allowing you to explore and enjoy without worrying about the details.",
         "secondDescriptionTitle": "Expert Guidance and Care",
         "secondDescription": "With a deep understanding of the local area and a passion for excellent service, we ensure your tour is informative, enjoyable, and memorable.",
-        "thirdDescriptionTitle": "Tailored to Your Business",
-        "thirdDescription": "With extensive experience and a commitment to excellence."
+        "thirdDescriptionTitle": "Famous Tours",
+        "thirdDescription": [
+          "Porto Tour - THE CITY OF ROMANCE AND UNMISTAKABLY, WINE",
+          "Coimbra Tour - THE CITY OF KNOWLEDGE AND WISDOM",
+          "Évora Tour - THE ROMANS HERITAGE",
+          "Óbidos, Batalha, Alcobaça and Nazaré Tour - THE MEDIEVAL HERITAGE",
+          "Tomar Tour - THE TEMPLARS HERITAGE",
+          "Fátima Tour - THE CRADLE OF PORTUGAL'S FAITH",
+          "Sintra / Cascais Tour - THE ROMANTIC EDEN",
+          "Lisbon City Tour - THE PORTUGUESE CITY OF SEVEN HILLS"
+        ]
       },
       "nightLife": {
         "title": "Night Life",
