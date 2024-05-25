@@ -43,7 +43,8 @@ export const ServiceItem = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
   const effectiveDescription = thirdDescription || [];
-  const isMobile: boolean = window.innerWidth < 1024;
+  const isMobile: boolean =
+    typeof window !== 'undefined' ? window?.innerWidth < 1024 : false;
 
   useEffect(() => {
     if (inView) {

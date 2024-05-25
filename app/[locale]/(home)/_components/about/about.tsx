@@ -13,7 +13,8 @@ export const About = () => {
   const t = useTranslations('home.about');
   const controls = useAnimation();
   const [ref, inView] = useInView();
-  const isMobile: boolean = window.innerWidth < 1024;
+  const isMobile: boolean =
+    typeof window !== 'undefined' ? window?.innerWidth < 1024 : false;
 
   useEffect(() => {
     if (inView) {
