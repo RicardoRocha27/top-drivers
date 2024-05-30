@@ -48,7 +48,9 @@ export const MobileMenu = () => {
           <SheetContent className="md:hidden">
             <div className="relative h-full">
               <SheetHeader>
-                <Logo size={70} />
+                <div className="flex">
+                  <Logo size={70} />
+                </div>
                 <Separator className="bg-secondary min-w-[100px] h-[1px] rounded-full my-2" />
               </SheetHeader>
               <MenuItemMobile itemsNames={itemsNames} />
