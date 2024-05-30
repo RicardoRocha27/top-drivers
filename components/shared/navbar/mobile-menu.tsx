@@ -1,15 +1,11 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Menu } from 'lucide-react';
 import { FaFacebook } from 'react-icons/fa6';
-import { PiInstagramLogoFill } from 'react-icons/pi';
-import { RiWhatsappFill } from 'react-icons/ri';
 import {
   Sheet,
   SheetContent,
   SheetFooter,
   SheetHeader,
-  SheetPrimitive,
   SheetTrigger,
 } from '@/components/ui/sheet';
 import { Separator } from '@/components/ui/separator';
