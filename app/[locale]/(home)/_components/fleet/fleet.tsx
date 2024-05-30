@@ -16,6 +16,8 @@ export const Fleet = () => {
             </div>
           </div>
           <FleetGrid />
+        </div>
+        <div className="max-w-6xl mx-auto my-8">
           <p className="text-xs text-foreground/80">*{t('disclaimer')}</p>
         </div>
       </div>
