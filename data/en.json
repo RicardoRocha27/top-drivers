@@ -50,7 +50,8 @@
     "fleet": {
       "title": "Our Fleet",
       "subtitle": "We have a fleet composed of the most luxurious and comfortable vehicles, ensuring a pleasant and safe journey.",
-      "button": "All Vehicles"
+      "button": "All Vehicles",
+      "disclaimer": "The images were generated through artificial intelligence. The vehicles may not be exactly as shown."
     },
     "contacts": {
       "title": "Contact Us",
@@ -171,7 +172,8 @@
         "sprinter16": {
           "description": "The Mercedes-Benz Sprinter 16Pax is perfect for larger groups, combining space, comfort, and versatility."
         }
-      }
+      },
+      "disclaimer": "The images were retired from the official Mercedes-Benz website. The vehicles may not be exactly as shown."
     }
   },
   "about": {

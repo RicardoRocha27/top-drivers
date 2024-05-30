@@ -1,8 +1,11 @@
-import { Container } from "@/components/shared/container";
-import { Header } from "@/components/shared/header";
-import { FleetGrid } from "./fleet-grid";
+import { Container } from '@/components/shared/container';
+import { Header } from '@/components/shared/header';
+import { FleetGrid } from './fleet-grid';
+import { useTranslations } from 'next-intl';
 
 export const Fleet = () => {
+  const t = useTranslations('home.fleet');
+
   return (
     <Container>
       <div className="rounded-lg bg-secondary py-16 px-4 my-32">
@@ -13,6 +16,7 @@ export const Fleet = () => {
             </div>
           </div>
           <FleetGrid />
+          <p className="text-xs text-foreground/80">*{t('disclaimer')}</p>
         </div>
       </div>
     </Container>

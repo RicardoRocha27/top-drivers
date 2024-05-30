@@ -50,7 +50,8 @@
     "fleet": {
       "title": "Frota",
       "subtitle": "Temos uma frota composta pelos veículos mais luxuosos e confortáveis, adaptados para satisfazer as suas necessidades.",
-      "button": "Todos os veículos"
+      "button": "Todos os veículos",
+      "disclaimer": "As imagens foram geradas através de inteligência artificial. Os veículos podem não ser exatamente como mostrado."
     },
     "contacts": {
       "title": "Contacte-nos",
@@ -171,7 +172,8 @@
         "sprinter16": {
           "description": "O Mercedes-Benz Sprinter 16Pax é ideal para grupos maiores, combinando espaço e conforto com versatilidade."
         }
-      }
+      },
+      "disclaimer": "As imagens foram retiradas do site oficial da Mercedes-Benz. Os veículos podem não ser exatamente como mostrado."
     }
   },
   "about": {
