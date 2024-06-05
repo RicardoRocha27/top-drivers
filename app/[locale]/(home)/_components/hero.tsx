@@ -28,12 +28,13 @@ export const Hero = () => {
           >
             {locale === 'en' ? (
               <>
-                Portugal <span className="text-accent">Transfer Services</span>
+                The Excelence of{' '}
+                <span className="text-accent">Being Driven</span>
               </>
             ) : (
               <>
-                <span className="text-accent">Serviços de Transferes</span> em
-                Portugal
+                <span className="text-accent">A Excelência de</span> Ser
+                Conduzido
               </>
             )}
           </h1>
