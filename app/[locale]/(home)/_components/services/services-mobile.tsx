@@ -3,7 +3,7 @@ import { ServiceCard } from './service-card';
 import { ServicesProps } from './services';
 
 import ExecutiveImage from '@/public/home-executive.jpg';
-import ToursImage from '@/public/home-tours.jpg';
+import ToursImage from '@/public/home-tours1.jpg';
 import NightLifeImage from '@/public/home-night-life.jpg';
 import WeddingsImage from '@/public/home-weddings.jpg';
 
