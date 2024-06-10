@@ -2,11 +2,11 @@ import {
   FACEBOOK_LINK,
   INSTAGRAM_LINK,
   TWITTER_LINK,
-} from "@/components/shared/footer/social-icons";
-import Link from "next/link";
-import React from "react";
-import { FaFacebook, FaTwitter } from "react-icons/fa6";
-import { PiInstagramLogoFill } from "react-icons/pi";
+} from '@/components/shared/footer/social-icons';
+import Link from 'next/link';
+import React from 'react';
+import { FaFacebook, FaTwitter } from 'react-icons/fa6';
+import { PiInstagramLogoFill } from 'react-icons/pi';
 
 type ContactInfoProps = {
   icon: React.ReactElement;
@@ -18,8 +18,8 @@ const MAP_NAMES_TO_LINKS: { [key: string]: string } = {
   Instagram: INSTAGRAM_LINK,
   Facebook: FACEBOOK_LINK,
   Twitter: TWITTER_LINK,
-  "+351 966513221": "tel:+966513221",
-  "info@topdrivers.pt": "mailto:info@topdrivers.pt",
+  '+351 916343416': 'tel:+916343416',
+  'info@topdrivers.pt': 'mailto:info@topdrivers.pt',
 };
 
 export const ContactsInfo = ({ icon, subtitle, text }: ContactInfoProps) => {
@@ -29,8 +29,8 @@ export const ContactsInfo = ({ icon, subtitle, text }: ContactInfoProps) => {
         <div className="text-lg">{icon}</div>
         <h3 className="font-semibold">{subtitle}</h3>
       </div>
-      {text !== "" ? (
-        !subtitle.includes("24/7") ? (
+      {text !== '' ? (
+        !subtitle.includes('24/7') ? (
           <Link
             href={MAP_NAMES_TO_LINKS[text]}
             className="text-sm text-foreground/80 hover:text-foreground"

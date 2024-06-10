@@ -1,6 +1,6 @@
-import { useLocale } from "next-intl";
-import Link from "next/link";
-import { FACEBOOK_LINK, INSTAGRAM_LINK, TWITTER_LINK } from "./social-icons";
+import { useLocale } from 'next-intl';
+import Link from 'next/link';
+import { FACEBOOK_LINK, INSTAGRAM_LINK, TWITTER_LINK } from './social-icons';
 
 type FooterLinkProps = {
   title: string;
@@ -24,8 +24,8 @@ export const FooterLink = ({ title, links }: FooterLinkProps) => {
     Instagram: INSTAGRAM_LINK,
     Facebook: FACEBOOK_LINK,
     Twitter: TWITTER_LINK,
-    966513221: "tel:+966513221",
-    "info@topdrivers.pt": "mailto:info@topdrivers.pt",
+    916343416: 'tel:+916343416',
+    'info@topdrivers.pt': 'mailto:info@topdrivers.pt',
   };
 
   return (
@@ -40,7 +40,7 @@ export const FooterLink = ({ title, links }: FooterLinkProps) => {
                 href={MAP_NAMES_TO_LINKS[link]}
                 className="text-sm hover:underline w-fit"
                 target={
-                  MAP_NAMES_TO_LINKS[link].includes("http") ? "_blank" : "_self"
+                  MAP_NAMES_TO_LINKS[link].includes('http') ? '_blank' : '_self'
                 }
               >
                 {link}

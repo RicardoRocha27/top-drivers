@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import { Button } from "../ui/button";
+import { AiOutlineWhatsApp } from 'react-icons/ai';
+import { Button } from '../ui/button';
 
 const WhatsappButton = () => {
   return (
@@ -9,7 +9,7 @@ const WhatsappButton = () => {
       variant="whatsapp"
       size="icon"
       className="shadow-md"
-      onClick={() => window.open(`https://wa.me/966513221`)}
+      onClick={() => window.open(`https://wa.me/916343416`)}
     >
       <AiOutlineWhatsApp size={20} className="text-foreground" />
     </Button>
