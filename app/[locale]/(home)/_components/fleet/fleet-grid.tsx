@@ -50,7 +50,7 @@ import Vclass3Image from '@/public/car-v-class-3.jpg';
 import Vclass4Image from '@/public/car-v-class-4.jpg';
 import Vclass5Image from '@/public/car-v-class-5.jpg';
 
-import Sprinter80Image from '@/public/car-sprinter-16.jpg';
+import Sprinter80Image from '@/public/car-sprinter-8.jpg';
 import Sprinter160Image from '@/public/car-sprinter-16.jpg';
 import Sprinter1Image from '@/public/car-sprinter-1.jpg';
 import Sprinter2Image from '@/public/car-sprinter-2.jpg';
