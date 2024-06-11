@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
-import HeroImage from '@/public/hero-image1.png';
+import HeroImage from '@/public/hero-image2.png';
 import { LocaleProps } from '@/types';
 
 export const Hero = () => {
