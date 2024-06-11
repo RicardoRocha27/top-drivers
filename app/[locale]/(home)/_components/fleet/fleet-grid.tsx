@@ -8,35 +8,35 @@ import { CarouselArrows } from './carousel-arrows';
 import { useTranslations } from 'next-intl';
 import { Fleet } from '@/types';
 
-import Eclass0Image from '@/public/car-e-class.png';
+import Eclass0Image from '@/public/car-e-class.jpg';
 import Eclass1Image from '@/public/car-e-class-1.webp';
 import Eclass2Image from '@/public/car-e-class-2.webp';
 import Eclass3Image from '@/public/car-e-class-3.webp';
 import Eclass4Image from '@/public/car-e-class-4.webp';
 import Eclass5Image from '@/public/car-e-class-5.webp';
 
-import Sclass0Image from '@/public/car-s-class.png';
+import Sclass0Image from '@/public/car-s-class2.jpg';
 import Sclass1Image from '@/public/car-s-class-1.webp';
 import Sclass2Image from '@/public/car-s-class-2.webp';
 import Sclass3Image from '@/public/car-s-class-3.webp';
 import Sclass4Image from '@/public/car-s-class-4.webp';
 import Sclass5Image from '@/public/car-s-class-5.webp';
 
-import Eqe0Image from '@/public/car-eqe.png';
+import Eqe0Image from '@/public/car-eqe.jpg';
 import Eqe1Image from '@/public/car-eqe-1.webp';
 import Eqe2Image from '@/public/car-eqe-2.webp';
 import Eqe3Image from '@/public/car-eqe-3.webp';
 import Eqe4Image from '@/public/car-eqe-4.webp';
 import Eqe5Image from '@/public/car-eqe-5.webp';
 
-import Eqs0Image from '@/public/car-eqs.png';
+import Eqs0Image from '@/public/car-eqs.jpg';
 import Eqs1Image from '@/public/car-eqs-1.webp';
 import Eqs2Image from '@/public/car-eqs-2.webp';
 import Eqs3Image from '@/public/car-eqs-3.webp';
 import Eqs4Image from '@/public/car-eqs-4.webp';
 import Eqs5Image from '@/public/car-eqs-5.webp';
 
-import EqsSuv0Image from '@/public/car-eqs-suv.png';
+import EqsSuv0Image from '@/public/car-eqs-suv.jpg';
 import EqsSuv1Image from '@/public/car-eqs-suv-1.webp';
 import EqsSuv2Image from '@/public/car-eqs-suv-2.webp';
 import EqsSuv3Image from '@/public/car-eqs-suv-3.webp';
@@ -50,8 +50,8 @@ import Vclass3Image from '@/public/car-v-class-3.jpg';
 import Vclass4Image from '@/public/car-v-class-4.jpg';
 import Vclass5Image from '@/public/car-v-class-5.jpg';
 
-import Sprinter80Image from '@/public/car-sprinter-16.png';
-import Sprinter160Image from '@/public/car-sprinter-16.png';
+import Sprinter80Image from '@/public/car-sprinter-16.jpg';
+import Sprinter160Image from '@/public/car-sprinter-16.jpg';
 import Sprinter1Image from '@/public/car-sprinter-1.jpg';
 import Sprinter2Image from '@/public/car-sprinter-2.jpg';
 import Sprinter3Image from '@/public/car-sprinter-3.jpg';
