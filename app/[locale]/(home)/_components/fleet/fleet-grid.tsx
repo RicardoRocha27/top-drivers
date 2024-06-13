@@ -15,7 +15,7 @@ import Eclass3Image from '@/public/car-e-class-3.webp';
 import Eclass4Image from '@/public/car-e-class-4.webp';
 import Eclass5Image from '@/public/car-e-class-5.webp';
 
-import Sclass0Image from '@/public/car-s-class2.jpg';
+import Sclass0Image from '@/public/car-s-class.jpg';
 import Sclass1Image from '@/public/car-s-class-1.webp';
 import Sclass2Image from '@/public/car-s-class-2.webp';
 import Sclass3Image from '@/public/car-s-class-3.webp';
