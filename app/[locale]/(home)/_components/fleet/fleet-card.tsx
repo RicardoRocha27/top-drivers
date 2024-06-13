@@ -24,7 +24,7 @@ export const FleetCard = ({
           src={imageUrl}
           placeholder="blur"
           height={180}
-          width={300}
+          width={350}
           className="object-center w-full object-cover rounded-lg"
         />
       </div>
