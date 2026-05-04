@@ -28,7 +28,7 @@ export const Hero = () => {
           >
             {locale === 'en' ? (
               <>
-                The Excelence of{' '}
+                The Excellence of{' '}
                 <span className="text-accent">Being Driven</span>
               </>
             ) : (

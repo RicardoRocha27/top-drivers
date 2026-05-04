@@ -24,7 +24,7 @@ export const FooterLink = ({ title, links }: FooterLinkProps) => {
     Instagram: INSTAGRAM_LINK,
     Facebook: FACEBOOK_LINK,
     Twitter: TWITTER_LINK,
-    916343416: 'tel:+916343416',
+    916343416: 'tel:+351916343416',
     'info@topdrivers.pt': 'mailto:info@topdrivers.pt',
   };
 

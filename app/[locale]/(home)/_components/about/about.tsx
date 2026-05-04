@@ -39,7 +39,13 @@ export const About = () => {
               {t('description')}
             </p>
           </div>
-          <AboutGrid card1Text={t('card1Text')} />
+          <AboutGrid
+            card1Text={t('card1Text')}
+            card2Text={t('card2Text')}
+            card3Text={t('card3Text')}
+            card4Title={t('card4Title')}
+            card4Text={t('card4Text')}
+          />
         </div>
       </motion.div>
     </Container>

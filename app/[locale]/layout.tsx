@@ -12,11 +12,24 @@ import { Toaster } from '@/components/ui/sonner';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['200', '400', '700'] });
 
-export const metadata: Metadata = {
-  title: 'TopDrivers',
-  description:
-    'TopDrivers offers exquisite quality and comfort tailored to meet your unique needs.',
-  keywords: [
+export function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Metadata {
+  const isPt = params.locale === 'pt';
+  return {
+    title: isPt
+      ? 'TopDrivers | Motoristas de Luxo em Portugal'
+      : 'TopDrivers | Luxury Chauffeur Service in Portugal',
+    description: isPt
+      ? 'TopDrivers oferece qualidade requintada e conforto adaptado para satisfazer as suas necessidades únicas.'
+      : 'TopDrivers offers exquisite quality and comfort tailored to meet your unique needs.',
+    keywords: METADATA_KEYWORDS,
+  };
+}
+
+const METADATA_KEYWORDS = [
     'Topdrivers',
     'Boaventours',
     'Serviço de Chauffeur',
@@ -59,8 +72,7 @@ export const metadata: Metadata = {
     'Premium Taxi Service',
     'Chauffeur Driven Cars',
     'City Tours',
-  ],
-};
+];
 
 export default async function RootLocaleLayout({
   children,

@@ -13,7 +13,7 @@
   "home": {
     "hero": {
       "subtitle": "Experience excellence through our services, offering exquisite quality and comfort tailored to meet your unique needs",
-      "button": "Contact us"
+      "button": "Book Now"
     },
     "services": {
       "title": "Our Services",
@@ -45,7 +45,11 @@
       "title": "About Us",
       "subtitle": "We are a luxury transportation company, dedicated to providing excellent and comfortable services to our clients.",
       "description": "We are a reference in Portugal for services of excellence in drivers and chauffeurs. Our commitment is to exceed the expectations of each client, which sets us apart as the distinctive choice for all transportation needs.",
-      "card1Text": "Completed Trips with professional drivers"
+      "card1Text": "Completed Trips with professional drivers",
+      "card2Text": "Satisfied clients across our journey",
+      "card3Text": "Years of experience on the road",
+      "card4Title": "Portugal & Spain",
+      "card4Text": "Lisbon · Porto · Algarve · Madrid · Seville · Barcelona"
     },
     "fleet": {
       "title": "Our Fleet",
@@ -68,7 +72,7 @@
     "hero": {
       "title": "Services to meet your needs",
       "description": "Time, comfort and privacy are some of life's greatest luxuries, and when combined with a remarkable and trustworthy Private Driver Service, perfection is achieved",
-      "button": "Contact us"
+      "button": "Book Now"
     },
     "items": {
       "executive": {
@@ -131,7 +135,7 @@
     "hero": {
       "title": "Discover our fleet of luxury vehicles",
       "description": "We guarantee memorable trips with comfort and safety, with our luxury fleet composed of Mercedes models equipped with everything you need for a pleasant and safe journey.",
-      "button": "Contact us"
+      "button": "Book Now"
     },
     "banner": {
       "title": "Because we also depend on them, we only trust the best of the best"
@@ -180,7 +184,7 @@
     "hero": {
       "title": "We are changing the way people travel",
       "description": "Our commitment is to exceed the expectations of each client, which sets us apart as the distinctive choice for all transportation needs.",
-      "button": "Contact us"
+      "button": "Book Now"
     },
     "mission": {
       "title": "Our Mission",
@@ -266,7 +270,7 @@
     "features": {
       "mobile": {
         "title": "Phone",
-        "description": "+351 916343416"
+        "description": "+351 916 343 416"
       },
       "email": {
         "title": "Email",

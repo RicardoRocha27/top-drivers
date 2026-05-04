@@ -9,7 +9,7 @@ const WhatsappButton = () => {
       variant="whatsapp"
       size="icon"
       className="shadow-md"
-      onClick={() => window.open(`https://wa.me/916343416`)}
+      onClick={() => window.open(`https://wa.me/351916343416`)}
     >
       <AiOutlineWhatsApp size={20} className="text-foreground" />
     </Button>

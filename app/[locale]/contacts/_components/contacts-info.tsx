@@ -18,7 +18,7 @@ const MAP_NAMES_TO_LINKS: { [key: string]: string } = {
   Instagram: INSTAGRAM_LINK,
   Facebook: FACEBOOK_LINK,
   Twitter: TWITTER_LINK,
-  '+351 916343416': 'tel:+916343416',
+  '+351 916 343 416': 'tel:+351916343416',
   'info@topdrivers.pt': 'mailto:info@topdrivers.pt',
 };
 

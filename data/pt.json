@@ -13,7 +13,7 @@
   "home": {
     "hero": {
       "subtitle": "Viva a excelência através dos nossos serviços de qualidade requintada e conforto adaptado para satisfazer as suas necessidades",
-      "button": "Contacte-nos"
+      "button": "Reservar Agora"
     },
     "services": {
       "title": "Serviços",
@@ -45,7 +45,11 @@
       "title": "Sobre nós",
       "subtitle": "Somos uma empresa de transporte de luxo, dedicada a fornecer serviços de excelência e conforto aos nossos clientes.",
       "description": "Somos uma referência em Portugal para serviços de motoristas e chauffeurs de excelência. O nosso compromisso é superar as expectativas de cada cliente, o que nos destaca como a escolha distintiva para todas as necessidades de transporte.",
-      "card1Text": "Viagens completas com motoristas profissionais"
+      "card1Text": "Viagens completas com motoristas profissionais",
+      "card2Text": "Clientes satisfeitos ao longo do nosso percurso",
+      "card3Text": "Anos de experiência na estrada",
+      "card4Title": "Portugal & Espanha",
+      "card4Text": "Lisboa · Porto · Algarve · Madrid · Sevilha · Barcelona"
     },
     "fleet": {
       "title": "Frota",
@@ -68,7 +72,7 @@
     "hero": {
       "title": "Serviços para atender às suas necessidades",
       "description": "Tempo, conforto e privacidade são alguns dos maiores luxos da vida, e quando combinados com um Serviço Privado de Motorista notável e digno de confiança, a perfeição é alcançada",
-      "button": "Contacte-nos"
+      "button": "Reservar Agora"
     },
     "items": {
       "executive": {
@@ -131,7 +135,7 @@
     "hero": {
       "title": "Conheça a nossa frota de veículos de luxo",
       "description": "Garantimos viagens memoráveis com conforto e segurança, com a nossa frota de luxo composta por modelos Mercedes equipados com tudo o que precisa para uma viagem agradável e segura.",
-      "button": "Contacte-nos"
+      "button": "Reservar Agora"
     },
     "banner": {
       "title": "Porque também nós dependemos deles, só confiamos nos melhores dos melhores"
@@ -180,7 +184,7 @@
     "hero": {
       "title": "Mudamos a forma como as pessoas viajam",
       "description": "O nosso compromisso é superar as expectativas de cada cliente, o que nos destaca como a escolha distintiva para todas as necessidades de transporte.",
-      "button": "Contacte-nos"
+      "button": "Reservar Agora"
     },
     "mission": {
       "title": "A nossa missão",
@@ -266,7 +270,7 @@
     "features": {
       "mobile": {
         "title": "Telemóvel",
-        "description": "+351 916343416"
+        "description": "+351 916 343 416"
       },
       "email": {
         "title": "Email",

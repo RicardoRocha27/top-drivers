@@ -27,7 +27,7 @@ export const Footer = () => {
           <hr className="h-px my-3 bg-background/20 border-none" />
           <div>
             <p className="text-left text-sm">
-              © TopDrivers 2024 - All rights reserved
+              © TopDrivers {new Date().getFullYear()} - All rights reserved
             </p>
           </div>
         </div>
